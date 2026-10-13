@@ -1,0 +1,149 @@
+:root {
+  --cream: #f7f5f0;
+  --ink: #24211e;
+  --gold: #a78252;
+  --line: #ded9cf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--ink);
+  margin: 0;
+}
+
+.display {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  letter-spacing: -.045em;
+  line-height: 1.06;
+}
+
+.eyebrow {
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.section-pad {
+  padding: clamp(72px, 9vw, 136px) 24px;
+}
+
+.shell {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card {
+  border-top: 1px solid var(--line);
+  transition: background .25s, padding .25s;
+}
+
+.service-card:hover {
+  background: #f7f5f0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 25px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  transition: transform .2s, opacity .2s;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  opacity: .85;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #a78252;
+  outline-offset: 4px;
+}
+
+input,
+select {
+  background: #fff;
+  border: 1px solid #d9d3c9;
+  border-radius: 2px;
+  width: 100%;
+  padding: 15px 16px;
+  min-height: 54px;
+  color: var(--ink);
+}
+
+input:disabled,
+select:disabled,
+button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.gallery img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.gallery figure {
+  overflow: hidden;
+  background: #eae3d9;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.045);
+}
+
+.float-book {
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  z-index: 30;
+  box-shadow: 0 10px 35px #24211e35;
+}
+
+@media (min-width: 768px) {
+  .float-book {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding-bottom: 90px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
