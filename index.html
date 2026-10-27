@@ -243,12 +243,21 @@
           <div class="svc-track">
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/DryManicura.png" alt="Dry Mani / Dry Pedi en JAE Nail House" loading="lazy">
+                <img src="assets/DryManicura.png" alt="Dry Manicura en JAE Nail House" loading="lazy">
               </div>
-              <h3>Dry Mani / Dry Pedi</h3>
-              <p class="svc-desc">Cuidado y limpieza de la uña natural.</p>
+              <h3>Dry Manicura</h3>
+              <p class="svc-desc">Cuidado preciso de la uña natural, con acabado impecable.</p>
               <p class="svc-price">Desde <strong>$280</strong></p>
-              <button type="button" class="svc-btn" data-service="Dry Mani / Dry Pedi">Reservar</button>
+              <button type="button" class="svc-btn" data-service="Dry Manicura">Reservar</button>
+            </article>
+            <article class="svc-card">
+              <div class="svc-photo">
+                <img src="assets/Drypedicure.png" alt="Dry Pedicura en JAE Nail House" loading="lazy">
+              </div>
+              <h3>Dry Pedicura</h3>
+              <p class="svc-desc">Cuidado preciso para pies, con acabado impecable.</p>
+              <p class="svc-price">Desde <strong>$450</strong></p>
+              <button type="button" class="svc-btn" data-service="Dry Pedicura">Reservar</button>
             </article>
             <article class="svc-card">
               <div class="svc-photo">
@@ -261,30 +270,12 @@
             </article>
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/servicio-base-rubber.jpg" alt="Base Rubber en JAE Nail House" loading="lazy">
+                <img src="assets/AcrilicoySoftGel.png" alt="Acrílico y Soft Gel en JAE Nail House" loading="lazy">
               </div>
-              <h3>Base Rubber</h3>
-              <p class="svc-desc">Fuerza y flexibilidad para tu uña natural.</p>
-              <p class="svc-price">Desde <strong>$480</strong></p>
-              <button type="button" class="svc-btn" data-service="Base Rubber">Reservar</button>
-            </article>
-            <article class="svc-card">
-              <div class="svc-photo">
-                <img src="assets/AcrilicoySoftGel.png" alt="Acrílico en JAE Nail House" loading="lazy">
-              </div>
-              <h3>Acrílico</h3>
-              <p class="svc-desc">Diseños totalmente personalizados.</p>
+              <h3>Acrílico y Soft Gel</h3>
+              <p class="svc-desc">Diseños totalmente personalizados, ligeros y naturales.</p>
               <p class="svc-price">Desde <strong>$700</strong></p>
-              <button type="button" class="svc-btn" data-service="Acrílico">Reservar</button>
-            </article>
-            <article class="svc-card">
-              <div class="svc-photo">
-                <img src="assets/AcrilicoySoftGel.png" alt="Soft Gel en JAE Nail House" loading="lazy">
-              </div>
-              <h3>Soft Gel</h3>
-              <p class="svc-desc">Ligero, resistente y natural.</p>
-              <p class="svc-price">Desde <strong>$700</strong></p>
-              <button type="button" class="svc-btn" data-service="Soft Gel">Reservar</button>
+              <button type="button" class="svc-btn" data-service="Acrílico y Soft Gel">Reservar</button>
             </article>
             <article class="svc-card">
               <div class="svc-photo">
@@ -303,6 +294,15 @@
               <p class="svc-desc">Diseños únicos para cada estilo.</p>
               <p class="svc-price">Desde <strong>$100</strong></p>
               <button type="button" class="svc-btn" data-service="Nail Art">Reservar</button>
+            </article>
+            <article class="svc-card">
+              <div class="svc-photo">
+                <img src="assets/Vitamina.png" alt="Vitamina en JAE Nail House" loading="lazy">
+              </div>
+              <h3>Vitamina</h3>
+              <p class="svc-desc">Aplicación de tratamiento para tus uñas.</p>
+              <p class="svc-price">Desde <strong>$100</strong></p>
+              <button type="button" class="svc-btn" data-service="Vitamina">Reservar</button>
             </article>
           </div>
           <button type="button" class="svc-arrow svc-next" aria-label="Siguiente servicio">→</button>
@@ -676,7 +676,11 @@
               </option>
 
               <option>
-                Dry Mani / Dry Pedi
+                Dry Manicura
+              </option>
+
+              <option>
+                Dry Pedicura
               </option>
 
               <option>
@@ -684,15 +688,7 @@
               </option>
 
               <option>
-                Base Rubber
-              </option>
-
-              <option>
-                Acrílico
-              </option>
-
-              <option>
-                Soft Gel
+                Acrílico y Soft Gel
               </option>
 
               <option>
@@ -1022,6 +1018,11 @@
       };
       root.querySelector('.svc-prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
       root.querySelector('.svc-next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+      const select = document.getElementById('service');
+      document.querySelectorAll('[data-service]').forEach(btn => btn.addEventListener('click', () => {
+        if (select) select.value = btn.dataset.service;
+        document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+      }));
     })();
   </script>
 
