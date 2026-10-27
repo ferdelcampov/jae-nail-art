@@ -2514,3 +2514,73 @@ select:focus-visible {
 .footer-bottom {
   color: rgba(255, 255, 255, .6);
 }
+
+
+/* Botones del pie con ícono */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 116px;
+  padding: 20px 8px 18px;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.footer-action .footer-icon svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-action > span:last-child {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer-action:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--black);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .35);
+}
+
+.footer-action:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
+
+/* Ajustes de los botones del pie */
+.footer-links .footer-action {
+  width: 136px;
+}
+
+.footer-links .footer-action:hover {
+  color: var(--black);
+}
+
+.footer-action > span:last-child {
+  letter-spacing: .1em;
+}
