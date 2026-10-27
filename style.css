@@ -1075,7 +1075,7 @@ button {
     100%;
 
   object-fit:
-    cover;
+    contain;
 
   transition:
     transform .7s ease;
@@ -1086,7 +1086,7 @@ button {
 .gallery figure:hover img {
 
   transform:
-    scale(1.04);
+    none;
 
 }
 
@@ -2335,4 +2335,39 @@ select:focus-visible {
   .gallery--two figure:last-child {
     grid-row: 1 / 3;
   }
+}
+
+
+/* Mosaico de 5 fotos: una grande a la izquierda y cuatro en cuadrícula a la derecha */
+@media (min-width: 901px) {
+  .gallery--five figure:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery--five {
+    grid-template-rows: none;
+  }
+
+  .gallery--five .gallery-main,
+  .gallery--five figure:last-child {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .gallery--five figure {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+
+/* Las fotos se muestran completas, sin recortar uñas */
+.gallery figure {
+  background: var(--cream-light);
+}
+
+.gallery img {
+  object-fit: contain;
 }
