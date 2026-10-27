@@ -2465,3 +2465,8 @@ select:focus-visible {
   font-size: 14px;
   color: var(--text-soft);
 }
+
+
+.price-book {
+  margin: -30px 0 50px;
+}
