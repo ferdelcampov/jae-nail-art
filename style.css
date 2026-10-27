@@ -2470,3 +2470,31 @@ select:focus-visible {
 .price-book {
   margin: -30px 0 50px;
 }
+
+
+/* Franjas oscuras más delgadas */
+.luxury-banner {
+  padding: 56px 24px;
+}
+
+.why-jae {
+  padding: 64px 0;
+}
+
+.why-grid {
+  margin-top: 56px;
+}
+
+@media (max-width: 620px) {
+  .luxury-banner {
+    padding: 44px 20px;
+  }
+
+  .why-jae {
+    padding: 56px 0;
+  }
+
+  .why-grid {
+    margin-top: 40px;
+  }
+}
