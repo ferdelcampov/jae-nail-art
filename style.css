@@ -2498,3 +2498,19 @@ select:focus-visible {
     margin-top: 40px;
   }
 }
+
+
+/* Enlaces del pie con mejor contraste */
+.footer-links a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+}
+
+.footer-bottom {
+  color: rgba(255, 255, 255, .6);
+}
