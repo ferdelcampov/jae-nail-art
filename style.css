@@ -2392,3 +2392,76 @@ select:focus-visible {
   background: var(--black);
   color: var(--white);
 }
+
+
+/* Lista de precios por servicio */
+.service-info .service-prices {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  max-width: 400px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.service-prices li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(33, 29, 30, .14);
+}
+
+.service-prices li span:last-child {
+  color: var(--black);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* Carta de precios dentro de la página */
+.price-menu {
+  margin-top: 90px;
+  padding-top: 60px;
+  border-top: 1px solid var(--line);
+}
+
+.price-title {
+  margin: 14px 0 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px 60px;
+}
+
+.price-group h3 {
+  margin: 0 0 6px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.price-note {
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.price-group .service-prices {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: var(--text-soft);
+}
