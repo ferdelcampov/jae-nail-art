@@ -9,264 +9,292 @@
     content="width=device-width, initial-scale=1"
   >
 
-  <title>JAE Nail House — Nail Art Specialist</title>
+  <meta
+    name="description"
+    content="JAE Nail House — Nail Art Specialists. Cuidado, técnica y diseño para tus uñas."
+  >
 
-  <!-- Google Fonts -->
+  <title>JAE Nail House — Nail Art Specialists</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
-  <!-- CSS propio -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="w-full" style="background:#fff">
+
+<body>
 
   <!-- =========================
        HEADER
   ========================== -->
-  <header class="w-full bg-white">
 
-    <div class="shell px-6 py-5 flex items-center justify-between gap-5">
+  <header class="site-header">
+
+    <div class="container header-inner">
 
       <a
         href="#inicio"
-        class="font-bold tracking-[.24em] text-lg shrink-0"
-        aria-label="JAE Nail House, ir al inicio"
+        class="brand"
+        aria-label="JAE Nail House"
       >
-        JAE
-        <span class="font-normal tracking-normal text-xs ml-2">
-          NAIL HOUSE
-        </span>
+        <img
+          src="assets/logo-negro.png"
+          alt="JAE Nail House"
+          class="brand-logo"
+        >
       </a>
 
-      <nav
-        aria-label="Navegación principal"
-        class="hidden md:flex gap-7 items-center"
-      >
-        <a
-          class="eyebrow hover:opacity-60"
-          href="#servicios"
-        >
-          SERVICIOS
+
+      <nav class="desktop-nav">
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#inspiracion">
+          Diseños
+        </a>
+
+        <a href="#ubicacion">
+          Ubicación
         </a>
 
         <a
-          class="eyebrow hover:opacity-60"
-          href="#inspiracion"
-        >
-          INSPIRACIÓN
-        </a>
-
-        <a
-          class="eyebrow hover:opacity-60"
-          href="#ubicacion"
-        >
-          UBICACIÓN
-        </a>
-
-        <a
-          class="eyebrow border-b border-current pb-1"
           href="#reservar"
+          class="nav-book"
         >
-          RESERVAR
+          Agenda tu cita
         </a>
+
       </nav>
 
+
       <a
-        class="pill md:hidden"
         href="#reservar"
-        style="background:var(--ink);color:#fff"
+        class="mobile-book"
       >
-        RESERVAR
+        Agendar
       </a>
 
     </div>
+
   </header>
 
 
-  <!-- =========================
-       MAIN
-  ========================== -->
-  <main id="inicio">
 
+  <main id="inicio">
 
     <!-- =========================
          HERO
     ========================== -->
-    <section
-      class="w-full"
-      style="background:var(--cream)"
-    >
 
-      <div class="shell grid md:grid-cols-2 min-h-[590px]">
+    <section class="hero">
 
-        <div
-          class="flex flex-col justify-center px-6 py-16 md:px-12 lg:px-20 md:py-24"
+      <div class="hero-image">
+
+        <img
+          src="assets/hero-jae.jpg"
+          alt="JAE Nail House"
+          onerror="this.src='https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg'"
         >
 
-          <p
-            class="eyebrow mb-8"
-            style="color:var(--gold)"
-          >
-            JAE NAIL HOUSE · NAIL ART SPECIALIST
+        <div class="hero-overlay"></div>
+
+      </div>
+
+
+      <div class="container hero-content">
+
+        <div class="hero-copy">
+
+          <p class="section-label light">
+            Nail Art Specialists
           </p>
 
-          <h1
-            class="display max-w-[600px]"
-            style="font-size:clamp(2.5rem,5vw,4.5rem)"
+          <img
+            src="assets/logo-blanco.png"
+            alt="JAE Nail House"
+            class="hero-logo"
           >
-            Uñas hermosas. Uñas saludables.
+
+          <h1>
+            Beautiful by design.<br>
+            Healthy by choice.
           </h1>
 
-          <p
-            class="mt-8 max-w-md leading-relaxed"
-            style="color:#514b43"
-          >
-            Arte en cada detalle. Una experiencia hecha para ti
-            y para el cuidado de tus uñas.
+          <p class="hero-description">
+            Diseño, técnica y cuidado en cada detalle.
+            Creamos sets que reflejan tu estilo mientras
+            cuidamos la salud de tus uñas.
           </p>
 
-          <div class="flex flex-wrap gap-3 mt-10">
+
+          <div class="hero-buttons">
 
             <a
-              class="pill"
               href="#reservar"
-              style="background:var(--ink);color:#fff"
+              class="btn btn-gold"
             >
-              RESERVA TU CITA
+              Agenda tu cita
             </a>
 
             <a
-              class="pill border border-[#24211e]"
-              href="https://api.whatsapp.com/send?text=Hola%2C%20JAE.%20Quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#servicios"
+              class="btn btn-outline-light"
             >
-              WHATSAPP
+              Ver servicios
             </a>
 
           </div>
 
-          <p
-            class="mt-12 eyebrow"
-            style="color:var(--gold)"
-          >
-            TÉCNICA · CUIDADO · EXPRESIÓN
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="brand-statement">
+
+      <div class="container statement-grid">
+
+        <div>
+
+          <p class="section-label">
+            JAE Nail House
           </p>
+
+          <h2 class="editorial-title">
+            Care is the<br>
+            new luxury.
+          </h2>
 
         </div>
 
-        <div
-          class="min-h-[420px] md:min-h-full overflow-hidden"
-        >
 
-          <img
-            class="photo"
-            loading="lazy"
-            src="https://images.pexels.com/photos/34373402/pexels-photo-34373402.jpeg"
-            alt="Mano con uñas cuidadas y anillos dorados sobre un fondo blanco suave."
-          >
+        <div class="statement-text">
+
+          <p>
+            La belleza comienza con el cuidado.
+          </p>
+
+          <p>
+            En JAE combinamos diseño, técnica y atención al
+            detalle para crear una experiencia personalizada
+            en cada visita.
+          </p>
+
+          <a href="#servicios" class="text-link">
+            Conoce nuestros servicios
+            <span>→</span>
+          </a>
 
         </div>
 
       </div>
+
     </section>
+
 
 
     <!-- =========================
          SERVICIOS
     ========================== -->
+
     <section
       id="servicios"
-      class="section-pad scroll-mt-8"
+      class="services-section"
     >
 
-      <div class="shell">
+      <div class="container">
 
-        <div class="grid md:grid-cols-2 gap-6 mb-14">
+        <div class="section-heading">
 
           <div>
 
-            <p
-              class="eyebrow mb-5"
-              style="color:var(--gold)"
-            >
-              01 / EL MENÚ
+            <p class="section-label">
+              01 / Servicios
             </p>
 
-            <h2
-              class="display"
-              style="font-size:clamp(2rem,4vw,3.5rem)"
-            >
-              Tu ritual, a tu manera.
+            <h2>
+              Encuentra tu<br>
+              próximo set.
             </h2>
 
           </div>
 
-          <p
-            class="md:self-end md:justify-self-end max-w-sm leading-relaxed"
-            style="color:#514b43"
-          >
-            Desde el cuidado esencial hasta el diseño que solo tú llevarías.
-            Elige lo que más te inspira.
+
+          <p class="section-intro">
+            Desde el cuidado esencial hasta diseños
+            personalizados. Elige el servicio que mejor
+            se adapte a lo que buscas.
           </p>
 
         </div>
 
 
-        <div
-          class="grid md:grid-cols-2 gap-x-14"
-          id="service-list"
-        >
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
+        <div class="service-list">
 
-            <div>
-              <h3 class="font-semibold">
+
+          <article class="service-card">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Dry Mani / Dry Pedi
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Cuidado preciso para manos y pies, con acabado impecable.
+              <p>
+                Preparación precisa y cuidado de la uña
+                natural para un acabado limpio y saludable.
               </p>
+
             </div>
 
             <button
               type="button"
               data-service="Dry Mani / Dry Pedi"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              02
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Gel semipermanente
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Color y brillo duradero para todos los días.
+              <p>
+                Color uniforme, brillo y duración con
+                preparación profesional.
               </p>
 
             </div>
@@ -274,29 +302,30 @@
             <button
               type="button"
               data-service="Gel semipermanente"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              03
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Base Rubber
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Refuerzo flexible con un acabado natural.
+              <p>
+                Refuerzo flexible para proteger la uña
+                manteniendo un acabado natural.
               </p>
 
             </div>
@@ -304,29 +333,30 @@
             <button
               type="button"
               data-service="Base Rubber"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              04
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Acrílico
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Forma, longitud y estructura a tu estilo.
+              <p>
+                Estructura, resistencia y longitud
+                personalizada para cada estilo.
               </p>
 
             </div>
@@ -334,29 +364,30 @@
             <button
               type="button"
               data-service="Acrílico"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              05
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Soft Gel
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Extensiones ligeras para un look muy tuyo.
+              <p>
+                Extensiones ligeras, naturales y cómodas
+                con un acabado impecable.
               </p>
 
             </div>
@@ -364,29 +395,30 @@
             <button
               type="button"
               data-service="Soft Gel"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              06
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Polygel
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Versatilidad y estructura en cada set.
+              <p>
+                Estructura ligera y resistente para crear
+                la longitud y forma que prefieras.
               </p>
 
             </div>
@@ -394,29 +426,30 @@
             <button
               type="button"
               data-service="Polygel"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
 
 
-          <article
-            class="service-card py-6 flex items-start justify-between gap-4"
-          >
 
-            <div>
+          <article class="service-card">
 
-              <h3 class="font-semibold">
+            <span class="service-number">
+              07
+            </span>
+
+            <div class="service-info">
+
+              <h3>
                 Nail Art
               </h3>
 
-              <p
-                class="mt-2 leading-relaxed text-sm"
-                style="color:#625c54"
-              >
-                Diseños personalizados, del detalle sutil al statement.
+              <p>
+                Diseños personalizados, desde detalles
+                minimalistas hasta composiciones premium.
               </p>
 
             </div>
@@ -424,12 +457,13 @@
             <button
               type="button"
               data-service="Nail Art"
-              class="shrink-0 underline underline-offset-4 text-sm"
             >
               Reservar
+              <span>→</span>
             </button>
 
           </article>
+
 
         </div>
 
@@ -438,70 +472,283 @@
     </section>
 
 
+
     <!-- =========================
-         RESERVAR
+         FRASE DE MARCA
     ========================== -->
+
+    <section class="luxury-banner">
+
+      <div class="container">
+
+        <p class="luxury-small">
+          JAE Nail House
+        </p>
+
+        <p class="luxury-big">
+          Care is the new luxury.
+        </p>
+
+        <p class="luxury-subtitle">
+          La belleza comienza con el cuidado.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INSPIRACIÓN
+    ========================== -->
+
     <section
-      id="reservar"
-      class="section-pad scroll-mt-8"
-      style="background:#ede8df"
+      id="inspiracion"
+      class="inspiration-section"
     >
 
-      <div
-        class="shell grid lg:grid-cols-[.85fr_1.15fr] gap-12 lg:gap-24"
-      >
+      <div class="container">
 
-        <div>
+        <div class="section-heading inspiration-heading">
 
-          <p
-            class="eyebrow mb-5"
-            style="color:#8c6a41"
-          >
-            02 / TU MOMENTO
-          </p>
+          <div>
 
-          <h2
-            class="display"
-            style="font-size:clamp(2rem,4vw,3.5rem)"
-          >
-            Hagamos una cita.
-          </h2>
+            <p class="section-label">
+              02 / Nail Inspiration
+            </p>
 
-          <p
-            class="mt-7 leading-relaxed max-w-md"
-            style="color:#514b43"
-          >
-            Elige tu servicio y el horario que prefieres.
-            Envíanos tu solicitud por WhatsApp y te contactaremos
-            para confirmar disponibilidad.
-          </p>
+            <h2>
+              Diseñado<br>
+              para ti.
+            </h2>
+
+          </div>
+
 
           <a
-            class="inline-block mt-9 underline underline-offset-4"
-            href="https://api.whatsapp.com/send?text=Hola%2C%20JAE.%20No%20s%C3%A9%20qu%C3%A9%20servicio%20necesito.%20%C2%BFMe%20pueden%20orientar%3F"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
+            class="text-link"
           >
-            ¿No sabes qué servicio necesitas?
-            Escríbenos por WhatsApp ↗
+            Ver más en Instagram
+            <span>↗</span>
           </a>
 
         </div>
 
 
+
+        <div class="gallery">
+
+
+          <figure class="gallery-main">
+
+            <img
+              src="assets/nails-01.jpg"
+              alt="Diseño de uñas JAE"
+              onerror="this.src='https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg'"
+            >
+
+          </figure>
+
+
+          <figure>
+
+            <img
+              src="assets/nails-02.jpg"
+              alt="Diseño de uñas JAE"
+              onerror="this.src='https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg'"
+            >
+
+          </figure>
+
+
+          <figure>
+
+            <img
+              src="assets/nails-03.jpg"
+              alt="Diseño de uñas JAE"
+              onerror="this.src='https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg'"
+            >
+
+          </figure>
+
+
+          <figure>
+
+            <img
+              src="assets/nails-04.jpg"
+              alt="Diseño de uñas JAE"
+              onerror="this.src='https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg'"
+            >
+
+          </figure>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         POR QUÉ JAE
+    ========================== -->
+
+    <section class="why-jae">
+
+      <div class="container">
+
+        <p class="section-label light">
+          03 / La experiencia
+        </p>
+
+        <h2>
+          Where beauty<br>
+          meets care.
+        </h2>
+
+
+        <div class="why-grid">
+
+
+          <article>
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Nail Art Specialists
+            </h3>
+
+            <p>
+              Diseños pensados específicamente para ti.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Cuidado
+            </h3>
+
+            <p>
+              Técnica enfocada en proteger la uña natural.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Higiene
+            </h3>
+
+            <p>
+              Herramientas y protocolos de limpieza profesional.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Diseño
+            </h3>
+
+            <p>
+              Cada set se adapta a tu estilo y personalidad.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESERVACIÓN
+    ========================== -->
+
+    <section
+      id="reservar"
+      class="booking-section"
+    >
+
+      <div class="container booking-grid">
+
+
+        <div class="booking-copy">
+
+          <p class="section-label">
+            04 / Agenda
+          </p>
+
+          <h2>
+            Tu próximo<br>
+            set empieza aquí.
+          </h2>
+
+          <p>
+            Selecciona el servicio, fecha y horario que
+            prefieres. Al enviar la solicitud abriremos
+            WhatsApp con todos tus datos.
+          </p>
+
+
+          <div class="booking-note">
+
+            <span>
+              ✦
+            </span>
+
+            <p>
+              Tu cita queda confirmada una vez que
+              JAE valide disponibilidad por WhatsApp.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
         <form
           id="booking-form"
-          class="p-6 md:p-10 space-y-5"
+          class="booking-form"
           novalidate
-          style="background:#faf9f6"
         >
 
-          <div>
 
-            <label
-              class="block font-semibold mb-2 text-sm"
-              for="service"
-            >
+          <div class="form-group">
+
+            <label for="service">
               Servicio
             </label>
 
@@ -547,14 +794,12 @@
           </div>
 
 
-          <div class="grid sm:grid-cols-2 gap-5">
 
-            <div>
+          <div class="form-row">
 
-              <label
-                class="block font-semibold mb-2 text-sm"
-                for="date"
-              >
+            <div class="form-group">
+
+              <label for="date">
                 Día
               </label>
 
@@ -567,12 +812,9 @@
             </div>
 
 
-            <div>
+            <div class="form-group">
 
-              <label
-                class="block font-semibold mb-2 text-sm"
-                for="time"
-              >
+              <label for="time">
                 Horario
               </label>
 
@@ -593,14 +835,12 @@
           </div>
 
 
-          <div class="grid sm:grid-cols-2 gap-5">
 
-            <div>
+          <div class="form-row">
 
-              <label
-                class="block font-semibold mb-2 text-sm"
-                for="client-name"
-              >
+            <div class="form-group">
+
+              <label for="client-name">
                 Tu nombre
               </label>
 
@@ -608,19 +848,15 @@
                 id="client-name"
                 type="text"
                 autocomplete="name"
-                maxlength="90"
                 required
               >
 
             </div>
 
 
-            <div>
+            <div class="form-group">
 
-              <label
-                class="block font-semibold mb-2 text-sm"
-                for="phone"
-              >
+              <label for="phone">
                 Teléfono
               </label>
 
@@ -628,8 +864,6 @@
                 id="phone"
                 type="tel"
                 autocomplete="tel"
-                inputmode="tel"
-                maxlength="25"
                 required
               >
 
@@ -638,22 +872,14 @@
           </div>
 
 
-          <p
-            class="leading-relaxed text-sm"
-            style="color:#625c54"
-          >
-            Este envío es una solicitud, no una cita confirmada.
-            Al presionar el botón se abrirá WhatsApp con tus datos.
-          </p>
-
 
           <button
             id="submit-booking"
             type="submit"
-            class="pill w-full"
-            style="background:var(--ink);color:#fff"
+            class="booking-button"
           >
-            SOLICITAR CITA POR WHATSAPP
+            Solicitar cita por WhatsApp
+            <span>→</span>
           </button>
 
 
@@ -661,7 +887,7 @@
             id="booking-status"
             role="status"
             aria-live="polite"
-            class="min-h-[24px] text-sm font-semibold"
+            class="booking-status"
           ></p>
 
         </form>
@@ -671,402 +897,154 @@
     </section>
 
 
-    <!-- =========================
-         INSPIRACIÓN
-    ========================== -->
-    <section
-      id="inspiracion"
-      class="section-pad scroll-mt-8"
-    >
-
-      <div class="shell">
-
-        <div
-          class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-10"
-        >
-
-          <div>
-
-            <p
-              class="eyebrow mb-5"
-              style="color:var(--gold)"
-            >
-              03 / NAIL INSPIRATION
-            </p>
-
-            <h2
-              class="display"
-              style="font-size:clamp(2rem,4vw,3.5rem)"
-            >
-              Find your next set.
-            </h2>
-
-          </div>
-
-
-          <a
-            class="underline underline-offset-4 text-sm"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Más inspiración en Instagram ↗
-          </a>
-
-        </div>
-
-
-        <div
-          class="gallery grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4"
-        >
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/6941115/pexels-photo-6941115.jpeg"
-              alt="Manos con manicura nude elegante sobre tela blanca."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/34997574/pexels-photo-34997574.jpeg"
-              alt="Mano con manicura francesa y anillos dorados sobre fondo azul."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/34885844/pexels-photo-34885844.jpeg"
-              alt="Detalle de nail art rosa con anillo dorado sobre fondo oscuro."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/17471377/pexels-photo-17471377.jpeg"
-              alt="Manos con uñas decoradas en degradado y motivos florales."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/7683035/pexels-photo-7683035.jpeg"
-              alt="Manos con uñas rojas junto a una hoja verde."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/9329773/pexels-photo-9329773.jpeg"
-              alt="Manos posando con manicura artística verde y amarilla."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/7664093/pexels-photo-7664093.jpeg"
-              alt="Mano con nail art sobre una tela de tonos pastel."
-            >
-          </figure>
-
-          <figure>
-            <img
-              class="w-full"
-              loading="lazy"
-              src="https://images.pexels.com/photos/6830805/pexels-photo-6830805.jpeg"
-              alt="Manos con nail art creativo vistas desde arriba."
-            >
-          </figure>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         POR QUÉ JAE
-    ========================== -->
-    <section
-      class="section-pad"
-      style="background:var(--cream)"
-    >
-
-      <div class="shell">
-
-        <p
-          class="eyebrow mb-5"
-          style="color:var(--gold)"
-        >
-          04 / POR QUÉ JAE
-        </p>
-
-        <h2
-          class="display mb-12"
-          style="font-size:clamp(2rem,4vw,3.5rem)"
-        >
-          El detalle lo cambia todo.
-        </h2>
-
-
-        <div
-          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-
-          <div class="border-t border-[#b99a70] pt-5">
-
-            <span
-              class="eyebrow"
-              style="color:var(--gold)"
-            >
-              01
-            </span>
-
-            <h3 class="mt-7 font-semibold leading-snug">
-              Especialistas en Nail Art
-            </h3>
-
-          </div>
-
-
-          <div class="border-t border-[#b99a70] pt-5">
-
-            <span
-              class="eyebrow"
-              style="color:var(--gold)"
-            >
-              02
-            </span>
-
-            <h3 class="mt-7 font-semibold leading-snug">
-              Técnica y cuidado de la uña natural
-            </h3>
-
-          </div>
-
-
-          <div class="border-t border-[#b99a70] pt-5">
-
-            <span
-              class="eyebrow"
-              style="color:var(--gold)"
-            >
-              03
-            </span>
-
-            <h3 class="mt-7 font-semibold leading-snug">
-              Herramientas y protocolos de higiene
-            </h3>
-
-          </div>
-
-
-          <div class="border-t border-[#b99a70] pt-5">
-
-            <span
-              class="eyebrow"
-              style="color:var(--gold)"
-            >
-              04
-            </span>
-
-            <h3 class="mt-7 font-semibold leading-snug">
-              Diseños personalizados
-            </h3>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
 
     <!-- =========================
          UBICACIÓN
     ========================== -->
+
     <section
       id="ubicacion"
-      class="section-pad scroll-mt-8"
+      class="location-section"
     >
 
-      <div
-        class="shell grid md:grid-cols-2 gap-10 md:gap-20 items-center"
-      >
+      <div class="container location-grid">
+
 
         <div>
 
-          <p
-            class="eyebrow mb-5"
-            style="color:var(--gold)"
-          >
-            05 / ENCUÉNTRANOS
+          <p class="section-label">
+            05 / Visítanos
           </p>
 
-          <h2
-            class="display"
-            style="font-size:clamp(2rem,4vw,3.5rem)"
-          >
-            Nos vemos en Satélite.
+          <h2>
+            Nos vemos<br>
+            en Satélite.
           </h2>
 
-          <p
-            class="mt-8 leading-relaxed"
-            style="color:#514b43"
-          >
-            Zona Satélite / Fuentes de Satélite, Naucalpan,
-            Estado de México. Solicita la dirección exacta
-            al confirmar tu cita.
+
+          <p class="location-text">
+            Zona Satélite / Fuentes de Satélite,
+            Naucalpan, Estado de México.
           </p>
 
-          <h3 class="font-semibold mt-9 mb-3">
-            Horarios
-          </h3>
 
-          <p
-            class="mb-2"
-            style="color:#514b43"
-          >
-            Lunes a viernes · 10:00–19:00
-          </p>
+          <div class="hours">
 
-          <p style="color:#514b43">
-            Sábado · 09:00–16:00
-          </p>
+            <p>
+              <strong>
+                Lunes – Viernes
+              </strong>
+
+              10:00 – 19:00
+            </p>
+
+            <p>
+              <strong>
+                Sábado
+              </strong>
+
+              09:00 – 16:00
+            </p>
+
+          </div>
+
 
           <a
-            class="pill mt-10"
             href="https://www.google.com/maps/search/?api=1&query=Fuentes+de+Sat%C3%A9lite%2C+Naucalpan+de+Ju%C3%A1rez%2C+M%C3%A9xico"
             target="_blank"
             rel="noopener noreferrer"
-            style="background:var(--ink);color:#fff"
+            class="btn btn-dark"
           >
-            VER LA ZONA EN MAPS ↗
+            Ver ubicación
           </a>
 
         </div>
 
 
-        <div
-          class="min-h-[340px] h-[430px] bg-[#ece7df] overflow-hidden"
-        >
+
+        <div class="map-wrapper">
 
           <iframe
-            title="Mapa de Fuentes de Satélite, Naucalpan"
+            title="Mapa JAE Nail House"
             src="https://maps.google.com/maps?q=Fuentes%20de%20Sat%C3%A9lite%2C%20Naucalpan%20de%20Ju%C3%A1rez&t=&z=14&ie=UTF8&iwloc=&output=embed"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="w-full h-full border-0"
           ></iframe>
 
         </div>
+
 
       </div>
 
     </section>
 
+
   </main>
+
 
 
   <!-- =========================
        FOOTER
   ========================== -->
-  <footer
-    class="px-6 py-12"
-    style="background:var(--cream)"
-  >
 
-    <div
-      class="shell flex flex-col md:flex-row md:items-end justify-between gap-8"
-    >
+  <footer>
+
+    <div class="container footer-grid">
 
       <div>
 
-        <p class="font-bold tracking-[.22em]">
-          JAE NAIL HOUSE
-        </p>
-
-        <p
-          class="mt-3 text-sm max-w-md leading-relaxed"
-          style="color:#625c54"
+        <img
+          src="assets/logo-blanco.png"
+          alt="JAE Nail House"
+          class="footer-logo"
         >
-          Nail Art Specialist · Uñas hermosas.
-          Uñas saludables.
+
+        <p class="footer-tagline">
+          Care is the new luxury.
         </p>
 
       </div>
 
 
-      <nav
-        aria-label="Enlaces del pie de página"
-        class="flex flex-wrap gap-5 text-sm"
-      >
+      <div class="footer-links">
 
         <a
-          class="underline underline-offset-4"
           href="https://www.instagram.com/"
           target="_blank"
-          rel="noopener noreferrer"
         >
           Instagram
         </a>
 
         <a
-          class="underline underline-offset-4"
-          href="https://api.whatsapp.com/send?text=Hola%2C%20JAE.%20Quisiera%20hacerles%20una%20consulta."
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#servicios"
         >
-          WhatsApp
+          Servicios
         </a>
 
         <a
-          class="underline underline-offset-4"
+          href="#reservar"
+        >
+          Reservaciones
+        </a>
+
+        <a
           href="#ubicacion"
         >
           Ubicación
         </a>
 
-        <a
-          class="underline underline-offset-4"
-          href="#politica"
-        >
-          Política de citas
-        </a>
-
-      </nav>
+      </div>
 
     </div>
 
 
-    <div
-      id="politica"
-      class="shell border-t border-[#dad5cb] mt-9 pt-6"
-    >
+    <div class="container footer-bottom">
 
-      <p
-        class="text-sm leading-relaxed"
-        style="color:#625c54"
-      >
-        Las citas están sujetas a confirmación de disponibilidad
-        por parte de JAE. Si necesitas cambiar o cancelar tu solicitud,
-        escríbenos por WhatsApp con la mayor anticipación posible.
+      <p>
+        JAE Nail House · Nail Art Specialists
+      </p>
+
+      <p>
+        La belleza comienza con el cuidado.
       </p>
 
     </div>
@@ -1074,18 +1052,19 @@
   </footer>
 
 
-  <!-- Botón flotante en móvil -->
+
+  <!-- BOTÓN MÓVIL -->
+
   <a
-    class="pill float-book"
     href="#reservar"
-    style="background:var(--ink);color:#fff"
+    class="floating-book"
   >
-    RESERVA TU CITA
+    Agenda tu cita
   </a>
 
 
-  <!-- JavaScript propio -->
   <script src="script.js"></script>
 
 </body>
+
 </html>
