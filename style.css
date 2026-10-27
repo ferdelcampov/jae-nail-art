@@ -2371,3 +2371,24 @@ select:focus-visible {
 .gallery img {
   object-fit: contain;
 }
+
+
+/* Botones de contacto */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+  max-width: 430px;
+}
+
+.btn-outline-dark {
+  border: 1px solid var(--black);
+  color: var(--black);
+  background: transparent;
+}
+
+.btn-outline-dark:hover {
+  background: var(--black);
+  color: var(--white);
+}
