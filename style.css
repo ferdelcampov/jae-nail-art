@@ -2584,3 +2584,31 @@ select:focus-visible {
 .footer-action > span:last-child {
   letter-spacing: .1em;
 }
+
+
+/* Portada: que se vea completa en pantalla y texto secundario más grande */
+@media (min-width: 901px) {
+  .hero {
+    min-height: min(calc(100vh - 88px), 700px);
+  }
+
+  .hero-content {
+    padding: 64px 0;
+  }
+}
+
+.hero-description {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 620px) {
+  .hero-content {
+    padding: 56px 0;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
