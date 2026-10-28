@@ -1,303 +1,170 @@
-<!doctype html>
-<html lang="es-MX">
 
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JAE Nail House. Nail Art Specialists. Belleza, diseño y cuidado de tus uñas.">
+  <title>JAE Nail House | Nail Art Specialists</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <meta
-    name="description"
-    content="JAE Nail House — Nail Art Specialists. Cuidado, técnica y diseño para tus uñas."
-  >
-
-  <title>JAE Nail House — Nail Art Specialists</title>
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
-
 <body>
-
-  <!-- =========================
-       HEADER
-  ========================== -->
-
+  <!-- HEADER -->
   <header class="site-header">
-
     <div class="container header-inner">
-
-      <a
-        href="#inicio"
-        class="brand"
-        aria-label="JAE Nail House"
-      >
-        <img
-          src="assets/logo-negro.png"
-          alt="JAE Nail House"
-          class="brand-logo"
-        >
+      <a href="#inicio" class="brand" aria-label="Inicio JAE Nail House">
+        <img src="assets/logo-negro.png" alt="JAE Nail House" class="brand-logo">
       </a>
 
-
-      <nav class="desktop-nav">
-
-        <a href="#servicios">
-          Servicios
-        </a>
-
-        <a href="#inspiracion">
-          Diseños
-        </a>
-
-        <a href="#ubicacion">
-          Ubicación
-        </a>
-
-        <a
-          href="#reservar"
-          class="nav-book"
-        >
-          Agenda tu cita
-        </a>
-
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#inspiracion">Diseños</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#reservar" class="nav-book">Agenda tu cita</a>
       </nav>
 
-
-      <a
-        href="#reservar"
-        class="mobile-book"
-      >
-        Agendar
-      </a>
-
+      <a href="#reservar" class="mobile-book">Agendar</a>
     </div>
-
   </header>
 
-
-
   <main id="inicio">
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
+    <!-- PORTADA -->
     <section class="hero">
-
       <div class="hero-image">
-
-        <img
-          src="assets/hero-jae.jpg"
-          alt="JAE Nail House"
-          onerror="this.src='https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg'"
-        >
-
+        <img src="assets/hero-jae.jpg" alt="JAE Nail House" class="hero-photo">
         <div class="hero-overlay"></div>
-
       </div>
-
 
       <div class="container hero-content">
-
         <div class="hero-copy">
-
-          <p class="section-label light">
-            Nail Art Specialists
-          </p>
-
-          <h1>
-            Beautiful by design.<br>
-            Healthy by choice.
-          </h1>
-
+          <p class="section-label light">Nail Art Specialists</p>
+          <h1>Beautiful by design.<br>Healthy by choice.</h1>
           <p class="hero-description">
-            Diseño, técnica y cuidado en cada detalle.
-            Creamos sets que reflejan tu estilo mientras
-            cuidamos la salud de tus uñas.
+            Diseño, técnica y cuidado en cada detalle. Creamos sets
+            que reflejan tu estilo mientras cuidamos la salud de tus uñas.
           </p>
-
 
           <div class="hero-buttons">
-
-            <a
-              href="#reservar"
-              class="btn btn-gold"
-            >
-              Agenda tu cita
-            </a>
-
-            <a
-              href="#servicios"
-              class="btn btn-outline-light"
-            >
-              Ver servicios
-            </a>
-
+            <a href="#reservar" class="btn btn-gold">Agenda tu cita</a>
+            <a href="#servicios" class="btn btn-outline-light">Ver servicios</a>
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         INTRO
-    ========================== -->
-
+    <!-- IDENTIDAD DE MARCA -->
     <section class="brand-statement">
-
       <div class="container statement-grid">
-
         <div>
-
-          <p class="section-label">
-            JAE Nail House
-          </p>
-
-          <h2 class="editorial-title">
-            Care is the<br>
-            new luxury.
-          </h2>
-
+          <p class="section-label">JAE Nail House</p>
+          <img
+            src="assets/luxurynegro.png"
+            alt="Care is the new luxury - JAE Nail House"
+            class="luxury-art luxury-art-intro"
+            loading="lazy"
+          >
         </div>
-
 
         <div class="statement-text">
-
+          <h2>La belleza comienza con el cuidado.</h2>
           <p>
-            La belleza comienza con el cuidado.
+            En JAE combinamos diseño, técnica y atención al detalle
+            para crear una experiencia personalizada en cada visita.
           </p>
-
-          <p>
-            En JAE combinamos diseño, técnica y atención al
-            detalle para crear una experiencia personalizada
-            en cada visita.
-          </p>
-
           <a href="#servicios" class="text-link">
-            Conoce nuestros servicios
-            <span>→</span>
+            Conoce nuestros servicios <span>→</span>
           </a>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         SERVICIOS
-    ========================== -->
-
-    <section
-      id="servicios"
-      class="services-section"
-    >
-
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services-section">
       <div class="container">
-
         <div class="section-heading">
-
           <div>
-
-            <p class="section-label">
-              01 / Servicios
-            </p>
-
-            <h2>
-              Encuentra tu<br>
-              próximo set.
-            </h2>
-
+            <p class="section-label">01 / Servicios</p>
+            <h2>Encuentra tu<br>próximo set.</h2>
           </div>
-
-
           <p class="section-intro">
-            Desde el cuidado esencial hasta diseños
-            personalizados. Elige el servicio que mejor
-            se adapte a lo que buscas.
+            Desde el cuidado esencial hasta diseños personalizados.
+            Elige el servicio que mejor se adapte a lo que buscas.
           </p>
-
         </div>
 
-                <div class="svc-carousel" data-services>
+        <div class="svc-carousel" data-services>
           <button type="button" class="svc-arrow svc-prev" aria-label="Servicio anterior">←</button>
-          <div class="svc-track">
+
+          <div class="svc-track" tabindex="0">
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/DryManicura.png" alt="Dry Manicura en JAE Nail House" loading="lazy">
+                <img src="assets/DryManicura.png" alt="Dry Manicura" loading="lazy">
               </div>
               <h3>Dry Manicura</h3>
               <p class="svc-desc">Cuidado preciso de la uña natural, con acabado impecable.</p>
               <p class="svc-price">Desde <strong>$280</strong></p>
               <button type="button" class="svc-btn" data-service="Dry Manicura">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/Drypedicure.png" alt="Dry Pedicura en JAE Nail House" loading="lazy">
+                <img src="assets/Drypedicure.png" alt="Dry Pedicura" loading="lazy">
               </div>
               <h3>Dry Pedicura</h3>
               <p class="svc-desc">Cuidado preciso para pies, con acabado impecable.</p>
               <p class="svc-price">Desde <strong>$450</strong></p>
               <button type="button" class="svc-btn" data-service="Dry Pedicura">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/GelSemipermanente.png" alt="Gel semipermanente en JAE Nail House" loading="lazy">
+                <img src="assets/GelSemipermanente.png" alt="Gel semipermanente" loading="lazy">
               </div>
               <h3>Gel semipermanente</h3>
               <p class="svc-desc">Color perfecto y mayor duración.</p>
               <p class="svc-price">Desde <strong>$350</strong></p>
               <button type="button" class="svc-btn" data-service="Gel semipermanente">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/AcrilicoySoftGel.png" alt="Acrílico y Soft Gel en JAE Nail House" loading="lazy">
+                <img src="assets/AcrilicoySoftGel.png" alt="Acrílico y Soft Gel" loading="lazy">
               </div>
               <h3>Acrílico y Soft Gel</h3>
-              <p class="svc-desc">Diseños totalmente personalizados, ligeros y naturales.</p>
+              <p class="svc-desc">Diseños personalizados, ligeros y naturales.</p>
               <p class="svc-price">Desde <strong>$700</strong></p>
               <button type="button" class="svc-btn" data-service="Acrílico y Soft Gel">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/Polygel.png" alt="Polygel en JAE Nail House" loading="lazy">
+                <img src="assets/Polygel.png" alt="Polygel" loading="lazy">
               </div>
               <h3>Polygel</h3>
               <p class="svc-desc">Estructura y diseño a tu medida.</p>
               <p class="svc-price">Desde <strong>$750</strong></p>
               <button type="button" class="svc-btn" data-service="Polygel">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/Decoracion.png" alt="Nail Art en JAE Nail House" loading="lazy">
+                <img src="assets/Decoracion.png" alt="Nail Art" loading="lazy">
               </div>
               <h3>Nail Art</h3>
               <p class="svc-desc">Diseños únicos para cada estilo.</p>
               <p class="svc-price">Desde <strong>$100</strong></p>
               <button type="button" class="svc-btn" data-service="Nail Art">Reservar</button>
             </article>
+
             <article class="svc-card">
               <div class="svc-photo">
-                <img src="assets/Vitamina.png" alt="Vitamina en JAE Nail House" loading="lazy">
+                <img src="assets/Vitamina.png" alt="Vitamina" loading="lazy">
               </div>
               <h3>Vitamina</h3>
               <p class="svc-desc">Aplicación de tratamiento para tus uñas.</p>
@@ -305,6 +172,7 @@
               <button type="button" class="svc-btn" data-service="Vitamina">Reservar</button>
             </article>
           </div>
+
           <button type="button" class="svc-arrow svc-next" aria-label="Siguiente servicio">→</button>
         </div>
 
@@ -312,720 +180,223 @@
           <a href="#reservar" class="btn btn-dark">Agenda tu cita</a>
         </div>
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         FRASE DE MARCA
-    ========================== -->
-
+    <!-- FRASE DE MARCA CON PNG BLANCO -->
     <section class="luxury-banner">
-
       <div class="container">
-
-        <p class="luxury-small">
-          JAE Nail House
-        </p>
-
-        <p class="luxury-big">
-          Care is the new luxury.
-        </p>
-
-        <p class="luxury-subtitle">
-          La belleza comienza con el cuidado.
-        </p>
-
+        <img
+          src="assets/luxuryblanco.png"
+          alt="Care is the new luxury - JAE Nail House"
+          class="luxury-art luxury-art-banner"
+          loading="lazy"
+        >
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         INSPIRACIÓN
-    ========================== -->
-
-    <section
-      id="inspiracion"
-      class="inspiration-section"
-    >
-
+    <!-- INSPIRACIÓN / CARRUSELES -->
+    <section id="inspiracion" class="inspiration-section">
       <div class="container">
-
         <div class="section-heading inspiration-heading">
-
           <div>
-
-            <p class="section-label">
-              02 / Nail Inspiration
-            </p>
-
-            <h2>
-              Diseñado<br>
-              para ti.
-            </h2>
-
+            <p class="section-label">02 / Nail Inspiration</p>
+            <h2>Find your<br>next set.</h2>
           </div>
-
 
           <a
             href="https://www.instagram.com/jae.nailhouse/"
+            class="text-link"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-link"
           >
-            Ver más en Instagram
-            <span>↗</span>
+            Más inspiración en Instagram <span>↗</span>
           </a>
-
         </div>
 
-
-
-        <div class="gallery-slider" data-gallery>
-          <div class="gallery-slide">
-            <div class="gallery">
-            <figure class="gallery-main">
-              <img src="assets/acrílico.png" onerror="this.onerror=null;this.src='assets/acrílico.png'" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/acrílico2.png" onerror="this.onerror=null;this.src='assets/acrílico2.png'" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/babyboomer.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/babyboomer2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-          <div class="gallery-slide" hidden>
-            <div class="gallery">
-            <figure class="gallery-main">
-              <img src="assets/acetato.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/acetato2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/aurora.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/tintas%20de%20alcohol.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-          <div class="gallery-slide" hidden>
-            <div class="gallery">
-            <figure class="gallery-main">
-              <img src="assets/carey.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/carey2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/brillitos.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/shining.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-          <div class="gallery-slide" hidden>
-            <div class="gallery gallery--five">
-            <figure class="gallery-main">
-              <img src="assets/puntitos.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/puntitos2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/relieve.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/relieve2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/relieve3.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-          <div class="gallery-slide" hidden>
-            <div class="gallery">
-            <figure class="gallery-main">
-              <img src="assets/stickers.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/stickers2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/stickers3.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/softgel.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-          <div class="gallery-slide" hidden>
-            <div class="gallery gallery--five">
-            <figure class="gallery-main">
-              <img src="assets/vitamina.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/vitamina2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/poligel2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/tintas%20de%20alcohol2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/softgel2.png" alt="Diseño de uñas JAE" loading="lazy">
-            </figure>
-            </div>
-          </div>
-
-          <div class="gallery-controls">
-            <button type="button" class="gallery-btn" data-prev aria-label="Diseño anterior">←</button>
-            <p class="gallery-counter" aria-live="polite"><span data-current>01</span> / 06</p>
-            <button type="button" class="gallery-btn" data-next aria-label="Siguiente diseño">→</button>
-          </div>
-        </div>
-
+        <!-- Aquí script.js genera un carrusel por categoría -->
+        <div id="nail-collections" class="nail-collections"></div>
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         POR QUÉ JAE
-    ========================== -->
-
+    <!-- EXPERIENCIA -->
     <section class="why-jae">
-
       <div class="container">
-
-        <p class="section-label light">
-          03 / La experiencia
-        </p>
-
-        <h2>
-          Where beauty<br>
-          meets care.
-        </h2>
-
+        <p class="section-label light">03 / La experiencia</p>
+        <h2>Where beauty<br>meets care.</h2>
 
         <div class="why-grid">
-
-
           <article>
-
-            <span>
-              01
-            </span>
-
-            <h3>
-              Nail Art Specialists
-            </h3>
-
-            <p>
-              Diseños pensados específicamente para ti.
-            </p>
-
+            <span>01</span>
+            <h3>Nail Art Specialists</h3>
+            <p>Diseños pensados específicamente para ti.</p>
           </article>
 
-
           <article>
-
-            <span>
-              02
-            </span>
-
-            <h3>
-              Cuidado
-            </h3>
-
-            <p>
-              Técnica enfocada en proteger la uña natural.
-            </p>
-
+            <span>02</span>
+            <h3>Cuidado</h3>
+            <p>Técnica enfocada en proteger la uña natural.</p>
           </article>
 
-
           <article>
-
-            <span>
-              03
-            </span>
-
-            <h3>
-              Higiene
-            </h3>
-
-            <p>
-              Herramientas y protocolos de limpieza profesional.
-            </p>
-
+            <span>03</span>
+            <h3>Higiene</h3>
+            <p>Herramientas y protocolos de limpieza profesional.</p>
           </article>
 
-
           <article>
-
-            <span>
-              04
-            </span>
-
-            <h3>
-              Diseño
-            </h3>
-
-            <p>
-              Cada set se adapta a tu estilo y personalidad.
-            </p>
-
+            <span>04</span>
+            <h3>Diseño</h3>
+            <p>Cada set se adapta a tu estilo y personalidad.</p>
           </article>
-
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         RESERVACIÓN
-    ========================== -->
-
-    <section
-      id="reservar"
-      class="booking-section"
-    >
-
+    <!-- RESERVACIONES -->
+    <section id="reservar" class="booking-section">
       <div class="container booking-grid">
-
-
         <div class="booking-copy">
-
-          <p class="section-label">
-            04 / Agenda
-          </p>
-
-          <h2>
-            Tu próximo<br>
-            set empieza aquí.
-          </h2>
+          <p class="section-label">04 / Agenda</p>
+          <h2>Tu próximo<br>set empieza aquí.</h2>
 
           <p>
-            Selecciona el servicio, fecha y horario que
-            prefieres. Al enviar la solicitud abriremos
-            WhatsApp con todos tus datos.
+            Selecciona el servicio, fecha y horario que prefieres.
+            Al enviar la solicitud abriremos WhatsApp con todos tus datos.
           </p>
 
-
           <div class="booking-note">
-
-            <span>
-              ✦
-            </span>
-
+            <span>✦</span>
             <p>
-              Tu cita queda confirmada una vez que
-              JAE valide disponibilidad por WhatsApp.
+              Tu cita queda confirmada una vez que JAE valide
+              disponibilidad por WhatsApp.
             </p>
-
           </div>
+
           <div class="contact-buttons">
             <a href="https://wa.me/525516383938" target="_blank" rel="noopener noreferrer" class="btn btn-dark">WhatsApp</a>
             <a href="tel:+525524620848" class="btn btn-outline-dark">Llamar</a>
             <a href="https://www.instagram.com/jae.nailhouse/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">Instagram</a>
           </div>
-
-          </div>
-
-
         </div>
 
-
-
-        <form
-          id="booking-form"
-          class="booking-form"
-          novalidate
-        >
-
-
+        <form id="booking-form" class="booking-form">
           <div class="form-group">
-
-            <label for="service">
-              Servicio
-            </label>
-
-            <select
-              id="service"
-              required
-            >
-
-              <option value="">
-                Selecciona un servicio
-              </option>
-
-              <option>
-                Dry Manicura
-              </option>
-
-              <option>
-                Dry Pedicura
-              </option>
-
-              <option>
-                Gel semipermanente
-              </option>
-
-              <option>
-                Acrílico y Soft Gel
-              </option>
-
-              <option>
-                Polygel
-              </option>
-
-              <option>
-                Nail Art
-              </option>
-
-              <option>
-                Vitamina
-              </option>
-
+            <label for="service">Servicio</label>
+            <select id="service" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Dry Manicura</option>
+              <option>Dry Pedicura</option>
+              <option>Gel semipermanente</option>
+              <option>Acrílico y Soft Gel</option>
+              <option>Polygel</option>
+              <option>Nail Art</option>
+              <option>Vitamina</option>
             </select>
-
           </div>
 
-
-
           <div class="form-row">
-
             <div class="form-group">
-
-              <label for="date">
-                Día
-              </label>
-
-              <input
-                id="date"
-                type="date"
-                required
-              >
-
+              <label for="date">Día</label>
+              <input id="date" type="date" required>
             </div>
-
-
             <div class="form-group">
-
-              <label for="time">
-                Horario
-              </label>
-
-              <select
-                id="time"
-                required
-                disabled
-              >
-
-                <option value="">
-                  Elige primero un día
-                </option>
-
+              <label for="time">Horario</label>
+              <select id="time" required disabled>
+                <option value="">Elige primero un día</option>
               </select>
-
             </div>
-
           </div>
-
-
 
           <div class="form-row">
-
             <div class="form-group">
-
-              <label for="client-name">
-                Tu nombre
-              </label>
-
-              <input
-                id="client-name"
-                type="text"
-                autocomplete="name"
-                required
-              >
-
+              <label for="client-name">Tu nombre</label>
+              <input id="client-name" type="text" maxlength="90" autocomplete="name" required>
             </div>
-
-
             <div class="form-group">
-
-              <label for="phone">
-                Teléfono
-              </label>
-
-              <input
-                id="phone"
-                type="tel"
-                autocomplete="tel"
-                required
-              >
-
+              <label for="phone">Teléfono</label>
+              <input id="phone" type="tel" maxlength="25" autocomplete="tel" required>
             </div>
-
           </div>
 
-
-
-          <button
-            id="submit-booking"
-            type="submit"
-            class="booking-button"
-          >
-            Solicitar cita por WhatsApp
-            <span>→</span>
+          <button id="submit-booking" type="submit" class="booking-button">
+            Solicitar cita por WhatsApp <span>→</span>
           </button>
-
-
-          <p
-            id="booking-status"
-            role="status"
-            aria-live="polite"
-            class="booking-status"
-          ></p>
-
+          <p id="booking-status" class="booking-status" role="status" aria-live="polite"></p>
         </form>
-
       </div>
-
     </section>
 
-
-
-    <!-- =========================
-         UBICACIÓN
-    ========================== -->
-
-    <section
-      id="ubicacion"
-      class="location-section"
-    >
-
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="location-section">
       <div class="container location-grid">
-
-
         <div>
-
-          <p class="section-label">
-            05 / Visítanos
-          </p>
-
-          <h2>
-            Nos vemos<br>
-            en Satélite.
-          </h2>
-
+          <p class="section-label">05 / Visítanos</p>
+          <h2>Nos vemos<br>en Satélite.</h2>
 
           <p class="location-text">
-            Avenida Fuentes de Satélite #146, PH Local 2,<br>Col. Jardines de Satélite, Cd. Satélite, 53129, Estado de México.
+            Avenida Fuentes de Satélite #146, PH Local 2,<br>
+            Col. Jardines de Satélite, Cd. Satélite, 53129, Estado de México.
           </p>
 
-
           <div class="hours">
-
-            <p>
-              <strong>
-                Lunes – Viernes
-              </strong>
-
-              10:00 – 19:00
-            </p>
-
-            <p>
-              <strong>
-                Sábado
-              </strong>
-
-              09:00 – 15:00
-            </p>
-
-            <p>
-              <strong>
-                Domingo
-              </strong>
-
-              Cerrado
-            </p>
-
+            <p><strong>Lunes – Viernes</strong> 10:00 – 19:00</p>
+            <p><strong>Sábado</strong> 09:00 – 15:00</p>
+            <p><strong>Domingo</strong> Cerrado</p>
           </div>
-
 
           <a
             href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Fuentes+de+Sat%C3%A9lite+146+PH+Local+2+Jardines+de+Sat%C3%A9lite+53129"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-dark"
-          >
-            Ver ubicación
-          </a>
-
+          >Ver ubicación</a>
         </div>
 
-
-
         <div class="map-wrapper">
-
           <iframe
             title="Mapa JAE Nail House"
             src="https://maps.google.com/maps?q=Avenida+Fuentes+de+Sat%C3%A9lite+146+PH+Local+2+Jardines+de+Sat%C3%A9lite+53129&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-
         </div>
-
-
       </div>
-
     </section>
-
-
   </main>
 
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
+  <!-- FOOTER -->
   <footer>
-
     <div class="container footer-grid">
-
-      <div>
-
-        <img
-          src="assets/logo-blanco.png"
-          alt="JAE Nail House"
-          class="footer-logo"
-        >
-
-        <p class="footer-tagline">
-          Care is the new luxury.
-        </p>
-
+      <div class="footer-brand">
+        <img src="assets/logo-blanco.png" alt="JAE Nail House" class="footer-logo">
+        <img src="assets/luxuryblanco.png" alt="Care is the new luxury" class="luxury-art luxury-art-footer">
       </div>
 
-
-      <div class="footer-links">
-        <a href="https://www.instagram.com/jae.nailhouse/" class="footer-action" target="_blank" rel="noopener noreferrer">
-          <span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".7" fill="currentColor"/></svg></span>
-          <span>Instagram</span>
+      <nav class="footer-links" aria-label="Enlaces de pie de página">
+        <a href="https://www.instagram.com/jae.nailhouse/" target="_blank" rel="noopener noreferrer" class="footer-action">
+          <span class="footer-icon">◎</span><span>Instagram</span>
         </a>
-        <a href="https://wa.me/525516383938" class="footer-action" target="_blank" rel="noopener noreferrer">
-          <span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.8A8 8 0 1 1 8.2 18.7L4 20z"/><path d="M9.2 8.6c.2 2.9 2.4 5.2 5.3 5.5l1-1.2-1.7-1-.8.7c-1-.4-2-1.4-2.4-2.4l.7-.8-1-1.7-1.1.9z"/></svg></span>
-          <span>WhatsApp</span>
+        <a href="https://wa.me/525516383938" target="_blank" rel="noopener noreferrer" class="footer-action">
+          <span class="footer-icon">✆</span><span>WhatsApp</span>
         </a>
         <a href="#servicios" class="footer-action">
-          <span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 1.8L21.5 18.5l-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span>
-          <span>Servicios</span>
+          <span class="footer-icon">✧</span><span>Servicios</span>
         </a>
         <a href="#reservar" class="footer-action">
-          <span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8 14l2.5 2.5L16 12"/></svg></span>
-          <span>Reservaciones</span>
+          <span class="footer-icon">▣</span><span>Reservaciones</span>
         </a>
         <a href="#ubicacion" class="footer-action">
-          <span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <span>Ubicación</span>
+          <span class="footer-icon">⌖</span><span>Ubicación</span>
         </a>
-      </div>
-
+      </nav>
     </div>
-
 
     <div class="container footer-bottom">
-
-      <p>
-        JAE Nail House · Nail Art Specialists
-      </p>
-
-      <p>
-        La belleza comienza con el cuidado.
-      </p>
-
+      <p>JAE Nail House · Nail Art Specialists</p>
+      <p>La belleza comienza con el cuidado.</p>
     </div>
-
   </footer>
 
-
-
-  <!-- BOTÓN MÓVIL -->
-
-  <a
-    href="#reservar"
-    class="floating-book"
-  >
-    Agenda tu cita
-  </a>
-
-
-  <script src="script.js"></script>
-
-
-  <script>
-    (function () {
-      const root = document.querySelector('[data-gallery]');
-      if (!root) return;
-      const slides = [...root.querySelectorAll('.gallery-slide')];
-      const current = root.querySelector('[data-current]');
-      let index = 0;
-      function show(i) {
-        index = (i + slides.length) % slides.length;
-        slides.forEach((s, k) => { s.hidden = k !== index; });
-        current.textContent = String(index + 1).padStart(2, '0');
-      }
-      root.querySelector('[data-prev]').addEventListener('click', () => show(index - 1));
-      root.querySelector('[data-next]').addEventListener('click', () => show(index + 1));
-      let startX = null;
-      root.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-      root.addEventListener('touchend', e => {
-        if (startX === null) return;
-        const dx = e.changedTouches[0].clientX - startX;
-        if (Math.abs(dx) > 40) show(dx < 0 ? index + 1 : index - 1);
-        startX = null;
-      });
-    })();
-  </script>
-
-
-  <script>
-    (function () {
-      const root = document.querySelector('[data-services]');
-      if (!root) return;
-      const track = root.querySelector('.svc-track');
-      const step = () => {
-        const card = track.querySelector('.svc-card');
-        return card ? card.getBoundingClientRect().width + 18 : track.clientWidth;
-      };
-      root.querySelector('.svc-prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
-      root.querySelector('.svc-next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
-      const select = document.getElementById('service');
-      document.querySelectorAll('[data-service]').forEach(btn => btn.addEventListener('click', () => {
-        if (select) select.value = btn.dataset.service;
-        document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
-      }));
-    })();
-  </script>
-
+  <a href="#reservar" class="floating-book">Agenda tu cita</a>
 </body>
-
 </html>
