@@ -1229,3 +1229,122 @@ select:focus-visible,
     transition: none !important;
   }
 }
+
+/* ==========================================
+   JAE - AJUSTES DE ESPACIADO Y LOGOS
+========================================== */
+
+/* SECCIÓN BEIGE MÁS COMPACTA */
+
+.brand-statement {
+  padding: 45px 0;
+}
+
+.statement-grid {
+  align-items: center;
+  gap: 65px;
+}
+
+.luxury-art-intro {
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+}
+
+.statement-text h2 {
+  margin-bottom: 18px;
+}
+
+.statement-text p {
+  margin-bottom: 18px;
+}
+
+.statement-text .text-link {
+  margin-top: 12px;
+}
+
+
+/* FRANJA NEGRA MÁS COMPACTA */
+
+.luxury-banner {
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+/* PNG MÁS PEQUEÑO */
+
+.luxury-art-banner {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  max-height: none;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+/* ==========================================
+   AJUSTES PARA TABLETS
+========================================== */
+
+@media (max-width: 800px) {
+
+  .brand-statement {
+    padding: 45px 0;
+  }
+
+  .statement-grid {
+    gap: 30px;
+  }
+
+  .luxury-art-intro {
+    max-width: 440px;
+  }
+
+  .luxury-art-banner {
+    max-width: 650px;
+  }
+
+}
+
+
+/* ==========================================
+   AJUSTES PARA TELÉFONOS
+========================================== */
+
+@media (max-width: 600px) {
+
+  .brand-statement {
+    padding: 35px 0;
+  }
+
+  .statement-grid {
+    gap: 20px;
+  }
+
+  .luxury-art-intro {
+    max-width: 100%;
+  }
+
+  .statement-text h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+
+  .statement-text p {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .luxury-banner {
+    padding: 0 12px;
+  }
+
+  .luxury-art-banner {
+    width: 100%;
+    max-width: 420px;
+    max-height: none;
+  }
+
+}
