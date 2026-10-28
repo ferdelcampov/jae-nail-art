@@ -1231,120 +1231,167 @@ select:focus-visible,
 }
 
 /* ==========================================
-   JAE - AJUSTES DE ESPACIADO Y LOGOS
+   JAE - SECCIONES DE MARCA COMPACTAS
 ========================================== */
 
-/* SECCIÓN BEIGE MÁS COMPACTA */
+/* PRIMERA SECCIÓN: FONDO BEIGE */
 
 .brand-statement {
-  padding: 45px 0;
+  padding: 20px 0 !important;
 }
 
 .statement-grid {
+  min-height: 0;
+  gap: 45px;
   align-items: center;
-  gap: 65px;
 }
+
+/* Contenedor del logo */
+
+.statement-brand {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statement-brand .section-label {
+  margin-bottom: 0;
+}
+
+/* Ajustar imagen sin que agrande la sección */
 
 .luxury-art-intro {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
+  height: 180px;
+  max-height: 180px;
   margin: 0;
+  object-fit: contain;
 }
 
+/* Texto de la derecha */
+
 .statement-text h2 {
-  margin-bottom: 18px;
+  font-size: 29px;
+  margin-bottom: 12px;
 }
 
 .statement-text p {
-  margin-bottom: 18px;
+  margin: 0 0 14px;
 }
 
 .statement-text .text-link {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 
-/* FRANJA NEGRA MÁS COMPACTA */
+/* SEGUNDA SECCIÓN: FRANJA NEGRA */
 
 .luxury-banner {
-  padding: 0 24px;
+  height: 260px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-/* PNG MÁS PEQUEÑO */
+.luxury-banner .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PNG centrado y más pequeño */
 
 .luxury-art-banner {
-  display: block;
-  width: 100%;
-  max-width: 760px;
-  max-height: none;
-  height: auto;
+  width: 650px;
+  max-width: 90%;
+  height: 220px;
+  max-height: 220px;
   margin: 0 auto;
   object-fit: contain;
 }
 
 
 /* ==========================================
-   AJUSTES PARA TABLETS
+   TABLET
 ========================================== */
 
 @media (max-width: 800px) {
 
   .brand-statement {
-    padding: 45px 0;
+    padding: 25px 0 !important;
   }
 
-  .statement-grid {
-    gap: 30px;
+  .statement-brand {
+    height: 180px;
   }
 
   .luxury-art-intro {
-    max-width: 440px;
+    height: 150px;
+    max-height: 150px;
+  }
+
+  .luxury-banner {
+    height: 220px;
   }
 
   .luxury-art-banner {
-    max-width: 650px;
+    width: 550px;
+    height: 190px;
+    max-height: 190px;
   }
 
 }
 
 
 /* ==========================================
-   AJUSTES PARA TELÉFONOS
+   CELULAR
 ========================================== */
 
 @media (max-width: 600px) {
 
   .brand-statement {
-    padding: 35px 0;
+    padding: 25px 0 !important;
   }
 
   .statement-grid {
-    gap: 20px;
+    gap: 12px;
+  }
+
+  .statement-brand {
+    height: 140px;
   }
 
   .luxury-art-intro {
-    max-width: 100%;
+    height: 120px;
+    max-height: 120px;
   }
 
   .statement-text h2 {
-    font-size: 25px;
-    margin-bottom: 14px;
+    font-size: 24px;
   }
 
   .statement-text p {
     font-size: 13px;
-    margin-bottom: 14px;
   }
 
+  /* FRANJA NEGRA DELGADA */
+
   .luxury-banner {
-    padding: 0 12px;
+    height: 150px;
+    padding: 0 !important;
   }
 
   .luxury-art-banner {
     width: 100%;
-    max-width: 420px;
-    max-height: none;
+    max-width: 100%;
+    height: 130px;
+    max-height: 130px;
   }
 
 }
