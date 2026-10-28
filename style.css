@@ -1347,3 +1347,99 @@ select:focus-visible,
   transform: none;
   object-position: center;
 }
+
+
+/* ==========================================
+   JAE - BOTÓN FLOTANTE DE WHATSAPP
+========================================== */
+
+.whatsapp-float {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+  background: var(--black);
+  color: #ffffff;
+
+  border: 2px solid var(--gold);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ÍCONO */
+
+.whatsapp-float svg {
+  width: 33px;
+  height: 33px;
+}
+
+/* HOVER */
+
+.whatsapp-float:hover {
+  background: var(--gold);
+  color: #ffffff;
+
+  transform: translateY(-5px) scale(1.06);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* TELÉFONOS */
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 18px;
+
+    /* Encima del botón inferior de reservar */
+    bottom: 85px;
+
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float svg {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    transition: none;
+  }
+}
+
+
+/* LOGO OFICIAL DE WHATSAPP */
+
+.whatsapp-float svg {
+  display: block;
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+}
+
+/* Ajuste para celulares */
+
+@media (max-width: 600px) {
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+  }
+}
