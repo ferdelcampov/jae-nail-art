@@ -1661,3 +1661,90 @@ select:focus-visible,
   }
 
 }
+
+/* ==========================================
+   JAE - LOGO MÁS GRANDE Y LEGIBLE
+========================================== */
+
+.luxury-banner {
+  height: 280px;
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: var(--black);
+}
+
+.luxury-banner .container {
+  width: min(calc(100% - 48px), 1280px);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+}
+
+/* Contenedor visual del logo */
+
+.luxury-art-banner {
+  grid-column: 1;
+  justify-self: center;
+
+  /* Más grande para compensar
+     los márgenes del PNG */
+  width: 850px;
+  min-width: 850px;
+  max-width: none;
+
+  height: auto;
+  max-height: none;
+
+  margin: 0;
+  object-fit: contain;
+
+  /* Ampliar sin desplazarlo a la derecha */
+  transform: translateX(-110px);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 800px) {
+  .luxury-banner {
+    height: 235px;
+  }
+
+  .luxury-banner .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .luxury-art-banner {
+    width: 600px;
+    min-width: 600px;
+    transform: translateX(-80px);
+  }
+}
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+  .luxury-banner {
+    height: 175px;
+  }
+
+  .luxury-banner .container {
+    width: calc(100% - 30px);
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .luxury-art-banner {
+    width: 370px;
+    min-width: 370px;
+    transform: translateX(-45px);
+  }
+}
