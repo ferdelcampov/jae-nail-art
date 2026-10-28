@@ -125,147 +125,118 @@ const nailCategories = [
 // GENERAR CARRUSELES DE INSPIRACIÓN
 // =====================================
 
+
 function createNailGalleries() {
   const container = document.getElementById("nail-collections");
   if (!container) return;
 
-  const fallback = "assets/foto-pendiente.svg";
+  container.innerHTML = "";
 
-  nailCategories.forEach(category => {
-    const section = document.createElement("section");
-    section.className = "nail-collection";
-    section.setAttribute("aria-label", `Galería de ${category.title}`);
+  const track = document.createElement("div");
+  track.className = "nail-track";
 
-    const heading = document.createElement("div");
-    heading.className = "nail-collection-heading";
+  const timers = [];
+
+  nailCategories.forEach((category) => {
+    const card = document.createElement("article");
+    card.className = "nail-category-card";
+
+    const imageBox = document.createElement("div");
+    imageBox.className = "nail-image";
+
+    const img = document.createElement("img");
+    img.alt = `Diseño de uñas ${category.title}`;
+    img.loading = "lazy";
 
     const title = document.createElement("h3");
     title.textContent = category.title;
 
-    const controls = document.createElement("div");
-    controls.className = "nail-collection-controls";
+    const indicators = document.createElement("div");
+    indicators.className = "nail-indicators";
 
-    const prev = document.createElement("button");
-    prev.type = "button";
-    prev.className = "nail-arrow nail-prev";
-    prev.textContent = "←";
-    prev.setAttribute("aria-label", `Anterior en ${category.title}`);
+    let currentImage = 0;
 
-    const next = document.createElement("button");
-    next.type = "button";
-    next.className = "nail-arrow nail-next";
-    next.textContent = "→";
-    next.setAttribute("aria-label", `Siguiente en ${category.title}`);
-
-    controls.append(prev, next);
-    heading.append(title, controls);
-
-    const track = document.createElement("div");
-    track.className = "nail-track";
-    track.tabIndex = 0;
-    track.setAttribute("aria-label", `Fotos de ${category.title}`);
-
-    category.photos.forEach((filename, index) => {
-      const figure = document.createElement("figure");
-      figure.className = "nail-item";
-
-      const imageWrap = document.createElement("div");
-      imageWrap.className = "nail-image";
-
-      const img = document.createElement("img");
-      img.src = "assets/" + encodeURIComponent(filename);
-      img.alt = `${category.title}, diseño ${index + 1}`;
-      img.loading = "lazy";
-      img.decoding = "async";
-
-      img.onerror = function () {
-        this.onerror = null;
-        this.src = fallback;
-      };
-
-      const caption = document.createElement("figcaption");
-      caption.textContent =
-        category.title + " · " +
-        String(index + 1).padStart(2, "0");
-
-      imageWrap.appendChild(img);
-      figure.append(imageWrap, caption);
-      track.appendChild(figure);
+    const dots = category.photos.map((photo) => {
+      const dot = document.createElement("span");
+      dot.className = "nail-dot";
+      indicators.appendChild(dot);
+      return dot;
     });
 
-    const counter = document.createElement("p");
-    counter.className = "nail-count";
-    counter.setAttribute("aria-live", "polite");
+    function updateImage() {
+      const file = category.photos[currentImage];
 
-    function step() {
-      const item = track.querySelector(".nail-item");
-      if (!item) return track.clientWidth;
-      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-      return item.getBoundingClientRect().width + gap;
+      img.src = "assets/" + encodeURIComponent(file);
+      img.alt = `${category.title} - fotografía ${currentImage + 1}`;
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentImage);
+      });
     }
 
-    function updateControls() {
-      const maxScroll = track.scrollWidth - track.clientWidth;
-      prev.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft >= maxScroll - 2;
+    img.onerror = function () {
+      this.onerror = null;
+      this.src = "assets/foto-pendiente.svg";
+    };
 
-      const current = Math.min(
-        category.photos.length,
-        Math.round(track.scrollLeft / step()) + 1
-      );
+    updateImage();
 
-      counter.textContent =
-        String(current).padStart(2, "0") +
-        " / " +
-        String(category.photos.length).padStart(2, "0");
+    // Solo rotar si hay más de una fotografía
+    if (category.photos.length > 1) {
+      const timer = setInterval(() => {
+        currentImage = (currentImage + 1) % category.photos.length;
+        updateImage();
+      }, 5000);
+
+      timers.push(timer);
     }
 
-    prev.addEventListener("click", () => {
-      track.scrollBy({ left: -step(), behavior: "smooth" });
-    });
-
-    next.addEventListener("click", () => {
-      track.scrollBy({ left: step(), behavior: "smooth" });
-    });
-
-    track.addEventListener("scroll", updateControls, { passive: true });
-    window.addEventListener("resize", updateControls);
-
-    section.append(heading, track, counter);
-    container.appendChild(section);
-
-    requestAnimationFrame(updateControls);
+    imageBox.appendChild(img);
+    card.append(imageBox, title, indicators);
+    track.appendChild(card);
   });
-}
 
-// =====================================
-// CARRUSEL DE SERVICIOS
-// =====================================
+  const wrapper = document.createElement("div");
+  wrapper.className = "nail-carousel";
 
-function initServiceCarousel() {
-  const root = document.querySelector("[data-services]");
-  if (!root) return;
+  const prev = document.createElement("button");
+  prev.className = "nail-arrow";
+  prev.type = "button";
+  prev.textContent = "←";
+  prev.setAttribute("aria-label", "Categorías anteriores");
 
-  const track = root.querySelector(".svc-track");
-  const prev = root.querySelector(".svc-prev");
-  const next = root.querySelector(".svc-next");
+  const next = document.createElement("button");
+  next.className = "nail-arrow";
+  next.type = "button";
+  next.textContent = "→";
+  next.setAttribute("aria-label", "Siguientes categorías");
 
-  function getStep() {
-    const card = track.querySelector(".svc-card");
-    if (!card) return track.clientWidth;
+  function scrollOne(direction) {
+    const card = track.querySelector(".nail-category-card");
+    if (!card) return;
 
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    return card.getBoundingClientRect().width + gap;
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    const step = card.getBoundingClientRect().width + gap;
+
+    track.scrollBy({
+      left: step * direction,
+      behavior: "smooth"
+    });
   }
 
-  prev.addEventListener("click", () => {
-    track.scrollBy({ left: -getStep(), behavior: "smooth" });
-  });
+  prev.addEventListener("click", () => scrollOne(-1));
+  next.addEventListener("click", () => scrollOne(1));
 
-  next.addEventListener("click", () => {
-    track.scrollBy({ left: getStep(), behavior: "smooth" });
+  wrapper.append(prev, track, next);
+  container.appendChild(wrapper);
+
+  // Pausar los cambios automáticos cuando la pestaña no está visible
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) return;
+    // Los intervalos continúan su cuenta; al volver se ven las imágenes actuales.
   });
 }
+
 
 // =====================================
 // BOTONES DE RESERVAR SERVICIO
