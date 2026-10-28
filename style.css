@@ -1568,3 +1568,96 @@ select:focus-visible,
     width: 630px;
   }
 }
+
+
+/* ==========================================
+   JAE - FRANJA NEGRA CON LOGO A LA IZQUIERDA
+========================================== */
+
+.luxury-banner {
+  width: 100%;
+  height: 300px;
+  min-height: 0;
+  padding: 20px 0 !important;
+  background: var(--black);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Distribución en dos mitades */
+
+.luxury-banner .container {
+  width: min(calc(100% - 48px), 1280px);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+/* PNG COMPLETO, SIN CORTES */
+
+.luxury-art-banner {
+  display: block;
+  grid-column: 1;
+  justify-self: start;
+  width: 100%;
+  max-width: 570px;
+  height: 260px;
+  max-height: 260px;
+  margin: 0;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 800px) {
+
+  .luxury-banner {
+    height: 250px;
+    padding: 15px 0 !important;
+  }
+
+  .luxury-banner .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .luxury-art-banner {
+    max-width: 100%;
+    height: 215px;
+    max-height: 215px;
+  }
+
+}
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+  .luxury-banner {
+    height: 190px;
+    padding: 15px 0 !important;
+  }
+
+  .luxury-banner .container {
+    width: calc(100% - 34px);
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .luxury-art-banner {
+    width: 100%;
+    max-width: 100%;
+    height: 160px;
+    max-height: 160px;
+    object-position: left center;
+  }
+
+}
