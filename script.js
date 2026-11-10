@@ -158,8 +158,7 @@ const nailCategories = [
     price: 350,
     bookingService: "Gel semipermanente",
     photos: [
-      "softgel2.png",
-      "softgel.png"
+      "softgel2.png"
     ]
   },
 
