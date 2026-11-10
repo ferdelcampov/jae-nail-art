@@ -1675,3 +1675,51 @@ select:focus-visible,
     height: 150px;
   }
 }
+
+
+/* ==========================================
+   JAE - ICONOS DEL FOOTER
+========================================== */
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+}
+
+.footer-icon svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+/* EFECTO HOVER */
+
+.footer-action:hover .footer-icon {
+  color: var(--black);
+}
+
+/* CENTRADO DE LOS BOTONES */
+
+.footer-action {
+  text-align: center;
+  gap: 12px;
+}
+
+/* AJUSTES EN CELULAR */
+
+@media (max-width: 600px) {
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-icon svg {
+    width: 27px;
+    height: 27px;
+  }
+}
