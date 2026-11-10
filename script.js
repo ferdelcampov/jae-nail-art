@@ -1,5 +1,6 @@
+
 /* ==========================================
-   JAE NAIL HOUSE — JAVASCRIPT
+   JAE NAIL HOUSE — JAVASCRIPT COMPLETO
 ========================================== */
 
 // ==========================================
@@ -22,155 +23,102 @@ const phone = document.getElementById("phone");
 // CATÁLOGO DE DISEÑOS
 // ==========================================
 
-// Todos los archivos están dentro de assets/.
-// Las categorías se muestran en este mismo orden.
-//
-// Para agregar fotografías nuevas, solo tienes
-// que añadir el nombre de la imagen a "photos".
+// Las imágenes están dentro de assets/.
+// Para agregar una nueva fotografía,
+// solamente agrega su nombre en "photos".
 
 const nailCategories = [
   {
     title: "Acrílico",
     description:
-      "Extensiones resistentes con forma, longitud y diseño personalizados.",
+      "Extensiones resistentes con forma y longitud personalizadas.",
     price: 700,
     bookingService: "Acrílico y Soft Gel",
     photos: [
-      "acrílico.png",
       "acrílico2.png"
-    ]
-  },
-
-  {
-    title: "Baby Boomer",
-    description:
-      "Degradado delicado entre tonos nude y blanco para un acabado elegante.",
-    bookingService: "Nail Art",
-    photos: [
-      "babyboomer.png",
-      "babyboomer2.png"
-    ]
-  },
-
-  {
-    title: "Acetato",
-    description:
-      "Efectos brillantes y diseños con reflejos únicos.",
-    bookingService: "Nail Art",
-    photos: [
-      "acetato.png",
-      "acetato2.png"
     ]
   },
 
   {
     title: "Aurora",
     description:
-      "Acabado luminoso con reflejos perlados y efecto tornasol.",
+      "Reflejos nacarados y efectos luminosos con acabado tornasol.",
     bookingService: "Nail Art",
     photos: [
-      "aurora.png"
+      "acetato.png",
+      "aurora.png",
+      "cromados.png"
     ]
   },
 
   {
-    title: "Tintas de alcohol",
+    title: "Baby Boomer",
     description:
-      "Diseños artísticos con colores y efectos fluidos.",
+      "Degradados delicados y difuminados en tonos suaves.",
     bookingService: "Nail Art",
     photos: [
-      "tintas de alcohol.png",
-      "tintas de alcohol2.png"
+      "babyboomer.png",
+      "difuminado.png"
     ]
   },
 
   {
     title: "Carey",
     description:
-      "Diseño inspirado en el efecto carey, sofisticado y atemporal.",
+      "Un efecto clásico de tonos cálidos y detalles sofisticados.",
     bookingService: "Nail Art",
     photos: [
-      "carey.png",
-      "carey2.png"
+      "carey.png"
     ]
   },
 
   {
-    title: "Brillitos",
+    title: "Cat Eye",
     description:
-      "Detalles brillantes que aportan luz y elegancia a tus uñas.",
+      "Efecto magnético con reflejos que cambian con la luz.",
     bookingService: "Nail Art",
     photos: [
-      "brillitos.png"
+      "cateye2.png"
     ]
   },
 
   {
-    title: "Shining",
+    title: "Cristales",
     description:
-      "Efecto luminoso para unas uñas delicadas y sofisticadas.",
+      "Aplicaciones brillantes para diseños con personalidad.",
     bookingService: "Nail Art",
     photos: [
-      "shining.png"
+      "cristales.png"
     ]
   },
 
   {
-    title: "Puntitos",
+    title: "Francés corto",
     description:
-      "Diseño minimalista con pequeños detalles personalizados.",
+      "La manicura francesa clásica en uñas cortas.",
     bookingService: "Nail Art",
     photos: [
-      "puntitos.png",
-      "puntitos2.png"
+      "francescorto.png"
     ]
   },
 
   {
-    title: "Relieve",
+    title: "Francés",
     description:
-      "Diseños con textura y detalles tridimensionales.",
+      "Líneas limpias y una manicura elegante y atemporal.",
     bookingService: "Nail Art",
     photos: [
-      "relieve.png",
-      "relieve2.png",
-      "relieve3.png"
+      "frances.png"
     ]
   },
 
   {
-    title: "Stickers",
+    title: "Matching",
     description:
-      "Decoraciones creativas para personalizar tu manicura.",
+      "Diseños coordinados que combinan estilo y detalle.",
     bookingService: "Nail Art",
     photos: [
-      "stickers.png",
-      "stickers2.png",
-      "stickers3.png"
-    ]
-  },
-
-  {
-    title: "Soft Gel",
-    description:
-      "Extensiones ligeras con un acabado natural y elegante.",
-    price: 700,
-    bookingService: "Acrílico y Soft Gel",
-    photos: [
-      "softgel.png",
-      "softgel2.png"
-    ]
-  },
-
-  {
-    title: "Vitamina",
-    description:
-      "Tratamiento enfocado en el cuidado de tus uñas.",
-    price: 100,
-    bookingService: "Vitamina",
-    photos: [
-      "vitamina.png",
-      "vitamina2.png"
+      "matching.png"
     ]
   },
 
@@ -183,22 +131,109 @@ const nailCategories = [
     photos: [
       "poligel2.png"
     ]
+  },
+
+  {
+    title: "Polka Dots",
+    description:
+      "Diseños minimalistas con puntos y detalles delicados.",
+    bookingService: "Nail Art",
+    photos: [
+      "puntitos.png"
+    ]
+  },
+
+  {
+    title: "Relieve",
+    description:
+      "Texturas y detalles tridimensionales.",
+    bookingService: "Nail Art",
+    photos: [
+      "relieve.png"
+    ]
+  },
+
+  {
+    title: "Gel semipermanente",
+    description:
+      "Un solo tono de color con brillo y acabado uniforme.",
+    price: 350,
+    bookingService: "Gel semipermanente",
+    photos: [
+      "softgel2.png",
+      "gelsemipermanente.png"
+    ]
+  },
+
+  {
+    title: "Glitter",
+    description:
+      "Destellos y acabados brillantes para un set especial.",
+    bookingService: "Nail Art",
+    photos: [
+      "brillitos.png"
+    ]
+  },
+
+  {
+    title: "Nail Art",
+    description:
+      "Detalles decorativos y accesorios para diseños únicos.",
+    bookingService: "Nail Art",
+    photos: [
+      "charms.png"
+    ]
+  },
+
+  {
+    title: "Texturas",
+    description:
+      "Detalles con volumen y carácter para un acabado creativo.",
+    bookingService: "Nail Art",
+    photos: [
+      "charms2.png"
+    ]
+  },
+
+  {
+    title: "Tintas de alcohol",
+    description:
+      "Efectos artísticos de color. Nombre comercial por confirmar.",
+    bookingService: "Nail Art",
+    photos: [
+      "tintas de alcohol.png"
+    ]
+  },
+
+  {
+    title: "Vitamina",
+    description:
+      "Tratamiento enfocado en el cuidado de las uñas.",
+    price: 100,
+    bookingService: "Vitamina",
+    photos: [
+      "vitamina.png"
+    ]
   }
+
+  // PENDIENTE:
+  // acetato2.png todavía no tiene
+  // nombre de efecto aprobado.
 ];
 
 // ==========================================
-// RUTAS DE FOTOGRAFÍAS
+// RUTAS DE LAS FOTOGRAFÍAS
 // ==========================================
 
 function photoPath(filename) {
   return "assets/" + encodeURIComponent(filename);
 }
 
-// Compatibilidad con archivos con acentos.
-// Si no carga la primera versión, intenta
-// la normalización alternativa del nombre.
+// Compatibilidad con archivos que tienen
+// acentos en sus nombres.
 
 function setPhotoWithFallback(image, filename) {
+
   const variants = [
     filename,
     filename.normalize("NFD"),
@@ -206,42 +241,65 @@ function setPhotoWithFallback(image, filename) {
   ];
 
   const uniqueVariants = [...new Set(variants)];
+
   let attempt = 0;
 
   image.onerror = function () {
+
     attempt++;
 
     if (attempt < uniqueVariants.length) {
-      image.src = photoPath(uniqueVariants[attempt]);
+
+      image.src = photoPath(
+        uniqueVariants[attempt]
+      );
+
     } else {
+
       image.onerror = null;
-      image.alt = "Fotografía pendiente: " + filename;
+
+      image.alt =
+        "Fotografía pendiente: " + filename;
+
       image.style.display = "none";
+
+      if (image.parentElement) {
+        image.parentElement.dataset.pending =
+          "Foto pendiente";
+      }
     }
   };
 
   image.style.display = "block";
+
+  if (image.parentElement) {
+    delete image.parentElement.dataset.pending;
+  }
+
   image.src = photoPath(uniqueVariants[0]);
 }
 
 // ==========================================
-// WHATSAPP
+// ENLACES DE WHATSAPP
 // ==========================================
 
 function whatsappURL(message) {
+
   return (
     "https://wa.me/" +
     WHATSAPP_NUMBER +
     "?text=" +
     encodeURIComponent(message)
   );
+
 }
 
 // ==========================================
-// CARRUSEL ÚNICO DE SERVICIOS
+// CARRUSEL DE SERVICIOS
 // ==========================================
 
 function createNailGalleries() {
+
   const container =
     document.getElementById("nail-collections");
 
@@ -255,64 +313,83 @@ function createNailGalleries() {
   const track = document.createElement("div");
   track.className = "nail-track";
   track.tabIndex = 0;
+
   track.setAttribute(
     "aria-label",
     "Carrusel de servicios y diseños de JAE"
   );
 
+  // FLECHA ANTERIOR
+
   const prev = document.createElement("button");
+
   prev.type = "button";
   prev.className = "nail-arrow";
   prev.textContent = "←";
+
   prev.setAttribute(
     "aria-label",
     "Ver servicios anteriores"
   );
 
+  // FLECHA SIGUIENTE
+
   const next = document.createElement("button");
+
   next.type = "button";
   next.className = "nail-arrow";
   next.textContent = "→";
+
   next.setAttribute(
     "aria-label",
     "Ver siguientes servicios"
   );
 
-  nailCategories.forEach(category => {
+  // ========================================
+  // CREAR TARJETAS AUTOMÁTICAMENTE
+  // ========================================
 
-    // TARJETA
+  nailCategories.forEach(category => {
 
     const card = document.createElement("article");
     card.className = "nail-category-card";
 
-    // CONTENEDOR DE IMAGEN
+    // CONTENEDOR DE FOTOGRAFÍA
 
     const imageBox = document.createElement("div");
     imageBox.className = "nail-image";
 
     const image = document.createElement("img");
+
     image.alt = "Diseño " + category.title;
     image.loading = "lazy";
     image.decoding = "async";
 
     let currentImage = 0;
 
-    // INDICADORES
+    // INDICADORES DE FOTOGRAFÍAS
 
     const indicators = document.createElement("div");
     indicators.className = "nail-indicators";
 
     const dots = category.photos.map(() => {
+
       const dot = document.createElement("span");
+
       dot.className = "nail-dot";
+
       indicators.appendChild(dot);
+
       return dot;
+
     });
 
-    // CAMBIAR FOTOGRAFÍA
+    // ACTUALIZAR FOTOGRAFÍA
 
     function updateImage() {
-      const filename = category.photos[currentImage];
+
+      const filename =
+        category.photos[currentImage];
 
       image.alt =
         category.title +
@@ -322,20 +399,26 @@ function createNailGalleries() {
       setPhotoWithFallback(image, filename);
 
       dots.forEach((dot, index) => {
+
         dot.classList.toggle(
           "active",
           index === currentImage
         );
+
       });
+
     }
 
     updateImage();
 
+    // ========================================
     // CAMBIO AUTOMÁTICO CADA 5 SEGUNDOS
-    // ÚNICAMENTE SI HAY MÁS DE UNA FOTO
+    // ========================================
 
     if (category.photos.length > 1) {
+
       setInterval(() => {
+
         if (document.hidden) return;
 
         currentImage =
@@ -345,51 +428,70 @@ function createNailGalleries() {
         updateImage();
 
       }, PHOTO_INTERVAL);
+
     }
 
     imageBox.appendChild(image);
 
-    // TÍTULO
+    // ========================================
+    // NOMBRE DE LA CATEGORÍA
+    // ========================================
 
     const title = document.createElement("h3");
+
     title.textContent = category.title;
 
+    // ========================================
     // DESCRIPCIÓN
+    // ========================================
 
     const description = document.createElement("p");
+
     description.className = "nail-description";
+
     description.textContent = category.description;
 
-    // PRECIO, SOLO SI ESTÁ DEFINIDO
+    // ========================================
+    // PRECIO
+    // ========================================
 
-    let priceElement = null;
+    let priceElement = document.createElement("p");
+
+    priceElement.className = "nail-price";
 
     if (category.price !== undefined) {
-      priceElement = document.createElement("p");
-      priceElement.className = "nail-price";
 
-      const priceLabel = document.createTextNode(
-        "Desde "
-      );
+      const priceLabel =
+        document.createTextNode("Desde ");
 
-      const priceValue = document.createElement("strong");
+      const priceValue =
+        document.createElement("strong");
 
       priceValue.textContent =
-        "$" + category.price.toLocaleString("es-MX");
+        "$" +
+        category.price.toLocaleString("es-MX");
 
-      priceElement.append(priceLabel, priceValue);
+      priceElement.append(
+        priceLabel,
+        priceValue
+      );
+
     } else {
-      priceElement = document.createElement("p");
-      priceElement.className = "nail-price";
-      priceElement.textContent = "Cotiza tu diseño";
+
+      priceElement.textContent =
+        "Cotiza tu diseño";
+
     }
 
-    // BOTÓN DE RESERVACIÓN WHATSAPP
+    // ========================================
+    // BOTÓN DE RESERVACIÓN POR WHATSAPP
+    // ========================================
 
     const reserve = document.createElement("a");
 
     reserve.className = "nail-reserve";
     reserve.textContent = "Reservar";
+
     reserve.target = "_blank";
     reserve.rel = "noopener noreferrer";
 
@@ -406,7 +508,9 @@ Muchas gracias.`;
 
     reserve.href = whatsappURL(message);
 
-    // CONSTRUIR TARJETA
+    // ========================================
+    // AGREGAR ELEMENTOS A LA TARJETA
+    // ========================================
 
     card.append(
       imageBox,
@@ -418,13 +522,15 @@ Muchas gracias.`;
     );
 
     track.appendChild(card);
+
   });
 
   // ========================================
-  // FLECHAS DEL CARRUSEL
+  // MOVIMIENTO DEL CARRUSEL
   // ========================================
 
   function getStep() {
+
     const card = track.querySelector(
       ".nail-category-card"
     );
@@ -439,14 +545,19 @@ Muchas gracias.`;
     return (
       card.getBoundingClientRect().width + gap
     );
+
   }
 
   function scrollCarousel(direction) {
+
     track.scrollBy({
       left: getStep() * direction,
       behavior: "smooth"
     });
+
   }
+
+  // BOTONES DE NAVEGACIÓN
 
   prev.addEventListener("click", () => {
     scrollCarousel(-1);
@@ -456,16 +567,19 @@ Muchas gracias.`;
     scrollCarousel(1);
   });
 
-  // ACTIVAR O DESACTIVAR FLECHAS
+  // ACTIVAR Y DESACTIVAR FLECHAS
 
   function updateArrows() {
+
     const maxScroll =
       track.scrollWidth - track.clientWidth;
 
-    prev.disabled = track.scrollLeft <= 2;
+    prev.disabled =
+      track.scrollLeft <= 2;
 
     next.disabled =
       track.scrollLeft >= maxScroll - 2;
+
   }
 
   track.addEventListener(
@@ -474,12 +588,21 @@ Muchas gracias.`;
     { passive: true }
   );
 
-  window.addEventListener("resize", updateArrows);
+  window.addEventListener(
+    "resize",
+    updateArrows
+  );
 
-  wrapper.append(prev, track, next);
+  wrapper.append(
+    prev,
+    track,
+    next
+  );
+
   container.appendChild(wrapper);
 
   requestAnimationFrame(updateArrows);
+
 }
 
 // ==========================================
@@ -487,6 +610,7 @@ Muchas gracias.`;
 // ==========================================
 
 function todayInMexico() {
+
   const parts = new Intl.DateTimeFormat(
     "en-US",
     {
@@ -507,6 +631,7 @@ function todayInMexico() {
     "-" +
     getPart("day")
   );
+
 }
 
 // ==========================================
@@ -514,6 +639,7 @@ function todayInMexico() {
 // ==========================================
 
 function setStatus(message, error = false) {
+
   if (!bookingStatus) return;
 
   bookingStatus.textContent = message;
@@ -521,6 +647,7 @@ function setStatus(message, error = false) {
   bookingStatus.style.color = error
     ? "#9a3830"
     : "#947044";
+
 }
 
 // ==========================================
@@ -528,6 +655,7 @@ function setStatus(message, error = false) {
 // ==========================================
 
 function updateTimes() {
+
   if (!dateInput || !timeInput) return;
 
   timeInput.replaceChildren();
@@ -539,52 +667,93 @@ function updateTimes() {
   timeInput.disabled = true;
 
   if (!dateInput.value) {
+
     setStatus("");
+
     return;
+
   }
 
   // EVITAR FECHAS PASADAS
 
   if (dateInput.value < todayInMexico()) {
+
     setStatus(
       "Selecciona una fecha de hoy en adelante.",
       true
     );
+
     return;
+
   }
 
   const [year, month, day] =
-    dateInput.value.split("-").map(Number);
+    dateInput.value
+      .split("-")
+      .map(Number);
 
   const weekday = new Date(
     Date.UTC(year, month - 1, day)
   ).getUTCDay();
 
-  // NO SE TRABAJA LOS DOMINGOS
+  // ========================================
+  // DOMINGOS CERRADOS
+  // ========================================
 
   if (weekday === 0) {
+
     setStatus(
       "Los domingos no hay atención. Elige otro día.",
       true
     );
+
     return;
+
   }
 
-  // LUNES A VIERNES 10:00 - 19:00
-  // SÁBADO 09:00 - 15:00
+  // ========================================
+  // HORARIOS
+  //
+  // LUNES: SOLO CON CITA PREVIA
+  // MARTES A VIERNES: 10:00 - 19:00
+  // SÁBADO: 09:00 - 15:00
+  // ========================================
 
-  const first = weekday === 6 ? 9 : 10;
-  const last = weekday === 6 ? 14 : 18;
+  const first =
+    weekday === 6 ? 9 : 10;
 
-  for (let hour = first; hour <= last; hour++) {
+  const last =
+    weekday === 6 ? 14 : 18;
+
+  for (
+    let hour = first;
+    hour <= last;
+    hour++
+  ) {
+
     const label =
       String(hour).padStart(2, "0") + ":00";
 
-    timeInput.add(new Option(label, label));
+    timeInput.add(
+      new Option(label, label)
+    );
+
   }
 
   timeInput.disabled = false;
-  setStatus("");
+
+  if (weekday === 1) {
+
+    setStatus(
+      "Los lunes se atiende únicamente con cita previa. JAE confirmará tu solicitud por WhatsApp."
+    );
+
+  } else {
+
+    setStatus("");
+
+  }
+
 }
 
 // ==========================================
@@ -592,6 +761,7 @@ function updateTimes() {
 // ==========================================
 
 function initBookingForm() {
+
   if (
     !form ||
     !service ||
@@ -600,7 +770,9 @@ function initBookingForm() {
     !clientName ||
     !phone
   ) {
+
     return;
+
   }
 
   dateInput.min = todayInMexico();
@@ -611,27 +783,33 @@ function initBookingForm() {
   );
 
   form.addEventListener("submit", event => {
+
     event.preventDefault();
 
     dateInput.min = todayInMexico();
 
     if (!form.reportValidity()) return;
 
-    // VALIDAR HORARIOS
+    // VALIDAR FECHA Y HORARIO
 
     if (
       dateInput.value < todayInMexico() ||
       timeInput.disabled ||
       !timeInput.value
     ) {
+
       setStatus(
         "Selecciona una fecha y un horario válidos.",
         true
       );
+
       return;
+
     }
 
-    // FORMATO DE FECHA LEGIBLE
+    // ========================================
+    // FORMATEAR FECHA
+    // ========================================
 
     const formattedDate = new Date(
       dateInput.value + "T12:00:00"
@@ -645,9 +823,23 @@ function initBookingForm() {
     // DISEÑO OPCIONAL
 
     const selectedDesign =
-      designInput?.value.trim() || "Sin especificar";
+      designInput?.value.trim() ||
+      "Sin especificar";
 
+    // DETECTAR SI ES LUNES
+
+    const isMonday =
+      new Date(
+        dateInput.value + "T12:00:00"
+      ).getDay() === 1;
+
+    const mondayNote = isMonday
+      ? "\nNota: sé que los lunes se atiende solo con cita previa."
+      : "";
+
+    // ========================================
     // MENSAJE DE WHATSAPP
+    // ========================================
 
     const message =
 `Hola JAE ✨
@@ -663,7 +855,7 @@ Horario: ${timeInput.value}
 Nombre: ${clientName.value.trim()}
 Teléfono: ${phone.value.trim()}
 
-Quedo pendiente de la confirmación de disponibilidad.
+Quedo pendiente de la confirmación de disponibilidad.${mondayNote}
 
 ¡Gracias!`;
 
@@ -680,7 +872,9 @@ Quedo pendiente de la confirmación de disponibilidad.
     setStatus(
       "Se abrió WhatsApp. Envía el mensaje para solicitar tu cita."
     );
+
   });
+
 }
 
 // ==========================================
@@ -688,31 +882,60 @@ Quedo pendiente de la confirmación de disponibilidad.
 // ==========================================
 
 function initSterileCarousel() {
-  const root = document.querySelector("[data-sterile]");
+
+  const root =
+    document.querySelector("[data-sterile]");
 
   if (!root) return;
 
-  const track = root.querySelector(".sterile-track");
-  const prev = root.querySelector("[data-sprev]");
-  const next = root.querySelector("[data-snext]");
+  const track =
+    root.querySelector(".sterile-track");
+
+  const prev =
+    root.querySelector("[data-sprev]");
+
+  const next =
+    root.querySelector("[data-snext]");
+
+  if (!track || !prev || !next) return;
 
   function getStep() {
-    const slide = track.querySelector(".sterile-slide");
+
+    const slide =
+      track.querySelector(".sterile-slide");
+
     if (!slide) return track.clientWidth;
 
     const gap =
-      parseFloat(getComputedStyle(track).columnGap) || 0;
+      parseFloat(
+        getComputedStyle(track).columnGap
+      ) || 0;
 
-    return slide.getBoundingClientRect().width + gap;
+    return (
+      slide.getBoundingClientRect().width +
+      gap
+    );
+
   }
 
   prev.addEventListener("click", () => {
-    track.scrollBy({ left: -getStep(), behavior: "smooth" });
+
+    track.scrollBy({
+      left: -getStep(),
+      behavior: "smooth"
+    });
+
   });
 
   next.addEventListener("click", () => {
-    track.scrollBy({ left: getStep(), behavior: "smooth" });
+
+    track.scrollBy({
+      left: getStep(),
+      behavior: "smooth"
+    });
+
   });
+
 }
 
 // ==========================================
@@ -722,8 +945,12 @@ function initSterileCarousel() {
 document.addEventListener(
   "DOMContentLoaded",
   () => {
+
     createNailGalleries();
+
     initSterileCarousel();
+
     initBookingForm();
+
   }
 );
