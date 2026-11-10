@@ -1723,3 +1723,319 @@ select:focus-visible,
     height: 27px;
   }
 }
+
+
+/* ==========================================
+   JAE - FOOTER MINIMALISTA
+========================================== */
+
+/* DISTRIBUCIÓN GENERAL */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.5fr;
+  align-items: start;
+  gap: 55px;
+}
+
+/* LOGO PRINCIPAL */
+
+.footer-brand {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Mantener tamaño del logo JAE */
+
+.footer-brand .luxury-art-footer {
+  display: block;
+  width: 100%;
+  max-width: 580px;
+  height: 190px;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==========================================
+   DIRECTORIO
+========================================== */
+
+.footer-directory h3,
+.footer-social h3 {
+  margin: 0 0 22px;
+  color: var(--gold-light);
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+/* ENLACES DEL DIRECTORIO */
+
+.footer-directory-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 22px;
+  row-gap: 15px;
+}
+
+.footer-directory-links a {
+  width: fit-content;
+
+  color: rgba(255,255,255,0.75);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-directory-links a:hover {
+  color: var(--gold-light);
+  transform: translateX(3px);
+}
+
+/* ==========================================
+   REDES SOCIALES SIN CAJAS
+========================================== */
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* SOLO LOGOS */
+
+.footer-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+
+  padding: 0;
+  color: white;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-social-links svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+/* HOVER ELEGANTE */
+
+.footer-social-links a:hover {
+  color: var(--gold-light);
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   PARTE INFERIOR
+========================================== */
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 60px;
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255,255,255,0.16);
+  gap: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* FRASE Y WEB-LTR EN LA MISMA LÍNEA */
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+  min-width: 0;
+}
+
+.footer-slogan {
+  color: rgba(255,255,255,0.7);
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   LOGO WEB-LTR PEQUEÑO
+========================================== */
+
+.footer-web-ltr {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding-left: 18px;
+  border-left: 1px solid rgba(255,255,255,0.22);
+
+  transition: opacity 0.25s ease;
+}
+
+.footer-web-ltr img {
+  display: block;
+  width: 85px;
+  max-width: 85px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer-web-ltr:hover {
+  opacity: 0.7;
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 1050px) {
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand .luxury-art-footer {
+    max-width: 500px;
+    height: 175px;
+  }
+
+  .footer-directory-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================
+   TELÉFONOS
+========================================== */
+
+@media (max-width: 600px) {
+
+  footer {
+    padding-top: 50px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 18px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .footer-brand .luxury-art-footer {
+    max-width: 100%;
+    height: 145px;
+  }
+
+  .footer-directory h3,
+  .footer-social h3 {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .footer-directory-links {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-directory-links a {
+    font-size: 12px;
+  }
+
+  .footer-social-links {
+    gap: 10px;
+  }
+
+  .footer-social-links a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-social-links svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* INFORMACIÓN INFERIOR */
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 45px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .footer-bottom-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .footer-slogan {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .footer-web-ltr {
+    padding-left: 12px;
+  }
+
+  .footer-web-ltr img {
+    width: 68px;
+    max-width: 68px;
+    height: 30px;
+  }
+}
