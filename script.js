@@ -47,7 +47,6 @@ const nailCategories = [
     photos: [
       "acetato.png",
       "aurora.png",
-      "cromados.png"
     ]
   },
 
@@ -58,7 +57,6 @@ const nailCategories = [
     bookingService: "Nail Art",
     photos: [
       "babyboomer.png",
-      "difuminado.png"
     ]
   },
 
@@ -161,7 +159,7 @@ const nailCategories = [
     bookingService: "Gel semipermanente",
     photos: [
       "softgel2.png",
-      "gelsemipermanente.png"
+      "Gelsemipermanente.png"
     ]
   },
 
