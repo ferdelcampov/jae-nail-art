@@ -2118,3 +2118,359 @@ select:focus-visible,
   }
 
 }
+
+
+/* ==========================================
+   JAE NAIL HOUSE
+   NUEVA IDENTIDAD VISUAL CON PNG
+========================================== */
+
+/* ESTILOS GENERALES DE LOS PNG */
+
+.brand-art {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ==========================================
+   PORTADA
+========================================== */
+
+.hero-title-art {
+  width: 100%;
+  max-width: 650px;
+  max-height: 220px;
+  object-position: left center;
+  margin: 0;
+}
+
+/* ==========================================
+   PRESENTACIÓN BEIGE
+========================================== */
+
+.statement-title-art {
+  width: 100%;
+  max-width: 390px;
+  max-height: 225px;
+  margin: 0 0 12px;
+  object-position: left center;
+}
+
+/* ==========================================
+   ENCABEZADO DE SERVICIOS
+========================================== */
+
+.services-title-art {
+  width: 100%;
+  max-width: 550px;
+  max-height: 155px;
+  object-position: left center;
+}
+
+/* ==========================================
+   PRODUCTOS PREMIUM
+========================================== */
+
+.premium-brand {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 0 35px;
+  padding: 15px 22px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.premium-brand img {
+  width: 100%;
+  max-width: 520px;
+  height: 105px;
+  object-fit: contain;
+}
+
+/* ==========================================
+   FRANJA NEGRA - CARE IS THE NEW LUXURY
+========================================== */
+
+.luxury-banner {
+  height: 170px;
+  padding: 15px 0;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.luxury-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.luxury-banner .luxury-art-banner {
+  width: 100%;
+  max-width: 710px;
+  min-width: 0;
+  height: auto;
+  max-height: 125px;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+}
+
+/* ==========================================
+   EXPERIENCIA JAE
+========================================== */
+
+.experience-art-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  width: 100%;
+}
+
+.experience-title-art {
+  width: 100%;
+  max-width: 600px;
+  max-height: 235px;
+  object-position: left center;
+}
+
+.experience-detail-art {
+  width: 100%;
+  max-width: 570px;
+  max-height: 180px;
+  justify-self: end;
+}
+
+/* ==========================================
+   MAN CARE
+========================================== */
+
+.man-care-title-art {
+  width: 100%;
+  max-width: 480px;
+  max-height: 205px;
+  margin: 0 0 15px;
+  object-position: left center;
+}
+
+/* ==========================================
+   ESTERILIZACIÓN
+========================================== */
+
+.sterile-art-head {
+  background: var(--black);
+  color: white;
+  padding: 22px 35px;
+  margin: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.ritual-title-art {
+  width: 100%;
+  max-width: 250px;
+  max-height: 170px;
+  flex-shrink: 1;
+}
+
+.sterile-art-head p {
+  max-width: 440px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.8);
+}
+
+/* ==========================================
+   RESERVACIONES
+========================================== */
+
+.booking-art-panel {
+  width: 100%;
+  max-width: 390px;
+  background: var(--black);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.booking-title-art {
+  width: 100%;
+  max-width: 320px;
+  max-height: 245px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer-brand .luxury-art-footer {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: 190px;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 800px) {
+
+  .experience-art-row {
+    gap: 25px;
+  }
+
+  .luxury-banner {
+    height: 145px;
+  }
+
+  .luxury-banner .luxury-art-banner {
+    max-width: 600px;
+    max-height: 105px;
+  }
+
+  .sterile-art-head {
+    gap: 22px;
+  }
+
+  .footer-brand .luxury-art-footer {
+    max-width: 420px;
+    height: 165px;
+  }
+
+}
+
+/* ==========================================
+   TELÉFONOS
+========================================== */
+
+@media (max-width: 600px) {
+
+  /* PORTADA */
+
+  .hero-title-art {
+    width: 100%;
+    max-height: 140px;
+  }
+
+  /* PRESENTACIÓN */
+
+  .statement-title-art {
+    max-width: 300px;
+    max-height: 180px;
+  }
+
+  /* SERVICIOS */
+
+  .services-title-art {
+    max-width: 100%;
+    max-height: 110px;
+  }
+
+  /* PREMIUM */
+
+  .premium-brand {
+    padding: 12px 18px;
+  }
+
+  .premium-brand img {
+    height: 70px;
+  }
+
+  /* FRANJA NEGRA */
+
+  .luxury-banner {
+    height: 105px;
+    padding: 10px 0;
+  }
+
+  .luxury-banner .luxury-art-banner {
+    width: 100%;
+    max-width: 100%;
+    max-height: 75px;
+  }
+
+  /* EXPERIENCIA */
+
+  .experience-art-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .experience-title-art {
+    max-height: 175px;
+  }
+
+  .experience-detail-art {
+    max-height: 125px;
+    justify-self: start;
+  }
+
+  /* MAN CARE */
+
+  .man-care-title-art {
+    max-width: 100%;
+    max-height: 170px;
+  }
+
+  /* ESTERILIZACIÓN */
+
+  .sterile-art-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    gap: 10px;
+  }
+
+  .ritual-title-art {
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+  .sterile-art-head p {
+    font-size: 12px;
+  }
+
+  /* RESERVACIONES */
+
+  .booking-art-panel {
+    max-width: 100%;
+    padding: 18px;
+  }
+
+  .booking-title-art {
+    max-height: 210px;
+  }
+
+  /* FOOTER */
+
+  .footer-brand .luxury-art-footer {
+    max-width: 100%;
+    height: 145px;
+  }
+
+}
