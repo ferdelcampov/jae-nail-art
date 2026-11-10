@@ -159,7 +159,7 @@ const nailCategories = [
     bookingService: "Gel semipermanente",
     photos: [
       "softgel2.png",
-      "Gelsemipermanente.png"
+      "softgel.png"
     ]
   },
 
