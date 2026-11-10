@@ -1619,3 +1619,59 @@ select:focus-visible,
     transition: none;
   }
 }
+
+/* ==========================================
+   JAE - LOGO ÚNICO EN FOOTER
+========================================== */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* PNG MÁS GRANDE Y LEGIBLE */
+
+.footer-brand .luxury-art-footer {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 210px;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+  .footer-brand {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-brand .luxury-art-footer {
+    max-width: 550px;
+    height: 190px;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .footer-brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-brand .luxury-art-footer {
+    width: 100%;
+    max-width: 430px;
+    height: 150px;
+  }
+}
