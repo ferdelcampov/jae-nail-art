@@ -1908,16 +1908,29 @@ select:focus-visible,
   transition: opacity 0.25s ease;
 }
 
+.footer-web-ltr {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding-left: 18px;
+  border-left: 1px solid rgba(255,255,255,0.22);
+
+  transition: opacity 0.25s ease;
+}
+
 .footer-web-ltr img {
   display: block;
-  width: 85px;
-  max-width: 85px;
-  height: 32px;
+  width: 120px;
+  max-width: 120px;
+  height: auto;
+  max-height: 58px;
   object-fit: contain;
 }
 
 .footer-web-ltr:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* ==========================================
