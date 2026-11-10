@@ -1,7 +1,9 @@
+
 /* ==========================================
-   JAE NAIL HOUSE
-   CSS COMPLETO Y ACTUALIZADO
+   JAE NAIL HOUSE — CSS COMPLETO
 ========================================== */
+
+/* COLORES DE MARCA */
 
 :root {
   --black: #211d1e;
@@ -14,7 +16,7 @@
   --white: #ffffff;
   --text: #211d1e;
   --text-soft: #71665d;
-  --line: rgba(33, 29, 30, .16);
+  --line: rgba(33,29,30,.16);
   --container: 1280px;
 }
 
@@ -73,7 +75,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 246, 241, .97);
+  background: rgba(250,246,241,.97);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
@@ -83,7 +85,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 35px;
+  gap: 30px;
 }
 
 .brand {
@@ -100,7 +102,7 @@ button {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 26px;
 }
 
 .desktop-nav a,
@@ -161,9 +163,9 @@ button {
 .hero-overlay {
   background: linear-gradient(
     90deg,
-    rgba(25, 20, 19, .8) 0%,
-    rgba(25, 20, 19, .54) 48%,
-    rgba(25, 20, 19, .2) 100%
+    rgba(25,20,19,.8) 0%,
+    rgba(25,20,19,.54) 48%,
+    rgba(25,20,19,.2) 100%
   );
 }
 
@@ -180,7 +182,7 @@ button {
 .hero h1 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(3.3rem, 6vw, 6.4rem);
+  font-size: clamp(3.3rem,6vw,6.4rem);
   font-weight: 400;
   line-height: .98;
   letter-spacing: -.045em;
@@ -189,7 +191,7 @@ button {
 .hero-description {
   max-width: 520px;
   margin: 30px 0 0;
-  color: rgba(255, 255, 255, .87);
+  color: rgba(255,255,255,.87);
   font-size: 17px;
   line-height: 1.6;
 }
@@ -202,7 +204,7 @@ button {
 }
 
 /* ==========================================
-   BOTONES
+   BOTONES GENERALES
 ========================================== */
 
 .btn {
@@ -216,6 +218,7 @@ button {
   font-weight: 500;
   letter-spacing: .13em;
   text-transform: uppercase;
+  text-align: center;
   transition: background .25s, color .25s, transform .25s;
 }
 
@@ -289,7 +292,7 @@ button {
 .location-section h2 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(3.4rem, 5.5vw, 6rem);
+  font-size: clamp(3.4rem,5.5vw,6rem);
   font-weight: 400;
   line-height: .98;
   letter-spacing: -.045em;
@@ -324,19 +327,28 @@ button {
 }
 
 /* ==========================================
-   INTRODUCCIÓN DE MARCA
+   IDENTIDAD DE MARCA — FONDO BEIGE
 ========================================== */
 
 .brand-statement {
-  padding: 110px 0;
+  padding: 34px 0;
   background: var(--cream);
+  overflow: hidden;
 }
 
 .statement-grid {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   align-items: center;
-  gap: 90px;
+  gap: 65px;
+}
+
+.statement-brand {
+  min-width: 0;
+}
+
+.statement-brand .section-label {
+  margin: 0 0 4px;
 }
 
 .statement-text {
@@ -344,77 +356,94 @@ button {
 }
 
 .statement-text h2 {
+  margin: 0 0 18px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-size: clamp(1.6rem,2.5vw,2.2rem);
   font-weight: 400;
   line-height: 1.2;
-  margin: 0 0 22px;
 }
 
 .statement-text p {
   color: var(--text-soft);
   line-height: 1.9;
+  margin-bottom: 18px;
 }
 
 .statement-text .text-link {
-  margin-top: 22px;
+  margin-top: 10px;
 }
 
 /* ==========================================
-   PNG CARE IS THE NEW LUXURY
-   VERSIONES CLARA Y OSCURA
+   PNGS CARE IS THE NEW LUXURY
 ========================================== */
 
 .luxury-art {
   display: block;
   width: 100%;
-  height: auto;
   object-fit: contain;
 }
 
+/* PNG NEGRO SOBRE BEIGE */
+
 .luxury-art-intro {
-  max-width: 550px;
-  margin-top: 22px;
+  width: 100%;
+  max-width: 540px;
+  height: 170px;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
 }
 
 /* ==========================================
-   FRANJA NEGRA - ACTUALIZADA
+   FRANJA NEGRA CON PNG BLANCO
 ========================================== */
 
 .luxury-banner {
-  background: var(--black);
-  padding: 35px 24px;
-  text-align: center;
+  height: 230px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  background: var(--black);
 }
 
-/*
-  PNG MÁS GRANDE
-
-  Se aumenta el ancho máximo y se elimina
-  la restricción anterior de altura.
-*/
+.luxury-banner .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .luxury-art-banner {
   display: block;
   width: 100%;
-  max-width: 1100px;
+  max-width: 570px;
+  min-width: 0;
+  height: 175px;
   max-height: none;
-  height: auto;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
 }
 
-/* PNG DEL FOOTER */
+/* PNG EN EL FOOTER */
 
 .luxury-art-footer {
-  max-width: 360px;
-  max-height: 125px;
-  margin-top: 22px;
+  width: 100%;
+  max-width: 350px;
+  height: 95px;
+  max-height: none;
+  margin-top: 12px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ==========================================
-   SECCIÓN ÚNICA DE SERVICIOS
+   SERVICIOS — CARRUSEL
 ========================================== */
 
 .services-section {
@@ -475,9 +504,9 @@ button {
 .nail-image img {
   position: absolute;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   transition: opacity .35s ease;
 }
@@ -493,7 +522,7 @@ button {
   letter-spacing: .1em;
 }
 
-/* INDICADORES DE FOTOGRAFÍAS */
+/* INDICADORES DE FOTOS */
 
 .nail-indicators {
   display: flex;
@@ -531,7 +560,7 @@ button {
   padding: 0 8px;
 }
 
-/* PRECIOS */
+/* PRECIOS EN TARJETAS */
 
 .nail-price {
   margin: auto 0 16px;
@@ -549,7 +578,7 @@ button {
   letter-spacing: .04em;
 }
 
-/* BOTÓN DE RESERVA */
+/* BOTÓN RESERVAR */
 
 .nail-reserve {
   display: flex;
@@ -576,7 +605,8 @@ button {
 
 /* FLECHAS DEL CARRUSEL */
 
-.nail-arrow {
+.nail-arrow,
+.svc-arrow {
   flex: 0 0 46px;
   display: grid;
   place-items: center;
@@ -589,17 +619,19 @@ button {
   transition: background .2s, color .2s;
 }
 
-.nail-arrow:hover:not(:disabled) {
+.nail-arrow:hover:not(:disabled),
+.svc-arrow:hover:not(:disabled) {
   background: var(--black);
   color: white;
 }
 
-.nail-arrow:disabled {
+.nail-arrow:disabled,
+.svc-arrow:disabled {
   opacity: .3;
   cursor: default;
 }
 
-/* BOTÓN INFERIOR DE SERVICIOS */
+/* BOTÓN DEBAJO DEL CARRUSEL */
 
 .services-footer {
   margin-top: 55px;
@@ -610,6 +642,74 @@ button {
   margin: 0 0 22px;
   color: var(--text-soft);
   font-size: 14px;
+}
+
+/* ==========================================
+   CARTA DE PRECIOS
+========================================== */
+
+.price-menu {
+  margin-top: 90px;
+  padding-top: 60px;
+  border-top: 1px solid var(--line);
+}
+
+.price-title {
+  margin: 14px 0 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: clamp(2rem,4vw,3rem);
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.price-book {
+  margin: -30px 0 50px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 50px 60px;
+}
+
+.price-group h3 {
+  margin: 0 0 6px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.price-note {
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.service-prices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+.service-prices li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(33,29,30,.14);
+}
+
+.service-prices li span:last-child {
+  color: var(--black);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 /* ==========================================
@@ -625,7 +725,7 @@ button {
 .why-jae h2 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(3.5rem, 7vw, 7rem);
+  font-size: clamp(3.5rem,7vw,7rem);
   font-weight: 400;
   line-height: .96;
   letter-spacing: -.045em;
@@ -634,7 +734,7 @@ button {
 .why-grid {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
 }
 
@@ -660,9 +760,149 @@ button {
 }
 
 .why-grid p {
-  color: rgba(255, 255, 255, .66);
+  color: rgba(255,255,255,.66);
   font-size: 13px;
   line-height: 1.7;
+}
+
+/* ==========================================
+   MAN CARE
+========================================== */
+
+.man-care-section {
+  background: var(--cream);
+  padding: 90px 0;
+}
+
+.man-care-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.man-care-copy h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.6rem,5vw,4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.04em;
+  margin: 0 0 20px;
+}
+
+.man-care-copy > p:not(.section-label) {
+  color: var(--text-soft);
+  max-width: 450px;
+  line-height: 1.8;
+}
+
+.man-care-copy .btn {
+  margin-top: 20px;
+}
+
+.man-care-note {
+  font-size: 13px;
+}
+
+/* ESPACIO PARA FOTOS MASCULINAS */
+
+.man-care-media {
+  min-height: 315px;
+  background: var(--beige);
+  overflow: hidden;
+}
+
+.man-care-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 315px;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+.man-care-placeholder {
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 30px;
+  color: var(--black);
+  text-align: center;
+}
+
+.man-care-placeholder span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .22em;
+}
+
+.man-care-placeholder strong {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem,5vw,4.5rem);
+  font-weight: 400;
+}
+
+.man-care-placeholder small {
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+/* ==========================================
+   ESTERILIZACIÓN
+========================================== */
+
+.sterile-section {
+  padding: 90px 0;
+  background: var(--cream-light);
+}
+
+.sterile-title {
+  margin: 0 0 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: clamp(2rem,4vw,3.2rem);
+  letter-spacing: -.03em;
+  line-height: 1.05;
+}
+
+.sterile-carousel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sterile-track {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 36px) / 3);
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.sterile-track::-webkit-scrollbar {
+  display: none;
+}
+
+.sterile-slide {
+  margin: 0;
+  scroll-snap-align: start;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--beige);
+}
+
+.sterile-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ==========================================
@@ -717,7 +957,7 @@ button {
   min-width: 0;
   background: white;
   padding: 45px;
-  box-shadow: 0 20px 65px rgba(33, 29, 30, .07);
+  box-shadow: 0 20px 65px rgba(33,29,30,.07);
 }
 
 .form-row {
@@ -748,7 +988,7 @@ button {
   min-width: 0;
   height: 57px;
   padding: 0 15px;
-  border: 1px solid rgba(33, 29, 30, .2);
+  border: 1px solid rgba(33,29,30,.2);
   border-radius: 0;
   background: var(--cream-light);
   color: var(--black);
@@ -884,7 +1124,7 @@ footer {
   width: 120px;
   min-height: 113px;
   padding: 15px 7px;
-  border: 1px solid rgba(255, 255, 255, .28);
+  border: 1px solid rgba(255,255,255,.28);
   color: white;
   transition: background .25s, transform .25s;
 }
@@ -909,20 +1149,20 @@ footer {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, .16);
+  border-top: 1px solid rgba(255,255,255,.16);
   margin-top: 65px;
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  color: rgba(255, 255, 255, .65);
+  color: rgba(255,255,255,.65);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: .12em;
 }
 
 /* ==========================================
-   BOTÓN FLOTANTE
+   BOTÓN FLOTANTE AGENDAR
 ========================================== */
 
 .floating-book {
@@ -930,7 +1170,51 @@ footer {
 }
 
 /* ==========================================
-   RESPONSIVE - TABLET
+   WHATSAPP FLOTANTE
+========================================== */
+
+.whatsapp-float {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+
+  background: var(--black);
+  color: #fff;
+  border: 2px solid var(--gold);
+
+  box-shadow: 0 8px 25px rgba(0,0,0,.25);
+
+  transition:
+    transform .3s ease,
+    background .3s ease,
+    box-shadow .3s ease;
+}
+
+.whatsapp-float svg {
+  display: block;
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+}
+
+.whatsapp-float:hover {
+  background: var(--gold);
+  color: #fff;
+  transform: translateY(-5px) scale(1.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,.3);
+}
+
+/* ==========================================
+   RESPONSIVE — TABLETS
 ========================================== */
 
 @media (max-width: 1050px) {
@@ -957,10 +1241,6 @@ footer {
   }
 }
 
-/* ==========================================
-   RESPONSIVE - TABLET PEQUEÑA
-========================================== */
-
 @media (max-width: 800px) {
 
   .desktop-nav {
@@ -978,9 +1258,10 @@ footer {
   .statement-grid,
   .section-heading,
   .booking-grid,
-  .location-grid {
+  .location-grid,
+  .man-care-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
   }
 
   .section-heading-right {
@@ -992,16 +1273,46 @@ footer {
   }
 
   .why-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   .hero {
     min-height: 700px;
   }
+
+  /* LOGOS LUXURY */
+
+  .brand-statement {
+    padding: 35px 0;
+  }
+
+  .luxury-art-intro {
+    height: 150px;
+    max-width: 540px;
+  }
+
+  .luxury-banner {
+    height: 200px;
+    padding: 15px 0;
+  }
+
+  .luxury-art-banner {
+    height: 145px;
+    max-width: 100%;
+  }
+
+  .man-care-section {
+    padding: 65px 0;
+  }
+
+  .sterile-track {
+    grid-auto-columns: 82%;
+    gap: 14px;
+  }
 }
 
 /* ==========================================
-   RESPONSIVE - CELULAR
+   RESPONSIVE — CELULARES
 ========================================== */
 
 @media (max-width: 600px) {
@@ -1033,7 +1344,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 11vw, 4rem);
+    font-size: clamp(2.8rem,11vw,4rem);
   }
 
   .hero-description {
@@ -1045,9 +1356,8 @@ footer {
     align-items: flex-start;
   }
 
-  /* ESPACIADO */
+  /* ESPACIADOS */
 
-  .brand-statement,
   .services-section,
   .booking-section,
   .location-section {
@@ -1061,30 +1371,51 @@ footer {
   .section-heading h2,
   .booking-copy h2,
   .location-section h2 {
-    font-size: clamp(2.8rem, 11vw, 4rem);
+    font-size: clamp(2.8rem,11vw,4rem);
   }
 
-  /* PNG DE MARCA */
+  /* SECCIÓN BEIGE */
+
+  .brand-statement {
+    padding: 28px 0;
+  }
+
+  .statement-grid {
+    gap: 16px;
+  }
 
   .luxury-art-intro {
-    max-width: 100%;
+    width: 100%;
+    height: clamp(100px,29vw,145px);
   }
 
+  .statement-text h2 {
+    font-size: 24px;
+  }
+
+  .statement-text p {
+    font-size: 13px;
+  }
+
+  /* FRANJA NEGRA */
+
   .luxury-banner {
-    padding: 25px 12px;
+    height: 150px;
+    padding: 12px 0;
   }
 
   .luxury-art-banner {
     width: 100%;
+    height: 100px;
     max-width: 100%;
-    max-height: none;
   }
 
   .luxury-art-footer {
-    max-width: 260px;
+    max-width: 280px;
+    height: 75px;
   }
 
-  /* CARRUSEL */
+  /* CARRUSEL DE UÑAS */
 
   .nail-carousel {
     gap: 6px;
@@ -1095,7 +1426,8 @@ footer {
     gap: 12px;
   }
 
-  .nail-arrow {
+  .nail-arrow,
+  .svc-arrow {
     flex-basis: 34px;
     height: 34px;
     font-size: 15px;
@@ -1114,6 +1446,22 @@ footer {
     min-height: 48px;
   }
 
+  /* CARTA DE PRECIOS */
+
+  .price-menu {
+    margin-top: 65px;
+    padding-top: 45px;
+  }
+
+  .price-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .service-prices {
+    font-size: 12px;
+  }
+
   /* EXPERIENCIA */
 
   .why-jae {
@@ -1128,6 +1476,31 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 45px;
+  }
+
+  /* MAN CARE */
+
+  .man-care-section {
+    padding: 65px 0;
+  }
+
+  .man-care-copy h2 {
+    font-size: 3rem;
+  }
+
+  .man-care-media,
+  .man-care-placeholder {
+    min-height: 260px;
+  }
+
+  /* ESTERILIZACIÓN */
+
+  .sterile-section {
+    padding: 60px 0;
+  }
+
+  .sterile-title {
+    font-size: 2.6rem;
   }
 
   /* FORMULARIO */
@@ -1179,7 +1552,7 @@ footer {
     margin-top: 45px;
   }
 
-  /* BOTÓN FLOTANTE */
+  /* BOTÓN INFERIOR AGENDAR */
 
   .floating-book {
     position: fixed;
@@ -1198,7 +1571,21 @@ footer {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .14em;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, .2);
+    box-shadow: 0 12px 35px rgba(0,0,0,.2);
+  }
+
+  /* WHATSAPP FLOTANTE */
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 85px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1227,388 +1614,8 @@ select:focus-visible,
     scroll-behavior: auto !important;
     transition: none !important;
   }
-}
 
-/* ==========================================
-   AJUSTE FINAL DE PNGS LUXURY
-   Los PNG tienen una zona transparente muy alta.
-   object-fit: cover centra el diseño sin deformarlo.
-   Este bloque sustituye los ajustes anteriores.
-========================================== */
-
-/* Fondo beige: imagen a la izquierda, texto a la derecha */
-.brand-statement {
-  padding: 34px 0;
-  overflow: hidden;
-}
-
-.statement-grid {
-  gap: 65px;
-  align-items: center;
-}
-
-.statement-brand {
-  min-width: 0;
-}
-
-.statement-brand .section-label {
-  margin: 0 0 4px;
-}
-
-.luxury-art-intro {
-  display: block;
-  width: 100%;
-  max-width: 540px;
-  height: 170px;
-  max-height: none;
-  margin: 0;
-  object-fit: cover;
-  object-position: center;
-  transform: none;
-}
-
-/* Fondo negro: contenido legible solo en la mitad izquierda */
-.luxury-banner {
-  height: 230px;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.luxury-banner .container {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
-  gap: 48px;
-  height: auto;
-}
-
-.luxury-art-banner {
-  display: block;
-  grid-column: 1;
-  justify-self: start;
-  width: 100%;
-  max-width: 570px;
-  min-width: 0;
-  height: 175px;
-  max-height: none;
-  margin: 0;
-  object-fit: cover;
-  object-position: center;
-  transform: none;
-}
-
-/* Logo en el footer: evitar una imagen muy alta */
-.luxury-art-footer {
-  width: 100%;
-  max-width: 350px;
-  height: 95px;
-  max-height: none;
-  margin-top: 12px;
-  object-fit: cover;
-  object-position: center;
-  transform: none;
-}
-
-@media (max-width: 800px) {
-  .brand-statement { padding: 35px 0; }
-  .statement-grid { gap: 22px; }
-  .luxury-art-intro { height: 150px; max-width: 540px; }
-  .luxury-banner { height: 200px; padding: 15px 0; }
-  .luxury-banner .container { gap: 20px; }
-  .luxury-art-banner { height: 145px; max-width: 100%; }
-}
-
-@media (max-width: 600px) {
-  .brand-statement { padding: 28px 0; }
-  .statement-grid { gap: 16px; }
-  .luxury-art-intro { width: 100%; height: clamp(100px, 29vw, 145px); }
-  .luxury-banner { height: 150px; padding: 12px 0; }
-  .luxury-banner .container { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
-  .luxury-art-banner { width: 100%; height: 100px; }
-  .luxury-art-footer { width: 100%; max-width: 280px; height: 75px; }
-}
-
-/* CENTRAR PNG DE LA FRANJA NEGRA */
-
-.luxury-banner .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.luxury-art-banner {
-  margin-left: auto;
-  margin-right: auto;
-  justify-self: center;
-  grid-column: auto;
-  transform: none;
-  object-position: center;
-}
-
-
-/* ==========================================
-   JAE - BOTÓN FLOTANTE DE WHATSAPP
-========================================== */
-
-.whatsapp-float {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  z-index: 9999;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 62px;
-  height: 62px;
-
-  border-radius: 50%;
-  background: var(--black);
-  color: #ffffff;
-
-  border: 2px solid var(--gold);
-
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.25);
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-/* ÍCONO */
-
-.whatsapp-float svg {
-  width: 33px;
-  height: 33px;
-}
-
-/* HOVER */
-
-.whatsapp-float:hover {
-  background: var(--gold);
-  color: #ffffff;
-
-  transform: translateY(-5px) scale(1.06);
-
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* TELÉFONOS */
-
-@media (max-width: 600px) {
-  .whatsapp-float {
-    right: 18px;
-
-    /* Encima del botón inferior de reservar */
-    bottom: 85px;
-
-    width: 55px;
-    height: 55px;
-  }
-
-  .whatsapp-float svg {
-    width: 29px;
-    height: 29px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
   .whatsapp-float {
     transition: none;
-  }
-}
-
-
-/* LOGO OFICIAL DE WHATSAPP */
-
-.whatsapp-float svg {
-  display: block;
-  width: 34px;
-  height: 34px;
-  fill: currentColor;
-}
-
-/* Ajuste para celulares */
-
-@media (max-width: 600px) {
-  .whatsapp-float svg {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-/* ==========================================
-   CARTA DE PRECIOS (restaurada)
-========================================== */
-
-/* Lista de precios por servicio */
-.service-info .service-prices {
-  list-style: none;
-  margin: 16px 0 0;
-  padding: 0;
-  max-width: 400px;
-  font-size: 13px;
-  color: var(--text-soft);
-}
-
-.service-prices li {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 6px 0;
-  border-bottom: 1px dashed rgba(33, 29, 30, .14);
-}
-
-.service-prices li span:last-child {
-  color: var(--black);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-
-/* Carta de precios dentro de la página */
-.price-menu {
-  margin-top: 90px;
-  padding-top: 60px;
-  border-top: 1px solid var(--line);
-}
-
-.price-title {
-  margin: 14px 0 50px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -.03em;
-  line-height: 1;
-}
-
-.price-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px 60px;
-}
-
-.price-group h3 {
-  margin: 0 0 6px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-}
-
-.price-note {
-  margin: 0 0 12px;
-  font-size: 12px;
-  line-height: 1.6;
-  color: var(--text-soft);
-}
-
-.price-group .service-prices {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 14px;
-  color: var(--text-soft);
-}
-
-
-.price-book {
-  margin: -30px 0 50px;
-}
-
-/* Flechas del carrusel de esterilización */
-.svc-arrow {
-  flex: 0 0 48px;
-  height: 48px;
-  border: 1px solid var(--black);
-  background: var(--white);
-  color: var(--black);
-  font-size: 18px;
-  cursor: pointer;
-  transition: background .25s ease, color .25s ease;
-}
-
-.svc-arrow:hover {
-  background: var(--black);
-  color: var(--white);
-}
-
-@media (max-width: 620px) {
-  .svc-arrow {
-    flex-basis: 36px;
-    height: 36px;
-    font-size: 14px;
-  }
-}
-
-/* Sección de esterilización */
-.sterile-section {
-  padding: 90px 0;
-  background: var(--cream-light);
-}
-
-.sterile-title {
-  margin: 0 0 48px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  letter-spacing: -.03em;
-  line-height: 1.05;
-}
-
-.sterile-carousel {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.sterile-track {
-  flex: 1;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 2 * 18px) / 3);
-  gap: 18px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-
-.sterile-track::-webkit-scrollbar {
-  display: none;
-}
-
-.sterile-slide {
-  margin: 0;
-  scroll-snap-align: start;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: var(--beige);
-}
-
-.sterile-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 760px) {
-  .sterile-track {
-    grid-auto-columns: 82%;
-    gap: 14px;
-  }
-}
-
-@media (max-width: 620px) {
-  .sterile-section {
-    padding: 60px 0;
   }
 }
