@@ -2039,3 +2039,82 @@ select:focus-visible,
     height: 30px;
   }
 }
+
+/* ==========================================
+   JAE - AJUSTE DEL LOGO WEB-LTR
+========================================== */
+
+/* CONTENEDOR DEL LOGO */
+
+.footer-web-ltr {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding-left: 20px;
+  border-left: 1px solid rgba(255,255,255,0.22);
+}
+
+/* LOGO MÁS GRANDE */
+
+.footer-web-ltr img {
+  display: block;
+
+  width: 135px;
+  max-width: 135px;
+
+  height: 55px;
+  max-height: 55px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* MANTENER LA FRASE Y EL LOGO ALINEADOS */
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  min-width: 0;
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 1050px) {
+
+  .footer-web-ltr img {
+    width: 120px;
+    max-width: 120px;
+    height: 50px;
+    max-height: 50px;
+  }
+
+}
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+  .footer-bottom-right {
+    gap: 12px;
+  }
+
+  .footer-web-ltr {
+    padding-left: 12px;
+  }
+
+  .footer-web-ltr img {
+    width: 105px;
+    max-width: 105px;
+    height: 45px;
+    max-height: 45px;
+  }
+
+}
