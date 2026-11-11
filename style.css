@@ -2583,7 +2583,7 @@ select:focus-visible,
   background: transparent;
   object-fit: contain;
   object-position: left center;
-  filter: brightness(0);
+  filter: brightness(0) saturate(100%) invert(61%) sepia(27%) saturate(658%) hue-rotate(357deg) brightness(94%) contrast(87%);
 }
 
 /* Premium: texto negro sin caja dorada ni negra. */
