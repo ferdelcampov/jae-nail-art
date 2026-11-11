@@ -91,7 +91,7 @@ const nailCategories = [
   },
 
   {
-    title: "Cromados",
+    title: "Cromado",
     description:
       "Acabado efecto espejo con reflejos metálicos que aportan brillo, elegancia y un toque moderno a tus uñas.",
     bookingService: "Nail Art",
