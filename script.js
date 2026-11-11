@@ -198,7 +198,7 @@ const nailCategories = [
       "Efectos artísticos de color. Nombre comercial por confirmar.",
     bookingService: "Nail Art",
     photos: [
-      "tintas de alcohol.png"
+      "tintas de alcohol.jpg"
     ]
   },
 
