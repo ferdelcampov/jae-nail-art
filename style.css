@@ -2565,70 +2565,86 @@ select:focus-visible,
 
 /* ==========================================
    AJUSTES FINALES - NOVIEMBRE 2026
-   SOLO TITULOS DORADOS Y FRANJA BLANCA
-   La franja negra comienza en #experiencia
+   TITULOS NEGROS SIN CUADRO Y LUXURY DORADO
 ========================================== */
 
-/* Especialistas en Nail Art: dorado y letras oscuras legibles */
-.section-heading .services-title-frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background: var(--gold);
-  width: min(100%, 560px);
-  padding: 18px 24px;
-  border-radius: 2px;
-}
-
-.section-heading .services-title-frame .services-title-art {
+/* Nail Art: imagen convertida a negro directamente sobre blanco.
+   Quitamos los antiguos fondos, bordes y rellenos. */
+.section-heading .services-title-art {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 560px;
   max-height: 119px;
   height: auto;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   background: transparent;
   object-fit: contain;
+  object-position: left center;
   filter: brightness(0);
 }
 
-/* Productos premium: mismo dorado y contraste */
+/* Premium: texto negro sin caja dorada ni negra. */
 .price-menu .premium-brand {
-  background: var(--gold);
+  width: min(100%, 620px);
+  max-width: 620px;
+  padding: 0;
+  margin: 0 0 35px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  justify-content: flex-start;
 }
 
 .price-menu .premium-brand .brand-art {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: 105px;
+  object-fit: contain;
+  object-position: left center;
   background: transparent;
   filter: brightness(0);
 }
 
-/* Care is the new luxury: fondo blanco y letras oscuras */
+/* Luxury: letras doradas originales del PNG, sobre blanco.
+   Sin filtro de negro. */
 .luxury-banner.luxury-banner--light {
   background: #ffffff;
   height: 170px;
   padding: 15px 0;
 }
 
-.luxury-banner .luxury-art-banner--dark {
-  filter: brightness(0);
+.luxury-banner .luxury-art-banner--gold {
+  filter: none;
 }
 
-/* La franja negra empieza exactamente bajo el banner blanco.
-   La etiqueta 02 / La experiencia permanece dentro de ella. */
+/* El negro empieza JUSTO en 02 / La experiencia. */
 #experiencia.why-jae {
   background: var(--black);
 }
 
 @media (max-width: 800px) {
-  .luxury-banner.luxury-banner--light { height: 145px; }
+  .luxury-banner.luxury-banner--light {
+    height: 145px;
+  }
 }
 
 @media (max-width: 600px) {
-  .section-heading .services-title-frame {
+  .section-heading .services-title-art {
     width: 100%;
-    padding: 14px 16px;
+    max-height: 110px;
+  }
+
+  .price-menu .premium-brand {
+    padding: 0;
+  }
+
+  .price-menu .premium-brand .brand-art {
+    max-height: 70px;
   }
 
   .luxury-banner.luxury-banner--light {
