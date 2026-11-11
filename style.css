@@ -2530,3 +2530,36 @@ select:focus-visible,
     padding: 14px 16px;
   }
 }
+
+
+/* WEB-LTR - LOGO MÁS GRANDE */
+
+.footer-web-ltr img {
+  display: block;
+  width: 160px;
+  max-width: 160px;
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* TABLETS */
+
+@media (max-width: 1050px) {
+  .footer-web-ltr img {
+    width: 140px;
+    max-width: 140px;
+    max-height: 64px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+  .footer-web-ltr img {
+    width: 120px;
+    max-width: 120px;
+    max-height: 56px;
+  }
+}
