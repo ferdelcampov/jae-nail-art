@@ -91,6 +91,16 @@ const nailCategories = [
   },
 
   {
+    title: "Cromados",
+    description:
+      "Acabado efecto espejo con reflejos metálicos que aportan brillo, elegancia y un toque moderno a tus uñas.",
+    bookingService: "Nail Art",
+    photos: [
+      "cromados.png"
+    ]
+  },
+
+  {
     title: "Francés corto",
     description:
       "La manicura francesa clásica en uñas cortas.",
