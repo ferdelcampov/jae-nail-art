@@ -2652,3 +2652,121 @@ select:focus-visible,
     padding: 10px 0;
   }
 }
+
+/* =======================================================
+   JAE — ACTUALIZACIÓN CLIENTE: FOTOS Y MEN CARE
+   Se conservan los estilos anteriores y los títulos
+   dorados sobre blanco sin cambiar el footer de WEB-LTR.
+======================================================= */
+
+/* En portada: párrafo independiente a partir de "Creamos" */
+.hero-description--second { margin-top: 14px; }
+
+/* PNG Premium ahora debajo del título dorado de Nail Art */
+.section-heading > div:first-child { min-width: 0; }
+.section-heading .services-premium-art {
+  display: block;
+  width: min(76%, 400px);
+  max-width: 100%;
+  height: auto;
+  max-height: 82px;
+  margin-top: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* La primera franja conserva solo el logo, sin título duplicado */
+.statement-brand .luxury-art-intro { margin-top: 0; }
+
+/* Men Care: carrusel con foto, pie y controles discretos */
+.men-care-carousel {
+  width: 100%;
+  min-width: 0;
+  background: var(--beige);
+  overflow: hidden;
+}
+.men-care-track {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.men-care-track::-webkit-scrollbar { display: none; }
+.men-care-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  height: clamp(310px, 32vw, 445px);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+.men-care-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+.men-care-slide figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(33,29,30,.80));
+  padding: 30px 20px 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 17px;
+}
+.men-care-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  gap: 14px;
+  background: var(--black);
+  color: #fff;
+}
+.men-care-controls[hidden] { display: none; }
+.men-care-controls button {
+  width: 39px;
+  height: 35px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.38);
+  cursor: pointer;
+}
+.men-care-controls button:hover { background: var(--gold); }
+.men-care-count {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+.men-care-no-photos {
+  margin: 0;
+  padding: 65px 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .section-heading .services-premium-art { max-width: 360px; }
+}
+@media (max-width: 600px) {
+  .section-heading .services-premium-art {
+    width: 82%;
+    max-width: 310px;
+    max-height: 72px;
+    margin-top: 12px;
+  }
+  .men-care-slide { height: 340px; }
+}
