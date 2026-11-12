@@ -1,4 +1,3 @@
-
 /* ==========================================
    JAE NAIL HOUSE — JAVASCRIPT COMPLETO
 ========================================== */
@@ -30,202 +29,142 @@ const phone = document.getElementById("phone");
 const nailCategories = [
   {
     title: "Acrílico",
-    description:
-      "Extensiones resistentes con forma y longitud personalizadas.",
+    description: "Extensiones resistentes con forma y longitud personalizadas.",
     price: 700,
     bookingService: "Acrílico y Soft Gel",
-    photos: [
-      "acrílico2.png"
-    ]
+    photos: ["acrílico2.png", "acrílico.png"]
   },
-
   {
     title: "Aurora",
-    description:
-      "Reflejos nacarados y efectos luminosos con acabado tornasol.",
+    description: "Reflejos nacarados y cromados con acabados luminosos.",
     bookingService: "Nail Art",
     photos: [
-      "acetato.png",
-      "aurora.png",
+      "acetato.png", "aurora.png",
+      ["aurora-cromado-referencia.webp", "cromados.png"]
     ]
   },
-
   {
     title: "Baby Boomer",
-    description:
-      "Degradados delicados y difuminados en tonos suaves.",
+    description: "Degradados suaves y elegantes, desde tonos nude hasta vino.",
     bookingService: "Nail Art",
     photos: [
-      "babyboomer.png",
+      ["baby-boomer-vino.webp", "Manicura ombré vino y nude.png"],
+      ["baby-boomer-rosa.webp", "Manicura rosa ombré brillante.png"],
+      "babyboomer.png", "babyboomer2.png"
     ]
   },
-
   {
     title: "Carey",
-    description:
-      "Un efecto clásico de tonos cálidos y detalles sofisticados.",
+    description: "Un efecto clásico en tonos cálidos y sofisticados.",
     bookingService: "Nail Art",
-    photos: [
-      "carey.png"
-    ]
+    photos: ["carey.png", "carey2.png"]
   },
-
   {
     title: "Cat Eye",
-    description:
-      "Efecto magnético con reflejos que cambian con la luz.",
+    description: "Efecto magnético con reflejos que cambian con la luz.",
     bookingService: "Nail Art",
-    photos: [
-      "cateye2.png"
-    ]
+    photos: ["cateye2.png", "cateye.png"]
   },
-
   {
     title: "Cristales",
-    description:
-      "Aplicaciones brillantes para diseños con personalidad.",
+    description: "Pequeños cristales que aportan luz y elegancia a tus uñas.",
     bookingService: "Nail Art",
-    photos: [
-      "cristales.png"
-    ]
+    photos: [["cristales-referencia.webp", "cristales.png"]]
   },
-
-  {
-    title: "Cromado",
-    description:
-      "Acabado efecto espejo con reflejos metálicos que aportan brillo, elegancia y un toque moderno a tus uñas.",
-    bookingService: "Nail Art",
-    photos: [
-      "cromados.png"
-    ]
-  },
-
   {
     title: "Francés corto",
-    description:
-      "La manicura francesa clásica en uñas cortas.",
+    description: "La manicura francesa clásica para uñas cortas.",
     bookingService: "Nail Art",
-    photos: [
-      "francescorto.png"
-    ]
+    photos: ["francescorto.png"]
   },
-
   {
     title: "Francés",
-    description:
-      "Líneas limpias y una manicura elegante y atemporal.",
+    description: "Líneas limpias y un diseño clásico y atemporal.",
     bookingService: "Nail Art",
-    photos: [
-      "frances.png"
-    ]
+    photos: ["frances.png"]
   },
-
   {
     title: "Matching",
-    description:
-      "Diseños coordinados que combinan estilo y detalle.",
+    description: "Diseños coordinados que combinan estilo y detalle.",
     bookingService: "Nail Art",
-    photos: [
-      "matching.png"
-    ]
+    photos: ["matching.png"]
   },
-
   {
     title: "Polygel",
-    description:
-      "Estructura ligera y resistente para un set personalizado.",
+    description: "Aplicación de material ligero y resistente para extensiones personalizadas.",
     price: 750,
     bookingService: "Polygel",
     photos: [
-      "poligel2.png"
+      ["polygel-aplicacion.webp", "Aplicación de gel rosa brillante.png"],
+      "poligel2.png", "Polygel.png"
     ]
   },
-
   {
     title: "Polka Dots",
-    description:
-      "Diseños minimalistas con puntos y detalles delicados.",
+    description: "Diseños delicados con puntos y detalles minimalistas.",
     bookingService: "Nail Art",
-    photos: [
-      "puntitos.png"
-    ]
+    photos: ["puntitos.png", "puntitos2.png"]
   },
-
   {
     title: "Relieve",
-    description:
-      "Texturas y detalles tridimensionales.",
+    description: "Detalles tridimensionales que dan volumen y textura.",
     bookingService: "Nail Art",
-    photos: [
-      "relieve.png"
-    ]
+    photos: ["relieve.png", "relieve2.png", "relieve3.png"]
   },
-
   {
     title: "Gel semipermanente",
-    description:
-      "Un solo tono de color con brillo y acabado uniforme.",
+    description: "Color de larga duración con acabado brillante, natural y uniforme.",
     price: 350,
     bookingService: "Gel semipermanente",
     photos: [
-      "softgel2.png"
+      ["gel-semi-natural.webp", "Manicura baby boomer con brillo sutil.png"],
+      ["gel-semi-perlado.webp", "Manicura nude perlada brillante.png"],
+      "GelSemipermanente.png", "softgel2.png"
     ]
   },
-
   {
     title: "Glitter",
-    description:
-      "Destellos y acabados brillantes para un set especial.",
+    description: "Destellos y acabados brillantes para un diseño especial.",
     bookingService: "Nail Art",
     photos: [
+      ["glitter-holografico.webp", "Manicura perlada con brillo holográfico.png"],
       "brillitos.png"
     ]
   },
-
   {
     title: "Nail Art",
-    description:
-      "Detalles decorativos y accesorios para diseños únicos.",
+    description: "Diseños creativos con detalles decorativos y accesorios únicos.",
     bookingService: "Nail Art",
     photos: [
-      "charms.png"
+      ["nailart-charms-referencia.webp", "charms.png"],
+      ["nail-art-ondas.webp", "Uñas marfil con ondas doradas.png"]
     ]
   },
-
   {
     title: "Texturas",
-    description:
-      "Detalles con volumen y carácter para un acabado creativo.",
+    description: "Decoraciones con volumen y detalles dorados en relieve.",
     bookingService: "Nail Art",
     photos: [
+      ["texturas-calabazas.webp", "Manicura dorada con calabazas elegantes.png"],
+      ["texturas-dorado.webp", "Uñas doradas con diseño ondulado.png"],
       "charms2.png"
     ]
   },
-
   {
     title: "Tintas de alcohol",
-    description:
-      "Efectos artísticos de color. Nombre comercial por confirmar.",
+    description: "Efectos artísticos de color. Nombre comercial por confirmar.",
     bookingService: "Nail Art",
-    photos: [
-      "tintas de alcohol.jpg"
-    ]
+    photos: ["tintas de alcohol.png", "tintas de alcohol2.png"]
   },
-
   {
     title: "Vitamina",
-    description:
-      "Tratamiento enfocado en el cuidado de las uñas.",
+    description: "Tratamiento para el cuidado de las uñas.",
     price: 100,
     bookingService: "Vitamina",
     photos: [
-      "vitamina.png"
+      ["vitamina-sin-marca.webp", "Botella blanca sin marca con uñas antes y después.png"]
     ]
   }
-
-  // PENDIENTE:
-  // acetato2.png todavía no tiene
-  // nombre de efecto aprobado.
 ];
 
 // ==========================================
@@ -305,14 +244,52 @@ function whatsappURL(message) {
 // CARRUSEL DE SERVICIOS
 // ==========================================
 
-function createNailGalleries() {
+// Devuelve el primer archivo disponible del grupo (sin repetir la misma foto).
+function checkPhotoExists(filename) {
+  return new Promise(resolve => {
+    const tester = new Image();
+    tester.onload = () => resolve(true);
+    tester.onerror = () => resolve(false);
+    tester.src = photoPath(filename);
+  });
+}
+
+async function firstAvailablePhoto(option) {
+  const choices = Array.isArray(option) ? option : [option];
+  for (const name of choices) {
+    const normalized = [...new Set([name, name.normalize("NFD"), name.normalize("NFC")])];
+    for (const filename of normalized) {
+      if (await checkPhotoExists(filename)) return filename;
+    }
+  }
+  return null;
+}
+
+async function validPhotos(photoOptions) {
+  const selected = await Promise.all(photoOptions.map(firstAvailablePhoto));
+  return [...new Set(selected.filter(Boolean))];
+}
+
+async function createNailGalleries() {
 
   const container =
     document.getElementById("nail-collections");
 
   if (!container) return;
 
+  container.textContent = "Cargando diseños...";
+
+  // Revisa las rutas reales de GitHub. Las fotos faltantes no dejan cuadros vacíos.
+  const categoriesWithPhotos = (await Promise.all(nailCategories.map(async category => {
+    const photos = await validPhotos(category.photos);
+    return photos.length ? {...category, photos} : null;
+  }))).filter(Boolean);
+
   container.replaceChildren();
+  if (!categoriesWithPhotos.length) {
+    container.textContent = "No se encontraron fotografías en assets. Revisa sus nombres.";
+    return;
+  }
 
   const wrapper = document.createElement("div");
   wrapper.className = "nail-carousel";
@@ -356,7 +333,7 @@ function createNailGalleries() {
   // CREAR TARJETAS AUTOMÁTICAMENTE
   // ========================================
 
-  nailCategories.forEach(category => {
+  categoriesWithPhotos.forEach(category => {
 
     const card = document.createElement("article");
     card.className = "nail-category-card";
@@ -946,6 +923,92 @@ function initSterileCarousel() {
 }
 
 // ==========================================
+// CARRUSEL MEN CARE — FOTOS CADA 5 SEGUNDOS
+// ==========================================
+
+async function initMenCarousel() {
+  const root = document.querySelector("[data-men-carousel]");
+  if (!root) return;
+
+  const track = root.querySelector(".men-care-track");
+  const prev = root.querySelector("[data-men-prev]");
+  const next = root.querySelector("[data-men-next]");
+  const count = root.querySelector(".men-care-count");
+  if (!track || !prev || !next || !count) return;
+
+  const options = [
+    { label: "Manicura Men Care", files: ["men-care-manicura.webp", "Imagen de ChatGPT 12 nov 2026, 03_47_11 p.m-2.png"] },
+    { label: "Pedicura Men Care", files: ["men-care-pedicura.webp", "Imagen de ChatGPT 12 nov 2026, 03_47_10 p.m-1.png"] },
+    { label: "Bienestar Men Care", files: ["men-care-bienestar.webp", "man-doing-his-self-care-ritual.jpg"] }
+  ];
+
+  const available = (await Promise.all(options.map(async entry => {
+    const photo = await firstAvailablePhoto(entry.files);
+    return photo ? {...entry, photo} : null;
+  }))).filter(Boolean);
+
+  track.replaceChildren();
+  if (!available.length) {
+    const message = document.createElement("p");
+    message.className = "men-care-no-photos";
+    message.textContent = "Fotografías de Men Care próximamente";
+    track.appendChild(message);
+    root.querySelector(".men-care-controls").hidden = true;
+    return;
+  }
+
+  available.forEach((entry) => {
+    const figure = document.createElement("figure");
+    figure.className = "men-care-slide";
+    const image = document.createElement("img");
+    image.src = photoPath(entry.photo);
+    image.alt = entry.label;
+    image.loading = "lazy";
+    const caption = document.createElement("figcaption");
+    caption.textContent = entry.label;
+    figure.append(image, caption);
+    track.appendChild(figure);
+  });
+
+  const slides = [...track.querySelectorAll(".men-care-slide")];
+  let current = 0;
+  const controls = root.querySelector(".men-care-controls");
+  controls.hidden = slides.length < 2;
+
+  function show(index, smooth = true) {
+    current = (index + slides.length) % slides.length;
+    track.scrollTo({
+      left: slides[current].offsetLeft - slides[0].offsetLeft,
+      behavior: smooth ? "smooth" : "auto"
+    });
+    count.textContent = `${current + 1} / ${slides.length}`;
+  }
+
+  show(0, false);
+  prev.addEventListener("click", () => show(current - 1));
+  next.addEventListener("click", () => show(current + 1));
+  track.addEventListener("scroll", () => {
+    let closest = 0;
+    let smallest = Infinity;
+    slides.forEach((slide, i) => {
+      const distance = Math.abs(track.scrollLeft - (slide.offsetLeft - slides[0].offsetLeft));
+      if (distance < smallest) { smallest = distance; closest = i; }
+    });
+    current = closest;
+    count.textContent = `${current + 1} / ${slides.length}`;
+  }, {passive: true});
+  window.addEventListener("resize", () => show(current, false));
+
+  if (slides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    setInterval(() => {
+      if (!document.hidden && !root.matches(":hover") && !root.matches(":focus-within")) {
+        show(current + 1);
+      }
+    }, PHOTO_INTERVAL);
+  }
+}
+
+// ==========================================
 // INICIALIZAR PÁGINA
 // ==========================================
 
@@ -956,6 +1019,8 @@ document.addEventListener(
     createNailGalleries();
 
     initSterileCarousel();
+
+    initMenCarousel();
 
     initBookingForm();
 
