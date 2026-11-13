@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -19,100 +20,62 @@
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- JAVASCRIPT -->
   <script src="script.js" defer></script>
-
 </head>
 
 <body>
 
-  <!-- =====================================
-       HEADER / NAVEGACIÓN
-  ====================================== -->
+  <!-- HEADER -->
 
   <header class="site-header">
-
     <div class="container header-inner">
 
-      <!-- LOGO JAE -->
-
-      <a
-        href="#inicio"
-        class="brand"
-        aria-label="JAE Nail House - Inicio">
-
+      <a href="#inicio" class="brand" aria-label="JAE Nail House - Inicio">
         <img
           src="assets/logo-negro.png"
           alt="JAE Nail House"
           class="brand-logo">
-
       </a>
 
-      <!-- MENÚ PRINCIPAL -->
-
-      <nav
-        class="desktop-nav"
-        aria-label="Navegación principal">
-
+      <nav class="desktop-nav" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
-
         <a href="#experiencia">Nosotros</a>
-
         <a href="#man-care">Men Care</a>
-
         <a href="#ubicacion">Ubicación</a>
-
-        <a href="#reservar" class="nav-book">
-          Agenda tu cita
-        </a>
-
+        <a href="#reservar" class="nav-book">Agenda tu cita</a>
       </nav>
-
-      <!-- BOTÓN MÓVIL -->
 
       <a href="#reservar" class="mobile-book">
         Agendar
       </a>
 
     </div>
-
   </header>
-
 
   <main id="inicio">
 
-    <!-- =====================================
-         HERO / PORTADA
-    ====================================== -->
+    <!-- PORTADA -->
 
     <section class="hero">
 
-      <!-- IMAGEN DE FONDO -->
-
       <div class="hero-image">
-
         <img
           src="assets/hero-jae.jpg"
           alt="Experiencia JAE Nail House"
-          class="hero-photo">
+          class="hero-photo"
+          loading="eager"
+          fetchpriority="high">
 
         <div class="hero-overlay"></div>
-
       </div>
 
-
       <div class="container hero-content">
-
         <div class="hero-copy">
 
           <p class="section-label light">
             Nail Art Specialists
           </p>
-
-          <!-- TÍTULO EN PNG -->
 
           <h1>
             <img
@@ -124,61 +87,40 @@
           <p class="hero-description">
             Diseño, técnica y cuidado en cada detalle.
           </p>
+
           <p class="hero-description hero-description--second">
             Creamos diseños que reflejan tu estilo mientras
             cuidamos la salud de tus uñas.
           </p>
 
           <div class="hero-buttons">
-
-            <a
-              href="#reservar"
-              class="btn btn-gold">
+            <a href="#reservar" class="btn btn-gold">
               Agenda tu cita
             </a>
 
-            <a
-              href="#servicios"
-              class="btn btn-outline-light">
+            <a href="#servicios" class="btn btn-outline-light">
               Ver servicios
             </a>
-
           </div>
 
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =====================================
-         IDENTIDAD DE MARCA
-         SECCIÓN BEIGE
-    ====================================== -->
+    <!-- IDENTIDAD DE MARCA -->
 
     <section class="brand-statement">
-
       <div class="container statement-grid">
 
-        <!-- PNG CARE IS THE NEW LUXURY -->
-
         <div class="statement-brand">
-
           <img
             src="assets/luxurynegro.png"
             alt="Care is the new luxury - JAE Nail House"
             class="luxury-art luxury-art-intro"
             loading="lazy">
-
         </div>
 
-
-        <!-- PRESENTACIÓN DE MARCA -->
-
         <div class="statement-text">
-
-          <!-- NUEVO PNG -->
 
           <h2>
             <img
@@ -200,43 +142,30 @@
           </a>
 
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =====================================
-         SERVICIOS
-         CARRUSEL ÚNICO DE DISEÑOS
-    ====================================== -->
+    <!-- SERVICIOS -->
 
     <section id="servicios" class="services-section">
-
       <div class="container">
-
-        <!-- ENCABEZADO -->
 
         <div class="section-heading">
 
           <div>
-
             <p class="section-label">
               01 / Nuestros servicios
             </p>
-
-            <!-- TÍTULO PERSONALIZADO -->
 
             <h2>
               <img
                 src="assets/especialistas.png"
                 alt="Especialistas en Nail Art. Productos Premium"
                 class="brand-art services-title-art"
-                loading="lazy" onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
+                loading="lazy"
+                onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
             </h2>
-
           </div>
-
 
           <div class="section-heading-right">
 
@@ -246,46 +175,63 @@
               creatividad, técnica y cuidado.
             </p>
 
+            <!-- INSTAGRAM CON LOGO -->
+
             <a
               href="https://www.instagram.com/jae.nailhouse/"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-link">
+              class="text-link instagram-inspiration-link">
 
-              Más inspiración en Instagram
-              <span>↗</span>
+              <svg
+                class="instagram-link-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true">
 
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"/>
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4.5"/>
+
+                <circle
+                  cx="17.8"
+                  cy="6.2"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"/>
+              </svg>
+
+              <span class="instagram-link-label">
+                Más inspiración en Instagram
+              </span>
+
+              <span aria-hidden="true">↗</span>
             </a>
 
           </div>
-
         </div>
 
-
-        <!-- =====================================
-             CARRUSEL DE DISEÑOS
-
-             Las tarjetas se crean automáticamente
-             desde script.js.
-
-             Incluye:
-             - Fotografías
-             - Cambio automático cada 5 segundos
-             - Descripciones
-             - Precios disponibles
-             - Reservación por WhatsApp
-        ====================================== -->
+        <!-- CARRUSEL GENERADO POR SCRIPT.JS -->
 
         <div
           id="nail-collections"
           class="nail-collections">
         </div>
 
-
-        <!-- BOTÓN GENERAL -->
-
         <div class="services-footer">
-
           <p>
             ¿Buscas un diseño personalizado?
             Cuéntanos tu idea y te ayudamos a elegir.
@@ -294,13 +240,9 @@
           <a href="#reservar" class="btn btn-dark">
             Agenda tu cita
           </a>
-
         </div>
 
-
-        <!-- =====================================
-             CARTA DE PRECIOS
-        ====================================== -->
+        <!-- CARTA DE PRECIOS -->
 
         <div class="price-menu">
 
@@ -312,8 +254,8 @@
             src="assets/menú.png"
             alt="Menú de Servicios"
             class="brand-art price-title-art"
-            loading="lazy" onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
-
+            loading="lazy"
+            onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
 
           <a
             href="#reservar"
@@ -321,17 +263,14 @@
             Agenda tu cita
           </a>
 
-
           <div class="price-grid">
 
             <!-- DRY MANICURA / PEDICURA -->
 
             <div class="price-group">
-
               <h3>Dry Mani / Dry Pedi</h3>
 
               <ul class="service-prices">
-
                 <li>
                   <span>Dry manicura</span>
                   <span>$280</span>
@@ -357,16 +296,12 @@
                   </span>
                   <span>$650</span>
                 </li>
-
               </ul>
-
             </div>
-
 
             <!-- GEL SEMIPERMANENTE -->
 
             <div class="price-group">
-
               <h3>Gel semipermanente</h3>
 
               <p class="price-note">
@@ -375,7 +310,6 @@
               </p>
 
               <ul class="service-prices">
-
                 <li>
                   <span>1 tono</span>
                   <span>$350</span>
@@ -385,16 +319,12 @@
                   <span>Retiro</span>
                   <span>$50</span>
                 </li>
-
               </ul>
-
             </div>
-
 
             <!-- ACRÍLICO Y SOFT GEL -->
 
             <div class="price-group">
-
               <h3>Acrílico y Soft Gel</h3>
 
               <p class="price-note">
@@ -402,7 +332,6 @@
               </p>
 
               <ul class="service-prices">
-
                 <li>
                   <span>Extensiones</span>
                   <span>Desde $700</span>
@@ -412,16 +341,12 @@
                   <span>Retiro</span>
                   <span>$100</span>
                 </li>
-
               </ul>
-
             </div>
-
 
             <!-- POLYGEL -->
 
             <div class="price-group">
-
               <h3>Polygel</h3>
 
               <p class="price-note">
@@ -429,7 +354,6 @@
               </p>
 
               <ul class="service-prices">
-
                 <li>
                   <span>Extensiones</span>
                   <span>Desde $750</span>
@@ -439,16 +363,12 @@
                   <span>Retiro</span>
                   <span>$120</span>
                 </li>
-
               </ul>
-
             </div>
-
 
             <!-- DECORACIÓN BÁSICA -->
 
             <div class="price-group">
-
               <h3>Decoración básica</h3>
 
               <p class="price-note">
@@ -458,21 +378,16 @@
               </p>
 
               <ul class="service-prices">
-
                 <li>
                   <span>Básica 10 uñas</span>
                   <span>$100</span>
                 </li>
-
               </ul>
-
             </div>
 
-
-            <!-- DECORACIÓN AVANZADA -->
+            <!-- DECORACIÓN AVANZADA ACTUALIZADA -->
 
             <div class="price-group">
-
               <h3>Decoración avanzada</h3>
 
               <p class="price-note">
@@ -482,101 +397,55 @@
               </p>
 
               <ul class="service-prices">
-
                 <li>
-                  <span>2 uñas</span>
-                  <span>$100</span>
+                  <span>Por diseño</span>
+                  <span>Desde $100</span>
                 </li>
-
-                <li>
-                  <span>4 uñas</span>
-                  <span>$200</span>
-                </li>
-
-                <li>
-                  <span>6 uñas</span>
-                  <span>$300</span>
-                </li>
-
-                <li>
-                  <span>8 uñas</span>
-                  <span>$400</span>
-                </li>
-
-                <li>
-                  <span>10 uñas</span>
-                  <span>$500</span>
-                </li>
-
               </ul>
-
             </div>
-
 
             <!-- VITAMINA -->
 
             <div class="price-group">
-
               <h3>Vitamina</h3>
 
               <ul class="service-prices">
-
                 <li>
                   <span>Aplicación de tratamiento</span>
                   <span>$100</span>
                 </li>
-
               </ul>
-
             </div>
 
           </div>
-
         </div>
 
       </div>
-
     </section>
 
+    <!-- CARE IS THE NEW LUXURY -->
 
-    <!-- =====================================
-         FRANJA BLANCA - LETRAS DORADAS
-         CARE IS THE NEW LUXURY
-         LA FRANJA NEGRA INICIA EN LA SECCIÓN 02
-    ====================================== -->
-
-    <section class="luxury-banner luxury-banner--light" aria-label="Care is the new luxury">
+    <section
+      class="luxury-banner luxury-banner--light"
+      aria-label="Care is the new luxury">
 
       <div class="container">
-
         <img
           src="assets/careisluxury2.png"
           alt="Care is the new luxury"
           class="brand-art luxury-art-banner luxury-art-banner--gold"
           loading="lazy">
-
       </div>
-
     </section>
 
+    <!-- EXPERIENCIA -->
 
-    <!-- =====================================
-         EXPERIENCIA JAE
-         INICIO DE LA FRANJA NEGRA
-    ====================================== -->
-
-    <section
-      id="experiencia"
-      class="why-jae">
-
+    <section id="experiencia" class="why-jae">
       <div class="container">
 
         <p class="section-label light">
           02 / La experiencia
         </p>
-
-
-        <!-- NUEVOS PNG DE EXPERIENCIA -->
 
         <div class="experience-art-row">
 
@@ -593,84 +462,51 @@
             alt="Diseño que se ve, cuidado que se siente"
             class="brand-art experience-detail-art"
             loading="lazy">
-
         </div>
-
-
-        <!-- BENEFICIOS -->
 
         <div class="why-grid">
 
           <article>
-
             <span>01</span>
-
             <h3>Nail Art Specialists</h3>
-
             <p>
-              Diseños pensados específicamente
-              para ti.
+              Diseños pensados específicamente para ti.
             </p>
-
           </article>
 
-
           <article>
-
             <span>02</span>
-
             <h3>Cuidado</h3>
-
             <p>
-              Técnica enfocada en proteger
-              la uña natural.
+              Técnica enfocada en proteger la uña natural.
             </p>
-
           </article>
 
-
           <article>
-
             <span>03</span>
-
             <h3>Higiene</h3>
-
             <p>
               Herramientas y protocolos
               de limpieza profesional.
             </p>
-
           </article>
 
-
           <article>
-
             <span>04</span>
-
             <h3>Diseño</h3>
-
             <p>
               Cada diseño se adapta a tu estilo
               y personalidad.
             </p>
-
           </article>
 
         </div>
-
       </div>
-
     </section>
 
+    <!-- MEN CARE -->
 
-    <!-- =====================================
-         MEN CARE
-    ====================================== -->
-
-    <section
-      id="man-care"
-      class="man-care-section">
-
+    <section id="man-care" class="man-care-section">
       <div class="container man-care-grid">
 
         <div class="man-care-copy">
@@ -679,9 +515,6 @@
             03 / Men Care
           </p>
 
-
-          <!-- NUEVO PNG MEN CARE -->
-
           <h2>
             <img
               src="assets/men care.png"
@@ -689,7 +522,6 @@
               class="brand-art man-care-title-art"
               loading="lazy">
           </h2>
-
 
           <p>
             Manicura y cuidado de manos para hombres,
@@ -703,9 +535,6 @@
             con nuestro equipo.
           </p>
 
-
-          <!-- RESERVAR MEN CARE -->
-
           <a
             href="https://wa.me/525516383938?text=Hola%20JAE%2C%20me%20interesa%20conocer%20los%20servicios%20de%20Men%20Care.%20%C2%BFMe%20pueden%20compartir%20informaci%C3%B3n%20y%20disponibilidad%3F"
             target="_blank"
@@ -713,41 +542,57 @@
             class="btn btn-dark">
 
             Consultar Men Care
-
           </a>
-
         </div>
 
+        <!-- CARRUSEL MEN CARE -->
 
-        <!-- GALERÍA MEN CARE: las fotos disponibles se agregan desde script.js -->
-        <div class="men-care-carousel" data-men-carousel aria-label="Galería de Men Care">
-          <div class="men-care-track" aria-live="off"></div>
+        <div
+          class="men-care-carousel"
+          data-men-carousel
+          aria-label="Galería de Men Care">
+
+          <div
+            class="men-care-track"
+            aria-live="off">
+          </div>
+
           <div class="men-care-controls">
-            <button type="button" data-men-prev aria-label="Foto anterior de Men Care">&#8592;</button>
-            <span class="men-care-count" aria-live="polite">1 / 1</span>
-            <button type="button" data-men-next aria-label="Foto siguiente de Men Care">&#8594;</button>
+
+            <button
+              type="button"
+              data-men-prev
+              aria-label="Foto anterior de Men Care">
+              &#8592;
+            </button>
+
+            <span
+              class="men-care-count"
+              aria-live="polite">
+              1 / 1
+            </span>
+
+            <button
+              type="button"
+              data-men-next
+              aria-label="Foto siguiente de Men Care">
+              &#8594;
+            </button>
+
           </div>
         </div>
 
       </div>
-
     </section>
 
-
-    <!-- =====================================
-         HIGIENE Y ESTERILIZACIÓN
-    ====================================== -->
+    <!-- HIGIENE Y ESTERILIZACIÓN -->
 
     <section class="sterile-section">
-
       <div class="container">
 
         <p class="section-label">
           Higiene y esterilización
         </p>
-
-
-        <!-- NUEVO PNG EL RITUAL -->
 
         <div class="sterile-art-head">
 
@@ -759,15 +604,12 @@
               loading="lazy">
           </h2>
 
-
           <p>
             Cada detalle importa. Cuidamos nuestras
             herramientas y procesos de higiene para
             brindarte una experiencia segura.
           </p>
-
         </div>
-
 
         <!-- CARRUSEL DE ESTERILIZACIÓN -->
 
@@ -781,50 +623,37 @@
             ←
           </button>
 
-
           <div class="sterile-track">
 
             <figure class="sterile-slide">
-
               <img
                 src="assets/Limpieza1.jpg"
                 alt="Esterilización de herramientas JAE"
                 loading="lazy">
-
             </figure>
 
-
             <figure class="sterile-slide">
-
               <img
                 src="assets/Limpieza2.jpg"
                 alt="Limpieza de herramientas JAE"
                 loading="lazy">
-
             </figure>
 
-
             <figure class="sterile-slide">
-
               <img
                 src="assets/Limpieza3.jpg"
                 alt="Proceso de esterilización JAE"
                 loading="lazy">
-
             </figure>
 
-
             <figure class="sterile-slide">
-
               <img
                 src="assets/Limpieza4.PNG"
                 alt="Herramientas esterilizadas JAE"
                 loading="lazy">
-
             </figure>
 
           </div>
-
 
           <button
             type="button"
@@ -835,23 +664,13 @@
           </button>
 
         </div>
-
       </div>
-
     </section>
 
+    <!-- RESERVACIONES -->
 
-    <!-- =====================================
-         RESERVACIONES
-    ====================================== -->
-
-    <section
-      id="reservar"
-      class="booking-section">
-
+    <section id="reservar" class="booking-section">
       <div class="container booking-grid">
-
-        <!-- INFORMACIÓN -->
 
         <div class="booking-copy">
 
@@ -859,11 +678,7 @@
             04 / Agenda
           </p>
 
-
-          <!-- NUEVO PNG -->
-
           <div class="booking-art-panel">
-
             <h2>
               <img
                 src="assets/tuestilotumomento.png"
@@ -871,9 +686,7 @@
                 class="brand-art booking-title-art"
                 loading="lazy">
             </h2>
-
           </div>
-
 
           <p>
             Selecciona el servicio, fecha y horario
@@ -881,9 +694,7 @@
             abriremos WhatsApp con todos tus datos.
           </p>
 
-
           <div class="booking-note">
-
             <span>✦</span>
 
             <p>
@@ -891,11 +702,7 @@
               que JAE valide la disponibilidad
               por WhatsApp.
             </p>
-
           </div>
-
-
-          <!-- CONTACTO -->
 
           <div class="contact-buttons">
 
@@ -922,59 +729,33 @@
             </a>
 
           </div>
-
         </div>
 
+        <!-- FORMULARIO DE RESERVA -->
 
-        <!-- FORMULARIO -->
-
-        <form
-          id="booking-form"
-          class="booking-form">
-
-          <!-- SERVICIO -->
+        <form id="booking-form" class="booking-form">
 
           <div class="form-group">
+            <label for="service">Servicio</label>
 
-            <label for="service">
-              Servicio
-            </label>
-
-            <select
-              id="service"
-              required>
-
+            <select id="service" required>
               <option value="">
                 Selecciona un servicio
               </option>
-
               <option>Dry Manicura</option>
-
               <option>Dry Pedicura</option>
-
               <option>Gel semipermanente</option>
-
               <option>Acrílico y Soft Gel</option>
-
               <option>Polygel</option>
-
               <option>Nail Art</option>
-
               <option>Vitamina</option>
-
               <option>
                 Men Care (consultar disponibilidad)
               </option>
-
             </select>
-
           </div>
 
-
-          <!-- DISEÑO DE INSPIRACIÓN -->
-
           <div class="form-group">
-
             <label for="design">
               Diseño de inspiración (opcional)
             </label>
@@ -984,56 +765,37 @@
               type="text"
               placeholder="Ej. Aurora, Baby Boomer, Polka Dots..."
               maxlength="100">
-
           </div>
-
-
-          <!-- FECHA Y HORARIO -->
 
           <div class="form-row">
 
             <div class="form-group">
-
-              <label for="date">
-                Día
-              </label>
+              <label for="date">Día</label>
 
               <input
                 id="date"
                 type="date"
                 required>
-
             </div>
 
-
             <div class="form-group">
-
-              <label for="time">
-                Horario
-              </label>
+              <label for="time">Horario</label>
 
               <select
                 id="time"
                 required
                 disabled>
-
                 <option value="">
                   Elige primero un día
                 </option>
-
               </select>
-
             </div>
 
           </div>
 
-
-          <!-- DATOS DEL CLIENTE -->
-
           <div class="form-row">
 
             <div class="form-group">
-
               <label for="client-name">
                 Tu nombre
               </label>
@@ -1044,12 +806,9 @@
                 maxlength="90"
                 autocomplete="name"
                 required>
-
             </div>
 
-
             <div class="form-group">
-
               <label for="phone">
                 Teléfono
               </label>
@@ -1061,13 +820,9 @@
                 autocomplete="tel"
                 inputmode="tel"
                 required>
-
             </div>
 
           </div>
-
-
-          <!-- ENVIAR POR WHATSAPP -->
 
           <button
             id="submit-booking"
@@ -1076,11 +831,7 @@
 
             Solicitar cita por WhatsApp
             <span>→</span>
-
           </button>
-
-
-          <!-- ESTADO -->
 
           <p
             id="booking-status"
@@ -1090,20 +841,12 @@
           </p>
 
         </form>
-
       </div>
-
     </section>
 
+    <!-- UBICACIÓN -->
 
-    <!-- =====================================
-         UBICACIÓN
-    ====================================== -->
-
-    <section
-      id="ubicacion"
-      class="location-section">
-
+    <section id="ubicacion" class="location-section">
       <div class="container location-grid">
 
         <div>
@@ -1117,11 +860,9 @@
               src="assets/satélite.png"
               alt="Nos vemos en Satélite"
               class="brand-art location-title-art"
-              loading="lazy" onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
+              loading="lazy"
+              onerror="this.onerror=null;this.src=encodeURI(decodeURI(this.src).normalize('NFD'))">
           </h2>
-
-
-          <!-- DIRECCIÓN -->
 
           <p class="location-text">
             Avenida Fuentes de Satélite #146,
@@ -1131,14 +872,13 @@
             Estado de México.
           </p>
 
-
-          <!-- HORARIOS -->
+          <!-- HORARIOS ACTUALIZADOS -->
 
           <div class="hours">
 
             <p>
               <strong>Lunes</strong>
-              <span>Solo con cita</span>
+              <span>Consulta disponibilidad</span>
             </p>
 
             <p>
@@ -1158,62 +898,44 @@
 
           </div>
 
-
-          <!-- GOOGLE MAPS -->
-
           <a
             href="https://www.google.com/maps/search/?api=1&amp;query=Avenida+Fuentes+de+Sat%C3%A9lite+146+PH+Local+2+Jardines+de+Sat%C3%A9lite+53129"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-dark">
-
             Ver ubicación
-
           </a>
 
         </div>
 
-
         <!-- MAPA -->
 
         <div class="map-wrapper">
-
           <iframe
             title="Mapa JAE Nail House"
             src="https://maps.google.com/maps?q=Avenida+Fuentes+de+Sat%C3%A9lite+146+PH+Local+2+Jardines+de+Sat%C3%A9lite+53129&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
 
-
-  <!-- =====================================
-       FOOTER
-  ====================================== -->
+  <!-- FOOTER -->
 
   <footer>
-
     <div class="container footer-grid">
 
-      <!-- LOGO DE MARCA -->
-
       <div class="footer-brand">
-
         <img
           src="assets/careisluxury.png"
           alt="Care is the new luxury - JAE Nail House"
           class="brand-art luxury-art-footer"
           loading="lazy">
-
       </div>
-
 
       <!-- DIRECTORIO -->
 
@@ -1224,28 +946,18 @@
         <h3>Directorio</h3>
 
         <div class="footer-directory-links">
-
           <a href="#inicio">Inicio</a>
-
           <a href="#servicios">Servicios</a>
-
           <a href="#experiencia">Nosotros</a>
-
           <a href="#man-care">Men Care</a>
-
           <a href="#reservar">Reservaciones</a>
-
           <a href="#ubicacion">Ubicación</a>
-
         </div>
-
       </nav>
-
 
       <!-- REDES SOCIALES -->
 
       <div class="footer-social">
-
         <h3>Síguenos</h3>
 
         <div class="footer-social-links">
@@ -1287,11 +999,8 @@
                 r="1"
                 fill="currentColor"
                 stroke="none"/>
-
             </svg>
-
           </a>
-
 
           <!-- WHATSAPP -->
 
@@ -1309,21 +1018,15 @@
               aria-hidden="true">
 
               <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.48 0 .13 5.35.12 11.93a11.86 11.86 0 0 0 1.6 5.97L0 24l6.27-1.64a11.94 11.94 0 0 0 5.7 1.45h.01c6.57 0 11.92-5.35 11.93-11.93a11.86 11.86 0 0 0-3.39-8.4ZM12 21.8a9.89 9.89 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.64-.24-.38a9.88 9.88 0 0 1-1.52-5.24C2.1 6.46 6.53 2.03 12 2.03a9.81 9.81 0 0 1 7 2.9 9.81 9.81 0 0 1 2.9 7c0 5.46-4.44 9.87-9.9 9.87Zm5.42-7.41c-.3-.15-1.75-.87-2.02-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.14 4.53.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.75-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/>
-
             </svg>
-
           </a>
 
         </div>
-
       </div>
 
     </div>
 
-
-    <!-- =====================================
-         PARTE INFERIOR DEL FOOTER
-    ====================================== -->
+    <!-- PARTE INFERIOR DEL FOOTER -->
 
     <div class="container footer-bottom">
 
@@ -1331,21 +1034,13 @@
         JAE Nail House · Nail Art Specialists
       </p>
 
-
       <div class="footer-bottom-right">
 
         <p class="footer-slogan">
           La belleza comienza con el cuidado.
         </p>
 
-
         <!-- LOGO WEB-LTR -->
-
-        <!--
-          IMPORTANTE:
-          Reemplaza TU-DOMINIO-DE-WEB-LTR.com
-          por la dirección real de tu negocio.
-        -->
 
         <a
           href="https://web-ltr.com"
@@ -1359,32 +1054,21 @@
             src="assets/1.png"
             alt="WEB-LTR"
             loading="lazy">
-
         </a>
 
       </div>
-
     </div>
-
   </footer>
 
-
-  <!-- =====================================
-       BOTÓN INFERIOR EN MÓVILES
-  ====================================== -->
+  <!-- BOTÓN DE RESERVAR EN MÓVILES -->
 
   <a
     href="#reservar"
     class="floating-book">
-
     Agenda tu cita
-
   </a>
 
-
-  <!-- =====================================
-       BOTÓN FLOTANTE DE WHATSAPP
-  ====================================== -->
+  <!-- WHATSAPP FLOTANTE -->
 
   <a
     href="https://wa.me/525516383938?text=%C2%A1Hola%2C%20JAE%20Nail%20House%21%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20y%20disponibilidad%20para%20agendar%20una%20cita.%20%C2%A1Gracias%21"
@@ -1401,9 +1085,7 @@
       fill="currentColor">
 
       <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.48 0 .13 5.35.12 11.93a11.86 11.86 0 0 0 1.6 5.97L0 24l6.27-1.64a11.94 11.94 0 0 0 5.7 1.45h.01c6.57 0 11.92-5.35 11.93-11.93a11.86 11.86 0 0 0-3.39-8.4ZM12 21.8a9.89 9.89 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.64-.24-.38a9.88 9.88 0 0 1-1.52-5.24C2.1 6.46 6.53 2.03 12 2.03a9.81 9.81 0 0 1 7 2.9 9.81 9.81 0 0 1 2.9 7c0 5.46-4.44 9.87-9.9 9.87Zm5.42-7.41c-.3-.15-1.75-.87-2.02-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.14 4.53.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.75-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/>
-
     </svg>
-
   </a>
 
 </body>
