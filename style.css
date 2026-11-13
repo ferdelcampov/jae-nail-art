@@ -2770,3 +2770,56 @@ select:focus-visible,
   }
   .men-care-slide { height: 340px; }
 }
+
+/* ==========================================
+   TÍTULOS EN PNG: SERVICIOS, CARTA Y UBICACIÓN
+========================================== */
+
+/* Especialistas en Nail Art + Productos Premium (ya viene en dorado y negro) */
+.section-heading .services-title-art {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  max-height: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  filter: none;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Carta de precios: "Menú de Servicios" */
+.price-title-art {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin: 14px 0 50px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Ubicación: "Nos vemos en Satélite" */
+.location-title-art {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+  object-position: left center;
+}
+
+@media (max-width: 600px) {
+  .section-heading .services-title-art {
+    max-width: 100%;
+    max-height: none;
+  }
+  .price-title-art,
+  .location-title-art {
+    max-width: 100%;
+  }
+}
