@@ -602,7 +602,7 @@ function updateTimes() {
 
   if (weekday === 1) {
     setStatus(
-      "Los lunes se atiende únicamente con cita previa. JAE confirmará tu solicitud por WhatsApp."
+      "Los lunes, consulta disponibilidad. JAE confirmará tu solicitud por WhatsApp."
     );
   } else {
     setStatus("");
@@ -668,7 +668,7 @@ function initBookingForm() {
       ).getDay() === 1;
 
     const mondayNote = isMonday
-      ? "\nNota: sé que los lunes se atiende solo con cita previa."
+      ? "\nNota: quisiera consultar la disponibilidad para el lunes."
       : "";
 
     // MENSAJE DE WHATSAPP
