@@ -32,7 +32,7 @@ const nailCategories = [
     description: "Extensiones resistentes con forma y longitud personalizadas.",
     price: 700,
     bookingService: "Acrílico y Soft Gel",
-    photos: ["acrílico2.png", "acrílico.png"]
+    photos: ["soft gel.png"]
   },
   {
     title: "Aurora",
@@ -40,7 +40,7 @@ const nailCategories = [
     bookingService: "Nail Art",
     photos: [
       "acetato.png", "aurora.png",
-      ["aurora-cromado-referencia.webp", "cromados.png"]
+      ["aurota.png]
     ]
   },
   {
@@ -48,9 +48,7 @@ const nailCategories = [
     description: "Degradados suaves y elegantes, desde tonos nude hasta vino.",
     bookingService: "Nail Art",
     photos: [
-      ["baby-boomer-vino.webp", "Manicura ombré vino y nude.png"],
-      ["baby-boomer-rosa.webp", "Manicura rosa ombré brillante.png"],
-      "babyboomer.png", "babyboomer2.png"
+      ["babyboomer..png", "babyboomer (1).png"],
     ]
   },
   {
@@ -63,31 +61,31 @@ const nailCategories = [
     title: "Cat Eye",
     description: "Efecto magnético con reflejos que cambian con la luz.",
     bookingService: "Nail Art",
-    photos: ["cateye2.png", "cateye.png"]
+    photos: ["cat eye.png"]
   },
   {
     title: "Cristales",
     description: "Pequeños cristales que aportan luz y elegancia a tus uñas.",
     bookingService: "Nail Art",
-    photos: [["cristales-referencia.webp", "cristales.png"]]
+    photos: [["cristales.png"]]
   },
   {
     title: "Francés corto",
     description: "La manicura francesa clásica para uñas cortas.",
     bookingService: "Nail Art",
-    photos: ["francescorto.png"]
+    photos: ["francés corto.png"]
   },
   {
     title: "Francés",
     description: "Líneas limpias y un diseño clásico y atemporal.",
     bookingService: "Nail Art",
-    photos: ["frances.png"]
+    photos: ["francés.png"]
   },
   {
     title: "Matching",
     description: "Diseños coordinados que combinan estilo y detalle.",
     bookingService: "Nail Art",
-    photos: ["matching.png"]
+    photos: ["matching.m.png"]
   },
   {
     title: "Polygel",
@@ -95,21 +93,20 @@ const nailCategories = [
     price: 750,
     bookingService: "Polygel",
     photos: [
-      ["polygel-aplicacion.webp", "Aplicación de gel rosa brillante.png"],
-      "poligel2.png", "Polygel.png"
+      ["poligel2.png"],
     ]
   },
   {
     title: "Polka Dots",
     description: "Diseños delicados con puntos y detalles minimalistas.",
     bookingService: "Nail Art",
-    photos: ["puntitos.png", "puntitos2.png"]
+    photos: ["polkadots..png"]
   },
   {
     title: "Relieve",
     description: "Detalles tridimensionales que dan volumen y textura.",
     bookingService: "Nail Art",
-    photos: ["relieve.png", "relieve2.png", "relieve3.png"]
+    photos: ["relieve (1).png"]
   },
   {
     title: "Gel semipermanente",
@@ -117,9 +114,7 @@ const nailCategories = [
     price: 350,
     bookingService: "Gel semipermanente",
     photos: [
-      ["gel-semi-natural.webp", "Manicura baby boomer con brillo sutil.png"],
-      ["gel-semi-perlado.webp", "Manicura nude perlada brillante.png"],
-      "GelSemipermanente.png", "softgel2.png"
+      ["gelsemipermanente.png"]
     ]
   },
   {
@@ -127,8 +122,7 @@ const nailCategories = [
     description: "Destellos y acabados brillantes para un diseño especial.",
     bookingService: "Nail Art",
     photos: [
-      ["glitter-holografico.webp", "Manicura perlada con brillo holográfico.png"],
-      "brillitos.png"
+      ["glitter.png"],
     ]
   },
   {
@@ -136,8 +130,7 @@ const nailCategories = [
     description: "Diseños creativos con detalles decorativos y accesorios únicos.",
     bookingService: "Nail Art",
     photos: [
-      ["nailart-charms-referencia.webp", "charms.png"],
-      ["nail-art-ondas.webp", "Uñas marfil con ondas doradas.png"]
+      ["charms.png"],
     ]
   },
   {
@@ -145,16 +138,14 @@ const nailCategories = [
     description: "Decoraciones con volumen y detalles dorados en relieve.",
     bookingService: "Nail Art",
     photos: [
-      ["texturas-calabazas.webp", "Manicura dorada con calabazas elegantes.png"],
-      ["texturas-dorado.webp", "Uñas doradas con diseño ondulado.png"],
-      "charms2.png"
+      ["texturas.png"],
     ]
   },
   {
     title: "Tintas de alcohol",
     description: "Efectos artísticos de color. Nombre comercial por confirmar.",
     bookingService: "Nail Art",
-    photos: ["tintas de alcohol.png", "tintas de alcohol2.png"]
+    photos: ["tintas de alcohol (cambiará el nombre).png"]
   },
   {
     title: "Vitamina",
@@ -162,7 +153,7 @@ const nailCategories = [
     price: 100,
     bookingService: "Vitamina",
     photos: [
-      ["vitamina-sin-marca.webp", "Botella blanca sin marca con uñas antes y después.png"]
+      ["vitamina.png"]
     ]
   }
 ];
