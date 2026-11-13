@@ -123,7 +123,7 @@ const nailCategories = [
     description: "Extensiones ligeras y resistentes con un acabado personalizado.",
     price: 750,
     bookingService: "Polygel",
-    photos: ["poligel.png"]
+    photos: ["poligel2.png"]
   },
 
   // VITAMINA: SIN CAMBIOS
@@ -134,7 +134,7 @@ const nailCategories = [
     bookingService: "Vitamina",
     photos: [
       [
-        "vitamina-sin-marca.webp",
+        "vitamina.png",
         "Botella blanca sin marca con uñas antes y después.png"
       ]
     ]
