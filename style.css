@@ -2823,3 +2823,182 @@ select:focus-visible,
     max-width: 100%;
   }
 }
+
+
+/* ==========================================
+   JAE - AJUSTES DE LEGIBILIDAD
+========================================== */
+
+/* INSTAGRAM */
+
+.instagram-inspiration-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: fit-content;
+  color: var(--black);
+}
+
+.instagram-link-icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  color: var(--gold-dark);
+  transition: transform .2s, color .2s;
+}
+
+.instagram-inspiration-link:hover .instagram-link-icon {
+  transform: scale(1.1);
+  color: var(--gold);
+}
+
+/* TEXTOS GENERALES */
+
+body {
+  font-size: 17px;
+}
+
+.section-label {
+  font-size: 13px;
+}
+
+.desktop-nav a,
+.mobile-book {
+  font-size: 15px;
+}
+
+.btn,
+.text-link {
+  font-size: 15px;
+}
+
+.why-grid span {
+  font-size: 13px;
+}
+
+.why-grid p {
+  font-size: 14px;
+}
+
+.man-care-note,
+.booking-note p {
+  font-size: 14px;
+}
+
+.form-group label,
+.booking-status {
+  font-size: 14px;
+}
+
+.hours p {
+  font-size: 14px;
+}
+
+.footer-directory-links a {
+  font-size: 13px;
+}
+
+.footer-bottom,
+.footer-slogan {
+  font-size: 11px;
+}
+
+/* ==========================================
+   SOLO COMPUTADORAS
+========================================== */
+
+@media (min-width: 1024px) {
+
+  /* CARTA DE PRECIOS */
+
+  .price-group h3 {
+    font-size: 25px;
+  }
+
+  .price-note {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .service-prices {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .service-prices li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* TARJETAS DE UÑAS */
+
+  .nail-category-card h3 {
+    font-size: 21px;
+  }
+
+  .nail-description {
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 76px;
+  }
+
+  .nail-price {
+    font-size: 15px;
+  }
+
+  .nail-price strong {
+    font-size: 19px;
+  }
+
+  .nail-reserve {
+    font-size: 15px;
+  }
+
+  .services-footer p {
+    font-size: 15px;
+  }
+}
+
+/* ==========================================
+   CELULARES
+   CONSERVAR TAMAÑOS DEL MENÚ Y CARRUSEL
+========================================== */
+
+@media (max-width: 600px) {
+
+  .price-group h3 {
+    font-size: 22px;
+  }
+
+  .price-note,
+  .service-prices {
+    font-size: 12px;
+  }
+
+  .nail-category-card h3 {
+    font-size: 17px;
+  }
+
+  .nail-description {
+    font-size: 12px;
+  }
+
+  .nail-price {
+    font-size: 13px;
+  }
+
+  .nail-price strong {
+    font-size: 17px;
+  }
+
+  .nail-reserve {
+    font-size: 14px;
+  }
+
+  .instagram-link-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
