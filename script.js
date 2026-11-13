@@ -157,16 +157,23 @@ function photoVariants(filename) {
   ])];
 }
 
-function checkPhotoExists(filename) {
-  return new Promise(resolve => {
-    const tester = new Image();
 
-    tester.onload = () => resolve(true);
-    tester.onerror = () => resolve(false);
+async function checkPhotoExists(filename) {
+  try {
+    const response = await fetch(
+      photoPath(filename),
+      {
+        method: "HEAD",
+        cache: "force-cache"
+      }
+    );
 
-    tester.src = photoPath(filename);
-  });
+    return response.ok;
+  } catch (error) {
+    return false;
+  }
 }
+
 
 async function firstAvailablePhoto(option) {
   const choices = Array.isArray(option)
