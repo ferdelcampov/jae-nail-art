@@ -2894,6 +2894,38 @@ select:focus-visible,
   color: var(--gold);
 }
 
+/* FLECHITA DIBUJADA CON CSS (no emoji) — "Más inspiración en Instagram" */
+
+.instagram-inspiration-link::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 2px;
+  border-top: 2px solid var(--gold-dark);
+  border-right: 2px solid var(--gold-dark);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  transition: transform .3s ease, border-color .3s ease;
+  animation: igNudge 1.8s ease-in-out infinite;
+}
+
+.instagram-inspiration-link:hover::after {
+  border-color: var(--gold);
+  animation: none;
+  transform: rotate(45deg) translate(3px, -3px);
+}
+
+@keyframes igNudge {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); }
+  50% { transform: rotate(45deg) translate(3px, -3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .instagram-inspiration-link::after {
+    animation: none;
+  }
+}
+
 /* TEXTOS GENERALES */
 
 body {
