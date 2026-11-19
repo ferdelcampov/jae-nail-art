@@ -3002,36 +3002,3 @@ body {
     height: 20px;
   }
 }
-
-/* ==========================================
-   MAPA: BOTÓN "ABRIR EN MAPS" SOBRE EL MAPA
-========================================== */
-
-.map-wrapper {
-  position: relative;
-}
-
-.map-open {
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0 22px;
-  background: var(--black);
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  box-shadow: 0 8px 24px rgba(0,0,0,.2);
-  transition: background .25s;
-}
-
-.map-open:hover {
-  background: var(--gold);
-}
