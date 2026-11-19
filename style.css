@@ -1212,6 +1212,34 @@ footer {
   box-shadow: 0 12px 30px rgba(0,0,0,.3);
 }
 
+/* Aparece con pop-up (script.js: initWhatsappPop) */
+.whatsapp-float.wa-pending {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.whatsapp-float.wa-popped {
+  animation: waPop .6s cubic-bezier(.34, 1.56, .64, 1) backwards;
+}
+
+@keyframes waPop {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float.wa-popped {
+    animation: none;
+  }
+}
+
 /* ==========================================
    RESPONSIVE — TABLETS
 ========================================== */
