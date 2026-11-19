@@ -1616,15 +1616,15 @@ footer {
   /* WHATSAPP FLOTANTE */
 
   .whatsapp-float {
-    right: 18px;
+    right: 14px;
     bottom: 85px;
-    width: 55px;
-    height: 55px;
+    width: 46px;
+    height: 46px;
   }
 
   .whatsapp-float svg {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
   }
 }
 
