@@ -1220,17 +1220,38 @@ footer {
 }
 
 .whatsapp-float.wa-popped {
-  animation: waPop .6s cubic-bezier(.34, 1.56, .64, 1) backwards;
+  animation: waPop 1.4s cubic-bezier(.34, 1.56, .64, 1) backwards;
 }
 
+/* Entra en negro, se pone color miel como el hover y regresa a negro */
 @keyframes waPop {
   0% {
     opacity: 0;
     transform: scale(.3);
+    background: var(--black);
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.06);
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.06);
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
   }
   100% {
     opacity: 1;
     transform: scale(1);
+    background: var(--black);
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
   }
 }
 
