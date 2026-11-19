@@ -938,5 +938,24 @@ document.addEventListener(
     initSterileCarousel();
     initMenCarousel();
     initBookingForm();
+    initWhatsappPop();
   }
 );
+
+// ==========================================
+// WHATSAPP: APARECE CON POP-UP DESPUÉS DE UNOS SEGUNDOS
+// ==========================================
+
+function initWhatsappPop() {
+  const btn = document.querySelector(".whatsapp-float");
+  if (!btn) return;
+
+  const DELAY_MS = 3000;
+
+  btn.classList.add("wa-pending");
+
+  setTimeout(() => {
+    btn.classList.remove("wa-pending");
+    btn.classList.add("wa-popped");
+  }, DELAY_MS);
+}
