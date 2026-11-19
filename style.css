@@ -1212,45 +1212,36 @@ footer {
   box-shadow: 0 12px 30px rgba(0,0,0,.3);
 }
 
-/* Aparece con pop-up (script.js: initWhatsappPop) */
-.whatsapp-float.wa-pending {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
+/* Salta cada 7 s (script.js: initWhatsappPop).
+   Siempre visible: sube, se pone color miel como el hover y regresa a negro */
 .whatsapp-float.wa-popped {
-  animation: waPop 1.4s cubic-bezier(.34, 1.56, .64, 1) backwards;
+  animation: waJump 1.2s cubic-bezier(.34, 1.4, .64, 1) backwards;
 }
 
-/* Entra en negro, se pone color miel como el hover y regresa a negro */
-@keyframes waPop {
+@keyframes waJump {
   0% {
-    opacity: 0;
-    transform: scale(.3);
+    transform: translateY(0) scale(1);
     background: var(--black);
-    color: #fff;
     box-shadow: 0 8px 25px rgba(0,0,0,.25);
   }
-  45% {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.06);
+  30% {
+    transform: translateY(-16px) scale(1.06);
     background: var(--gold);
-    color: #fff;
-    box-shadow: 0 12px 30px rgba(0,0,0,.3);
+    box-shadow: 0 14px 30px rgba(0,0,0,.3);
   }
-  70% {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.06);
+  55% {
+    transform: translateY(0) scale(.96);
     background: var(--gold);
-    color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+  }
+  75% {
+    transform: translateY(-5px) scale(1.04);
+    background: var(--gold);
     box-shadow: 0 12px 30px rgba(0,0,0,.3);
   }
   100% {
-    opacity: 1;
-    transform: scale(1);
+    transform: translateY(0) scale(1);
     background: var(--black);
-    color: #fff;
     box-shadow: 0 8px 25px rgba(0,0,0,.25);
   }
 }
